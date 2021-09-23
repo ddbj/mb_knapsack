@@ -21,7 +21,8 @@ docker-compose exec postgresql psql  < ../20210909遺伝研DDBJ/skewer.sql
 ```
 
 ## データ取得
-TODO* SQLで
+
 **TODO**
+SQLで
 ```
 ```
