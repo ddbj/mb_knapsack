@@ -13,7 +13,7 @@ docker-compose up -d
 ## Dumpデータ投入
 
 **TODO**
-Dumpデータだけでは足りないらしい
+もらったDumpだけでは足りないらしい
 
 ```
 docker-compose exec postgresql psql  < ../20210909遺伝研DDBJ/Metabolite_ACT.sql 
