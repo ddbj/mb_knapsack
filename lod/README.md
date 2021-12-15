@@ -28,6 +28,7 @@ KNApSAcK RDFデータセットを利用して、shexerによるshex schemaの生
 
 ### shexerの実行
 ```
+$ python gen_shex.py
 ```
 
 ### shex validationの実行
