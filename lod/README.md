@@ -24,10 +24,28 @@ High-quality RDF （⭐️⭐️⭐️⭐️⭐️⭐️）
 
 ## 詳細
 
-![Validate-RDF-data-with-ShEx](Validate-RDF-data-with-ShEx.png)
+KNApSAcK RDFデータセットを利用して、shexerによるshex schemaの生成とおよびshex validationを実行した。
+
+### shexerの実行
 ```
 ```
 
+### shex validationの実行
+
+#### GUIの場合
+https://rdfshape.weso.es/shExValidate?activeSchemaTab=%23schemaUrl&activeTab=%23dataUrl&dataFormat=TURTLE&dataFormatUrl=TURTLE&dataURL=https%3A%2F%2Fraw.githubusercontent.com%2Fddbj%2Fmb_knapsack%2Fmain%2FC00000001.ttl&endpoint=&inference=None&schemaEmbedded=false&schemaEngine=ShEx&schemaFormat=ShExC&schemaFormatUrl=ShExC&schemaURL=https%3A%2F%2Fraw.githubusercontent.com%2Fddbj%2Fmb_knapsack%2Fmain%2Flod%2Fknapsack_core.shex&shapeMap=%3Chttp%3A%2F%2Fmb-wiki.nig.ac.jp%2Fresource%2FC00000001%3E%40weso-s%3AKNApSAcKCoreRecord&shapeMapActiveTab=%23shapeMapTextArea&shapeMapFormat=Compact&shapeMapFormatTextArea=Compact&triggerMode=shapeMap
+
+![Validate-RDF-data-with-ShEx](Validate-RDF-data-with-ShEx.png)
+
+
+#### CUIの場合
+
+既存のshex validation実装のテストおよびruby実装の試用
+
+```
+[tf@at044 lod]$ rdf shex knapsack_core_2021-08-28_exsample.ttl   --schema knapsack_core.shex --focus http://mb-wiki.nig.ac.jp/C00000001
+ERROR Focus nodes with no start: expression: (schema (prefix (("rdf" <http://www.w3.org/1999/02/22-rdf-syntax-ns#>) ...
+```
 
 ## 発展
 
