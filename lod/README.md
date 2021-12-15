@@ -13,7 +13,7 @@ RDFの再利用サイクル
 - warning/error時のAuto suggestion） 
 
 ```
-RDF（⭐️⭐️⭐️⭐️⭐️）←------------------------------|
+RDF（⭐️⭐️⭐️⭐️⭐️）←-----------------------------|
  ↓ shexer           ←---------------------|      |
 ShEx Auto generation → Add/Edit schema ---|      | 
  ↓ rdf shex                                      |
