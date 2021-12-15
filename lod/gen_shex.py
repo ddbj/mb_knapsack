@@ -21,12 +21,10 @@ namespaces_dict = {"http://www.w3.org/1999/02/22-rdf-syntax-ns#": "rdf",
                    "http://www.w3.org/2001/XMLSchema#": "xml"
                    }
 
-input_nt_file = "glycovid.nt"
 input_ttl_file = "knapsack_core.ttl"
 
 shaper = Shaper(target_classes=target_classes,
                 graph_file_input=input_ttl_file,
-#                raw_graph=raw_graph,
                 input_format=TURTLE,
                 namespaces_dict=namespaces_dict,  # Default: no prefixes
                 instantiation_property="http://www.w3.org/1999/02/22-rdf-syntax-ns#type")  # Default rdf:type
