@@ -7,19 +7,24 @@ Shexerを利用したHigh-quality RDF生成の自動化を目指して
 
 ## 概要・イメージ
 
+RDFの再利用サイクル
+
+- Schema & RDF refinement
+- warning/error時のAuto suggestion） 
+
 ```
---- RDFの再利用サイクル #Schema & RDF refinement（warning/error時のAuto suggestion） ---
-RDF（⭐️⭐️⭐️⭐️⭐️）←---------------------------------|
- ↓ shexer           ←--------------------------------------|      |
-ShEx Auto generation →　Add/Edit schema ---|      | 
- ↓ rdf shex                                                                 |
-RDF validation  →　Add/Edit RDF ----------------------|
+RDF（⭐️⭐️⭐️⭐️⭐️）←------------------------------|
+ ↓ shexer           ←---------------------|      |
+ShEx Auto generation → Add/Edit schema ---|      | 
+ ↓ rdf shex                                      |
+RDF validation  → Add/Edit RDF ------------------|
  ↓
 High-quality RDF （⭐️⭐️⭐️⭐️⭐️⭐️）
 ```
 
 ## 詳細
 
+![Validate-RDF-data-with-ShEx](Validate-RDF-data-with-ShEx.png)
 ```
 ```
 
