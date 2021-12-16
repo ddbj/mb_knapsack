@@ -36,9 +36,9 @@ RDF validation  → Add/Edit RDF ------------------|
 High-quality RDF （⭐️⭐️⭐️⭐️⭐️⭐️）
 ```
 
-## 詳細
+## 現在
 
-KNApSAcK RDFデータセットを利用して、shexerによるshex schemaの生成とおよびshex validationを実行した。
+KNApSAcK RDFデータセットを利用して、shexerによるshex schemaの生成し、その後shex validationを実行した。
 
 ### shexerの実行
 ```
@@ -48,6 +48,8 @@ $ python gen_shex.py
 ### shex validationの実行
 
 #### GUIの場合
+https://rdfshape.weso.es/shExValidate サイトからオンラインでshex validationを実行したところValidな判定を確認した。
+
 https://rdfshape.weso.es/shExValidate?activeSchemaTab=%23schemaUrl&activeTab=%23dataUrl&dataFormat=TURTLE&dataFormatUrl=TURTLE&dataURL=https%3A%2F%2Fraw.githubusercontent.com%2Fddbj%2Fmb_knapsack%2Fmain%2FC00000001.ttl&endpoint=&inference=None&schemaEmbedded=false&schemaEngine=ShEx&schemaFormat=ShExC&schemaFormatUrl=ShExC&schemaURL=https%3A%2F%2Fraw.githubusercontent.com%2Fddbj%2Fmb_knapsack%2Fmain%2Flod%2Fknapsack_core.shex&shapeMap=%3Chttp%3A%2F%2Fmb-wiki.nig.ac.jp%2Fresource%2FC00000001%3E%40weso-s%3AKNApSAcKCoreRecord&shapeMapActiveTab=%23shapeMapTextArea&shapeMapFormat=Compact&shapeMapFormatTextArea=Compact&triggerMode=shapeMap
 
 ![Validate-RDF-data-with-ShEx](Validate-RDF-data-with-ShEx.png)
@@ -55,7 +57,7 @@ https://rdfshape.weso.es/shExValidate?activeSchemaTab=%23schemaUrl&activeTab=%23
 
 #### CUIの場合
 
-既存のshex validation実装のテストおよびruby実装の試用
+shex validatorについては、2021年12月現在、https://shex.io サイトに記載されたJava, Scala, Ruby, Pythonの実装をそれぞれインストールして、shex validationを実行した。その中で、比較的ruby実装が正常の動作することを確認したが、validator出力やFocus nodeの指定などいくつかの課題があることを確認した。
 
 ```
 [tf@at044 lod]$ rdf shex knapsack_core_2021-08-28_exsample.ttl   --schema knapsack_core.shex --focus http://mb-wiki.nig.ac.jp/C00000001
@@ -63,5 +65,7 @@ ERROR Focus nodes with no start: expression: (schema (prefix (("rdf" <http://www
 ```
 
 ## 発展
-今後の発展としては、上述のshexerを利用したRDFデータ洗練作業を一つのアプリケーション内で実施可能な統合環境の開発を行う。
-また、ShExパターンによるRDFデータの検証結果を踏まえたメッセージを、次に行うべき作業が用意に想起できるように工夫する。
+今後の発展としては、上述のshexerを利用したRDFデータ洗練作業を一つのアプリケーション内で実施可能な統合環境の開発を行う。 また、ShExパターンによるRDFデータの検証結果を踏まえたメッセージを、次に行うべき作業が用意に想起できるように工夫する。
+
+RDF形式によるデータバリデーションについては、オントロジーで定義された制約に対して適合性の確認を期待する一方、オントロジー毎に記述や程度が異なる。
+TSV,XML,JSON形式データなどRDFに限らず、編集操作によって生成されたデータのバリデーションにおいて必要な、型判定やCVのチェック、エスケープ処理、文字コードや多言語の扱い、データ間の依存などのバリデーション実行後、リファイメントのプロセスを含めて再利用性の高いRDF生成を実現したい。
