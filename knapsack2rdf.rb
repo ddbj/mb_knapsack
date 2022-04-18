@@ -2,6 +2,8 @@ require 'pp'
 #require 'cgi'
 require 'uri'
 require 'json'
+require 'digest/md5'
+require 'zlib'
 
 module KNApSAcK
 class Core
@@ -11,6 +13,7 @@ def initialize (selected = "all")
  @ranks = family_kingdom
  @refs  = references_pmid
  @ids = id_all
+ @mws = mw_data
  to_ttl_prefix
  #@ids.sort.first(100).each_with_index do |id, i|
  @ids.sort.each_with_index do |id, i|
@@ -28,91 +31,102 @@ end
 
 def to_ttl_prefix
 puts "
-@prefix : <http://mb-wiki.nig.ac.jp/resource/> .
+@base <http://purl.jp/knapsack/> .
+@prefix : <http://purl.jp/knapsack/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix mb: <http://ddbj.nig.ac.jp/ontolofies/metabobank/> .
-@prefix mb-wiki: <http://mb-wiki.nig.ac.jp/> .
 @prefix sio: <http://semanticscience.org/resource/> .
 @prefix cheminf: <http://semanticscience.org/resource/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+
+
 "
 end
 
 def to_ttl h
     #subject = "<http://mb-wiki.nig.ac.jp/resource/#{h[:id]}>"
-    subject =":#{h[:id]}"
+    #subject =":#{h[:id]}"
+    subject ="<#{h[:id]}>"
 puts "
 #{subject}
   rdf:type mb:KNApSAcKCoreRecord ;
   dc:identifier \"#{h[:id]}\" ;
   rdfs:label \"#{h[:name]}\" ;
   mb:fid \"#{h[:fid]}\" ;
-  foaf:homepage mb-wiki:#{h[:id]} ;
+  foaf:homepage <https://mb.metabolomics.jp/wiki/Compound:#{h[:id]}> ;
   rdfs:seeAlso <http://www.knapsackfamily.com/knapsack_core/info.php?sname=C_ID&word=#{h[:id]}> ;
-  sio:SIO_000008 #{subject}\\/molecular_formula ; #sio:has-attribute
-  sio:SIO_000008 #{subject}\\/names ;             #sio:has-attribute
-  cheminf:CHEMINF_000200 #{subject}\\/smiles ;            #cheminf:has-attribute
-  cheminf:CHEMINF_000200 #{subject}\\/standard_inchikey ; #cheminf:has-attribute
-  cheminf:CHEMINF_000200 #{subject}\\/standard_inchi ;    #cheminf:has-attribute
-  cheminf:CHEMINF_000200 #{subject}\\/cas ;               #cheminf:has-attribute
-  cheminf:CHEMINF_000200 #{subject}\\/start_substance ;   #cheminf:has-attribute
-  dcterms:hasPart #{subject}\\/x-mdl-molfile ;  
-  dcterms:hasPart #{subject}\\/x-chemdraw ;  
-  dcterms:hasPart #{subject}\\/gif .  
+  sio:SIO_000008 <#{h[:id]}#molecular_formula> ;         #sio:has-attribute
+  sio:SIO_000008 <#{h[:id]}#names> ;
+  sio:SIO_000008 <#{h[:id]}#molecular_weight> ;
+  cheminf:CHEMINF_000200 <#{h[:id]}#smiles> ;            #cheminf:has-attribute
+  cheminf:CHEMINF_000200 <#{h[:id]}#standard_inchikey> ;
+  cheminf:CHEMINF_000200 <#{h[:id]}#standard_inchi> ;
+  cheminf:CHEMINF_000200 <#{h[:id]}#cas> ;
+  cheminf:CHEMINF_000200 <#{h[:id]}#start_substance> ;
+  dcterms:hasPart <#{h[:id]}#x-mdl-molfile> ;  
+  dcterms:hasPart <#{h[:id]}#x-chemdraw> ;  
+  dcterms:hasPart <#{h[:id]}#gif> . 
 "
 
 puts "
-#{subject}\\/x-mdl-molfile 
+<#{h[:id]}#x-mdl-molfile> 
   rdf:type cheminf:CHEMINF_000058 ;
   dcterms:format <nrn:mimetype:chemical/x-mdl-molfile> ; 
-  rdfs:seeAlso mb-wiki:Mol:C00000091 .
+  rdfs:seeAlso <https://mb.metabolomics.jp/wiki/Mol:#{h[:id]}> .
 
-#{subject}\\/x-chemdraw
+<#{h[:id]}#x-chemdraw> 
   rdf:type mb:CDXfile ;
   dcterms:format <nrn:mimetype:chemical/x-chemdraw> ; 
-  rdfs:seeAlso mb-wiki:File:C00000091.cdx .
+  rdfs:seeAlso <https://mb.metabolomics.jp/wiki/File:#{h[:id]}.cdx> .
 
-#{subject}\\/gif
+<#{h[:id]}#gif> 
   rdf:type mb:SDfile ;
   dcterms:format <nrn:mimetype:image/gif> ; 
-  rdfs:seeAlso mb-wiki:File:C00000091.gif .
+  rdfs:seeAlso <https://mb.metabolomics.jp/wiki/File:#{h[:id]}.gif> .
 
 "
 
 puts "
-#{subject}\\/molecular_formula
+<#{h[:id]}#molecular_formula>
   rdf:type cheminf:CHEMINF_000042 ;
   sio:SIO_000300 \"#{h[:comp]}\" .
 
-#{subject}\\/names
+<#{h[:id]}#names>
   rdf:type cheminf:CHEMINF_000043 ;
   sio:SIO_000300 \"#{h[:name]}\" .
 
-#{subject}\\/smiles
+<#{h[:id]}#molecular_weight>
+  rdf:type cheminf:CHEMINF_000334 ;
+  sio:SIO_000300 \"#{h[:mw]}\"^^xsd:double ;
+  sio:SIO_000221 obo:UO_0000055 . # has unit
+
+<#{h[:id]}#smiles>
   rdf:type cheminf:CHEMINF_000018 ;
   sio:SIO_000300 \"#{h[:smiles]}\" .
 
-#{subject}\\/standard_inchikey
+<#{h[:id]}#standard_inchikey>
   rdf:type cheminf:CHEMINF_000059 ;
   sio:SIO_000300 \"#{h[:ikey]}\";
   rdfs:seeAlso <http://identifiers.org/inchikey/#{h[:ikey]}>.
   
-#{subject}\\/standard_inchi
+<#{h[:id]}#standard_inchi>
   rdf:type cheminf:CHEMINF_000113 ;
   sio:SIO_000300 \"#{h[:inchi]}\";
   rdfs:seeAlso <http://identifiers.org/inchi/#{h[:inchi]}>.
   
-#{subject}\\/start_substance
+<#{h[:id]}#start_substance>
   rdf:type mb:Start_substance ;
   sio:SIO_000300 \"#{h[:substance]}\" .
 "
 
 cas =
 "
-#{subject}\\/cas
+<#{h[:id]}#cas>
   rdf:type cheminf:CHEMINF_000446 ;
   sio:SIO_000300 \"#{h[:cas_id]}\";
   rdfs:seeAlso <http://identifiers.org/cas/#{h[:cas_id]}>.
@@ -121,8 +135,10 @@ cas =
 #h[:annotations].first(1).each do |ann|
 h[:annotations].each do |ann|
   #s = "#{subject}\\/#{ann[:organism].gsub(' ','-')}"
-  s = "#{subject}\\/#{URI.encode(ann[:organism].gsub(".","_").gsub("(","_").gsub(")","_"))}"
-  s = "<http://mb-wiki.nig.ac.jp/resource/#{h[:id]}/organism##{URI.encode(ann[:organism])}>"
+  #s = "#{subject}\\/#{URI.encode(ann[:organism].gsub(".","_").gsub("(","_").gsub(")","_"))}"
+  #s = "<http://mb-wiki.nig.ac.jp/resource/#{h[:id]}/organism##{URI.encode(ann[:organism])}>"
+  #s = "#{subject}\\##{Digest::MD5.hexdigest(ann[:organism])}"
+  s = "<annotation##{Digest::MD5.hexdigest(ann[:organism])}>"
   puts "
 #{subject} sio:SIO_000255 #{s} ." #sio:has-annotation
   puts "
@@ -137,7 +153,8 @@ h[:annotations].each do |ann|
     puts "  dcterms:references  <http://identifiers.org/pubmed/#{pmid}> ;" 
   end
   puts "  rdfs:seeAlso <http://identifiers.org/taxonomy/#{ann[:taxonomy]}> ;" if ann[:taxonomy].to_i > 0
-  puts "  rdf:type mb:KNApSAcKCoreAnnotations ."
+  puts "  sio:SIO_000254 #{subject} . #sio:is annotation of" 
+  #puts "  rdf:type mb:KNApSAcKCoreAnnotations ."
 
   puts 
   #pp ann
@@ -146,6 +163,7 @@ end
 end
 
 def parse_by_id
+ #mw_data
  id_data
  in_chi_key
  id_cas
@@ -172,6 +190,18 @@ def references_pmid
         @refs[references] = pmid
     end
     @refs
+end
+
+def mw_data
+   file_path = 'knapsack_mw-tmp.txt.gz'
+   mws ={}
+   gz = Zlib::GzipReader.open(file_path)
+   gz.each_line do |line|
+     #puts line
+     cid, mw = line.chomp.split("\t")
+     mws[cid] = mw
+   end
+   mws
 end
 
 def id_data
@@ -203,7 +233,7 @@ def id_data
           :pmids => pmids
       })
     end
-    @ids_data[@id] = { :id => id, :fid => fid, :comp => comp, :name => name, :annotations => annotations}
+    @ids_data[@id] = { :id => id, :fid => fid, :comp => comp, :name => name, :annotations => annotations, :mw => @mws[id]}
   rescue SystemCallError => e
     puts %Q(class=[#{e.class}] message=[#{e.message}])
   end

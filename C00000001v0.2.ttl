@@ -1,102 +1,112 @@
 
+@base <http://purl.jp/knapsack/> .
 @prefix : <http://purl.jp/knapsack/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix mb: <http://ddbj.nig.ac.jp/ontolofies/metabobank/> .
-@prefix mb-wiki: <http://mb-wiki.nig.ac.jp/> .
 @prefix sio: <http://semanticscience.org/resource/> .
 @prefix cheminf: <http://semanticscience.org/resource/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 
-:C00000001
+
+
+<C00000001>
   rdf:type mb:KNApSAcKCoreRecord ;
   dc:identifier "C00000001" ;
   rdfs:label "Gibberellin A1;GA1" ;
   mb:fid "C19H24O6_C00000001" ;
   foaf:homepage <https://mb.metabolomics.jp/wiki/Compound:C00000001> ;
   rdfs:seeAlso <http://www.knapsackfamily.com/knapsack_core/info.php?sname=C_ID&word=C00000001> ;
-  sio:SIO_000008 :C00000001\/molecular_formula ; #sio:has-attribute
-  sio:SIO_000008 :C00000001\/names ;             #sio:has-attribute
-  cheminf:CHEMINF_000200 :C00000001\/smiles ;            #cheminf:has-attribute
-  cheminf:CHEMINF_000200 :C00000001\/standard_inchikey ; #cheminf:has-attribute
-  cheminf:CHEMINF_000200 :C00000001\/standard_inchi ;    #cheminf:has-attribute
-  cheminf:CHEMINF_000200 :C00000001\/cas ;               #cheminf:has-attribute
-  cheminf:CHEMINF_000200 :C00000001\/start_substance ;   #cheminf:has-attribute
-  dcterms:hasPart :C00000001\/x-mdl-molfile ;  
-  dcterms:hasPart :C00000001\/x-chemdraw ;  
-  dcterms:hasPart :C00000001\/gif .  
+  sio:SIO_000008 <C00000001#molecular_formula> ;         #sio:has-attribute
+  sio:SIO_000008 <C00000001#names> ;
+  sio:SIO_000008 <C00000001#molecular_weight> ;
+  cheminf:CHEMINF_000200 <C00000001#smiles> ;            #cheminf:has-attribute
+  cheminf:CHEMINF_000200 <C00000001#standard_inchikey> ;
+  cheminf:CHEMINF_000200 <C00000001#standard_inchi> ;
+  cheminf:CHEMINF_000200 <C00000001#cas> ;
+  cheminf:CHEMINF_000200 <C00000001#start_substance> ;
+  dcterms:hasPart <C00000001#x-mdl-molfile> ;  
+  dcterms:hasPart <C00000001#x-chemdraw> ;  
+  dcterms:hasPart <C00000001#gif> . 
 
-:C00000001\/x-mdl-molfile 
+<C00000001#x-mdl-molfile> 
   rdf:type cheminf:CHEMINF_000058 ;
   dcterms:format <nrn:mimetype:chemical/x-mdl-molfile> ; 
   rdfs:seeAlso <https://mb.metabolomics.jp/wiki/Mol:C00000001> .
 
-:C00000001\/x-chemdraw
+<C00000001#x-chemdraw> 
   rdf:type mb:CDXfile ;
   dcterms:format <nrn:mimetype:chemical/x-chemdraw> ; 
   rdfs:seeAlso <https://mb.metabolomics.jp/wiki/File:C00000001.cdx> .
 
-:C00000001\/gif
+<C00000001#gif> 
   rdf:type mb:SDfile ;
   dcterms:format <nrn:mimetype:image/gif> ; 
   rdfs:seeAlso <https://mb.metabolomics.jp/wiki/File:C00000001.gif> .
 
 
-:C00000001\/molecular_formula
+<C00000001#molecular_formula>
   rdf:type cheminf:CHEMINF_000042 ;
   sio:SIO_000300 "C19H24O6" .
 
-:C00000001\/names
+<C00000001#names>
   rdf:type cheminf:CHEMINF_000043 ;
   sio:SIO_000300 "Gibberellin A1;GA1" .
 
-:C00000001\/smiles
+<C00000001#molecular_weight>
+  rdf:type cheminf:CHEMINF_000334 ;
+  sio:SIO_000300 "348.15728849094"^^xsd:double ;
+  sio:SIO_000221 obo:UO_0000055 . # has unit
+
+<C00000001#smiles>
   rdf:type cheminf:CHEMINF_000018 ;
   sio:SIO_000300 "C1[C@@H]([C@@]2([C@@H]3[C@@](C1)([C@H]1[C@@]4([C@H]3C(=O)O)C[C@@](CC1)(C(=C)C4)O)OC2=O)C)O" .
 
-:C00000001\/standard_inchikey
+<C00000001#standard_inchikey>
   rdf:type cheminf:CHEMINF_000059 ;
   sio:SIO_000300 "JLJLRLWOEMWYQK-BKYUDGNBNA-N";
   rdfs:seeAlso <http://identifiers.org/inchikey/JLJLRLWOEMWYQK-BKYUDGNBNA-N>.
   
-:C00000001\/standard_inchi
+<C00000001#standard_inchi>
   rdf:type cheminf:CHEMINF_000113 ;
   sio:SIO_000300 "InChI=1S/C19H24O6/c1-9-7-17-8-18(9,24)5-3-10(17)19-6-4-11(20)16(2,15(23)25-19)13(19)12(17)14(21)22/h10-13,20,24H,1,3-8H2,2H3,(H,21,22)/t10-,11+,12-,13-,16-,17+,18+,19-/m1/s1";
   rdfs:seeAlso <http://identifiers.org/inchi/InChI=1S/C19H24O6/c1-9-7-17-8-18(9,24)5-3-10(17)19-6-4-11(20)16(2,15(23)25-19)13(19)12(17)14(21)22/h10-13,20,24H,1,3-8H2,2H3,(H,21,22)/t10-,11+,12-,13-,16-,17+,18+,19-/m1/s1>.
   
-:C00000001\/start_substance
+<C00000001#start_substance>
   rdf:type mb:Start_substance ;
   sio:SIO_000300 "" .
 
-:C00000001 sio:SIO_000255 :C00000001\#7137d093c966c72ab4dd902c8c2e54c9 .
+<C00000001> sio:SIO_000255 <annotation#7137d093c966c72ab4dd902c8c2e54c9> .
 
-:C00000001\#7137d093c966c72ab4dd902c8c2e54c9 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#7137d093c966c72ab4dd902c8c2e54c9> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Zea mays" ;
   mb:references "Fujioka,Proc. Natl. Acad. Sci. USA,85,(1988),9031" ;
   mb:sp1 "" ;
   mb:family "Poaceae" ;
   mb:kingdom "Plantae" ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/4577> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#b877c85460137f060ebabcbfb01b6a9a .
+<C00000001> sio:SIO_000255 <annotation#b877c85460137f060ebabcbfb01b6a9a> .
 
-:C00000001\#b877c85460137f060ebabcbfb01b6a9a rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#b877c85460137f060ebabcbfb01b6a9a> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Vitis vinifera" ;
   mb:references "Perez,Am.J.Viticulture,51,(2000),315" ;
   mb:sp1 "" ;
   mb:family "Vitaceae" ;
   mb:kingdom "Plantae" ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/29760> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#725fb9f0e5f1a6556baccdc1e3f76965 .
+<C00000001> sio:SIO_000255 <annotation#725fb9f0e5f1a6556baccdc1e3f76965> .
 
-:C00000001\#725fb9f0e5f1a6556baccdc1e3f76965 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#725fb9f0e5f1a6556baccdc1e3f76965> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Vigna unguiculata" ;
   mb:references "Garcia-Martinez,Plant Physiol.,85,(1987),212" ;
   mb:sp1 "" ;
@@ -105,36 +115,36 @@
   mb:pmid "16665660" ;
   dcterms:references  <http://identifiers.org/pubmed/16665660> ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/3917> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#e9e260c263ee642547957f2d1375c0df .
+<C00000001> sio:SIO_000255 <annotation#e9e260c263ee642547957f2d1375c0df> .
 
-:C00000001\#e9e260c263ee642547957f2d1375c0df rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#e9e260c263ee642547957f2d1375c0df> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Triticum aestivum" ;
   mb:references "Lin,Phytochem.,26,(1987),2485" ;
   mb:sp1 "" ;
   mb:family "Poaceae" ;
   mb:kingdom "Plantae" ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/4565> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#6feb1b534d0a5922785935ca4227b592 .
+<C00000001> sio:SIO_000255 <annotation#6feb1b534d0a5922785935ca4227b592> .
 
-:C00000001\#6feb1b534d0a5922785935ca4227b592 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#6feb1b534d0a5922785935ca4227b592> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Trifolium repens" ;
   mb:references "Perez,Am.J.Viticulture,51,(2000),315" ;
   mb:sp1 "" ;
   mb:family "Fabaceae" ;
   mb:kingdom "Plantae" ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/3899> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#18b24176c038147be449f9dc8b9f27aa .
+<C00000001> sio:SIO_000255 <annotation#18b24176c038147be449f9dc8b9f27aa> .
 
-:C00000001\#18b24176c038147be449f9dc8b9f27aa rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#18b24176c038147be449f9dc8b9f27aa> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Thlaspi arvense" ;
   mb:references "Metzger,Plant Physiol.,80,(1985),396" ;
   mb:sp1 "" ;
@@ -143,36 +153,36 @@
   mb:pmid "16664632" ;
   dcterms:references  <http://identifiers.org/pubmed/16664632> ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/13288> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#10b0f8dfb50b7dd0098da57db6c7d268 .
+<C00000001> sio:SIO_000255 <annotation#10b0f8dfb50b7dd0098da57db6c7d268> .
 
-:C00000001\#10b0f8dfb50b7dd0098da57db6c7d268 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#10b0f8dfb50b7dd0098da57db6c7d268> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Spinacia oleracea" ;
   mb:references "Suzuki,J.Plant Growth Reg.,13,(1994),63" ;
   mb:sp1 "" ;
   mb:family "Chenopodiaceae" ;
   mb:kingdom "Plantae" ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/3562> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#85596a1e1676e224501305268d6a3dd1 .
+<C00000001> sio:SIO_000255 <annotation#85596a1e1676e224501305268d6a3dd1> .
 
-:C00000001\#85596a1e1676e224501305268d6a3dd1 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#85596a1e1676e224501305268d6a3dd1> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Sonneratia apetala" ;
   mb:references "Ganguly,Phytochem.,13,(1974),1911" ;
   mb:sp1 "" ;
   mb:family "Lythraceae" ;
   mb:kingdom "Plantae" ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/122813> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#4c93d24c0c1a42c8f34e37ec7d40c794 .
+<C00000001> sio:SIO_000255 <annotation#4c93d24c0c1a42c8f34e37ec7d40c794> .
 
-:C00000001\#4c93d24c0c1a42c8f34e37ec7d40c794 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#4c93d24c0c1a42c8f34e37ec7d40c794> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Silene armeria" ;
   mb:references "Talon,Plant Physiol.,92,(1990),1094" ;
   mb:sp1 "" ;
@@ -181,12 +191,12 @@
   mb:pmid "16667376" ;
   dcterms:references  <http://identifiers.org/pubmed/16667376> ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/39866> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#16cf33e984b18c3854b218eb3d6e2509 .
+<C00000001> sio:SIO_000255 <annotation#16cf33e984b18c3854b218eb3d6e2509> .
 
-:C00000001\#16cf33e984b18c3854b218eb3d6e2509 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#16cf33e984b18c3854b218eb3d6e2509> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Sechium edule" ;
   mb:references "Albone,Planta,162,(1984),560" ;
   mb:sp1 "" ;
@@ -195,12 +205,12 @@
   mb:pmid "24253274" ;
   dcterms:references  <http://identifiers.org/pubmed/24253274> ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/184140> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#29323059f620cb075d9d8baa3d6b2b29 .
+<C00000001> sio:SIO_000255 <annotation#29323059f620cb075d9d8baa3d6b2b29> .
 
-:C00000001\#29323059f620cb075d9d8baa3d6b2b29 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#29323059f620cb075d9d8baa3d6b2b29> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Secale cereale" ;
   mb:references "Browning,Nature,265,(1977),375" ;
   mb:sp1 "" ;
@@ -209,12 +219,12 @@
   mb:pmid "870828" ;
   dcterms:references  <http://identifiers.org/pubmed/870828> ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/4550> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#cae4c7c02b42f0a2fdd16610e2bed70e .
+<C00000001> sio:SIO_000255 <annotation#cae4c7c02b42f0a2fdd16610e2bed70e> .
 
-:C00000001\#cae4c7c02b42f0a2fdd16610e2bed70e rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#cae4c7c02b42f0a2fdd16610e2bed70e> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Sasa kurilensis" ;
   mb:references "Yanagisawa,Biosci. Biotech. Biochem.,56,(1992),81" ;
   mb:sp1 "" ;
@@ -223,47 +233,47 @@
   mb:pmid "27286211" ;
   dcterms:references  <http://identifiers.org/pubmed/27286211> ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/121784> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#44b63af5987fad5be87f209378073ccd .
+<C00000001> sio:SIO_000255 <annotation#44b63af5987fad5be87f209378073ccd> .
 
-:C00000001\#44b63af5987fad5be87f209378073ccd rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#44b63af5987fad5be87f209378073ccd> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Saccharum spp." ;
   mb:references "KuhnleJ.Plant.Growth Reg.,2,(1983),59" ;
   mb:sp1 "" ;
   mb:family "Poaceae" ;
   mb:kingdom "Plantae" ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#d921ea4266e0a0da2045d1a3a8fcc422 .
+<C00000001> sio:SIO_000255 <annotation#d921ea4266e0a0da2045d1a3a8fcc422> .
 
-:C00000001\#d921ea4266e0a0da2045d1a3a8fcc422 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#d921ea4266e0a0da2045d1a3a8fcc422> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Rumex palustris" ;
   mb:references "RijindersPlanta,203,(1997),20" ;
   mb:sp1 "" ;
   mb:family "Polygonaceae" ;
   mb:kingdom "Plantae" ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/50298> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#2cb7fe9c188246e4d98e23930d3b8c63 .
+<C00000001> sio:SIO_000255 <annotation#2cb7fe9c188246e4d98e23930d3b8c63> .
 
-:C00000001\#2cb7fe9c188246e4d98e23930d3b8c63 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#2cb7fe9c188246e4d98e23930d3b8c63> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Rumex acetosa" ;
   mb:references "RijindersPlanta,203,(1997),20" ;
   mb:sp1 "" ;
   mb:family "Polygonaceae" ;
   mb:kingdom "Plantae" ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/41241> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#293297cc043059a11d27de3d2f1d1753 .
+<C00000001> sio:SIO_000255 <annotation#293297cc043059a11d27de3d2f1d1753> .
 
-:C00000001\#293297cc043059a11d27de3d2f1d1753 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#293297cc043059a11d27de3d2f1d1753> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Rhizobium phaseoli" ;
   mb:references "Atzhorn,Planta,175,(1988),532" ;
   mb:sp1 "" ;
@@ -272,12 +282,12 @@
   mb:pmid "24221937" ;
   dcterms:references  <http://identifiers.org/pubmed/24221937> ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/396> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#dd7ea7ea2dc7b6fb9617bbd5f4714676 .
+<C00000001> sio:SIO_000255 <annotation#dd7ea7ea2dc7b6fb9617bbd5f4714676> .
 
-:C00000001\#dd7ea7ea2dc7b6fb9617bbd5f4714676 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#dd7ea7ea2dc7b6fb9617bbd5f4714676> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Raphanus sativus" ;
   mb:references "Nakayama,Agric. Biol. Chem.,54,(1990),837" ;
   mb:sp1 "" ;
@@ -286,24 +296,24 @@
   mb:pmid "1368646" ;
   dcterms:references  <http://identifiers.org/pubmed/1368646> ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/3726> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#090690b475c6343d0e52b2fd5867b05f .
+<C00000001> sio:SIO_000255 <annotation#090690b475c6343d0e52b2fd5867b05f> .
 
-:C00000001\#090690b475c6343d0e52b2fd5867b05f rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#090690b475c6343d0e52b2fd5867b05f> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Psophocarpus tetragonolobus" ;
   mb:references "Murakami,JARQ,20,(1987),225" ;
   mb:sp1 "" ;
   mb:family "Fabaceae" ;
   mb:kingdom "Plantae" ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/3891> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#cd8b331df92cb407017948ef09e4e9ce .
+<C00000001> sio:SIO_000255 <annotation#cd8b331df92cb407017948ef09e4e9ce> .
 
-:C00000001\#cd8b331df92cb407017948ef09e4e9ce rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#cd8b331df92cb407017948ef09e4e9ce> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Pseudotsuga menziesii" ;
   mb:references "DoumasPhysiol Plant,85,(1992),489" ;
   mb:sp1 "" ;
@@ -312,24 +322,24 @@
   mb:pmid "24197464" ;
   dcterms:references  <http://identifiers.org/pubmed/24197464> ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/3357> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#31354a7d2c484806fda78d02cab1ce7f .
+<C00000001> sio:SIO_000255 <annotation#31354a7d2c484806fda78d02cab1ce7f> .
 
-:C00000001\#31354a7d2c484806fda78d02cab1ce7f rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#31354a7d2c484806fda78d02cab1ce7f> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Prunus subhirtella" ;
   mb:references "Kobayashi,Biosci. Biotech.Biochem.,60,(1996),159" ;
   mb:sp1 "" ;
   mb:family "Rosaceae" ;
   mb:kingdom "Plantae" ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/97320> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#2de6e7d9c5d11624a992cb15d75845ae .
+<C00000001> sio:SIO_000255 <annotation#2de6e7d9c5d11624a992cb15d75845ae> .
 
-:C00000001\#2de6e7d9c5d11624a992cb15d75845ae rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#2de6e7d9c5d11624a992cb15d75845ae> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Prunus persica" ;
   mb:references "Luna,Plant Physiol.,93,(1990),20" ;
   mb:sp1 "" ;
@@ -338,24 +348,24 @@
   mb:pmid "16667435" ;
   dcterms:references  <http://identifiers.org/pubmed/16667435> ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/3760> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#04e4413b7723bc7237435d98cc03b417 .
+<C00000001> sio:SIO_000255 <annotation#04e4413b7723bc7237435d98cc03b417> .
 
-:C00000001\#04e4413b7723bc7237435d98cc03b417 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#04e4413b7723bc7237435d98cc03b417> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Prunus avium" ;
   mb:references "Blake,Phytochem.,35,(1994),1383;Blake,Phytochem.,55,(2000),887" ;
   mb:sp1 "" ;
   mb:family "Rosaceae" ;
   mb:kingdom "Plantae" ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/42229> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#edb0b9797a1ab628485f7755f6ea29d5 .
+<C00000001> sio:SIO_000255 <annotation#edb0b9797a1ab628485f7755f6ea29d5> .
 
-:C00000001\#edb0b9797a1ab628485f7755f6ea29d5 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#edb0b9797a1ab628485f7755f6ea29d5> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Prunus armeniaca" ;
   mb:references "Bottini,Plant Physiol.,78,(1985),417" ;
   mb:sp1 "" ;
@@ -364,24 +374,24 @@
   mb:pmid "16664256" ;
   dcterms:references  <http://identifiers.org/pubmed/16664256> ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/36596> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#13dd96e1f07ba9df5e268e9bca96f81c .
+<C00000001> sio:SIO_000255 <annotation#13dd96e1f07ba9df5e268e9bca96f81c> .
 
-:C00000001\#13dd96e1f07ba9df5e268e9bca96f81c rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#13dd96e1f07ba9df5e268e9bca96f81c> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Populus tremuloides" ;
   mb:references "Zanewich,J.Plant Growth Reg.,13,(1994),159" ;
   mb:sp1 "" ;
   mb:family "Salicaceae" ;
   mb:kingdom "Plantae" ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/3693> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#a2bcc41c007e4310db5e098734f07d58 .
+<C00000001> sio:SIO_000255 <annotation#a2bcc41c007e4310db5e098734f07d58> .
 
-:C00000001\#a2bcc41c007e4310db5e098734f07d58 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#a2bcc41c007e4310db5e098734f07d58> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Agave amica" ;
   mb:references "Chang,Physiol. Plant,112,(2001),429" ;
   mb:sp1 "" ;
@@ -390,12 +400,12 @@
   mb:pmid "11473701" ;
   dcterms:references  <http://identifiers.org/pubmed/11473701> ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/82206> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#8b9e69cac4086051217dcac61198c4cf .
+<C00000001> sio:SIO_000255 <annotation#8b9e69cac4086051217dcac61198c4cf> .
 
-:C00000001\#8b9e69cac4086051217dcac61198c4cf rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#8b9e69cac4086051217dcac61198c4cf> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Pisum sativum" ;
   mb:references "Garcia-Martinez,Planta,184,(1991),53" ;
   mb:sp1 "" ;
@@ -404,24 +414,24 @@
   mb:pmid "24193929" ;
   dcterms:references  <http://identifiers.org/pubmed/24193929> ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/3888> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#f3d671a7154e11e635bb1d19de169459 .
+<C00000001> sio:SIO_000255 <annotation#f3d671a7154e11e635bb1d19de169459> .
 
-:C00000001\#f3d671a7154e11e635bb1d19de169459 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#f3d671a7154e11e635bb1d19de169459> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Pimpinella anisum" ;
   mb:references "Noma,Agric. Biol. Chem.,43,(1982),1793" ;
   mb:sp1 "" ;
   mb:family "Apiaceae" ;
   mb:kingdom "Plantae" ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/271192> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#d23b59b6f6901bb0cf9be465ce675341 .
+<C00000001> sio:SIO_000255 <annotation#d23b59b6f6901bb0cf9be465ce675341> .
 
-:C00000001\#d23b59b6f6901bb0cf9be465ce675341 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#d23b59b6f6901bb0cf9be465ce675341> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Picea sitchensis" ;
   mb:references "Moritz,Planta,181,(1990),538" ;
   mb:sp1 "" ;
@@ -430,12 +440,12 @@
   mb:pmid "24196934" ;
   dcterms:references  <http://identifiers.org/pubmed/24196934> ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/3332> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#3020460dfb1019d8ef9822d59d956b76 .
+<C00000001> sio:SIO_000255 <annotation#3020460dfb1019d8ef9822d59d956b76> .
 
-:C00000001\#3020460dfb1019d8ef9822d59d956b76 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#3020460dfb1019d8ef9822d59d956b76> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Picea abies" ;
   mb:references "Oden,Plant Physiol.,84,(1987),516" ;
   mb:sp1 "" ;
@@ -444,12 +454,12 @@
   mb:pmid "16665471" ;
   dcterms:references  <http://identifiers.org/pubmed/16665471> ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/3329> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#985be81a817e8cbdf7f7ce00acd9eefb .
+<C00000001> sio:SIO_000255 <annotation#985be81a817e8cbdf7f7ce00acd9eefb> .
 
-:C00000001\#985be81a817e8cbdf7f7ce00acd9eefb rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#985be81a817e8cbdf7f7ce00acd9eefb> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Phyllostachys edulis" ;
   mb:references "Yanagisawa,Biosci. Biotech. Biochem.,56,(1992),81" ;
   mb:sp1 "" ;
@@ -458,12 +468,12 @@
   mb:pmid "27286211" ;
   dcterms:references  <http://identifiers.org/pubmed/27286211> ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/38705> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#bc5fdef2902d5b94812398fdfc595318 .
+<C00000001> sio:SIO_000255 <annotation#bc5fdef2902d5b94812398fdfc595318> .
 
-:C00000001\#bc5fdef2902d5b94812398fdfc595318 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#bc5fdef2902d5b94812398fdfc595318> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Phyllostachys bambusoides" ;
   mb:references "Yanagisawa,Biosci. Biotech. Biochem.,56,(1992),81" ;
   mb:sp1 "" ;
@@ -472,36 +482,36 @@
   mb:pmid "27286211" ;
   dcterms:references  <http://identifiers.org/pubmed/27286211> ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/35706> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#e783e395316c9eeaa972c2ed1840ba39 .
+<C00000001> sio:SIO_000255 <annotation#e783e395316c9eeaa972c2ed1840ba39> .
 
-:C00000001\#e783e395316c9eeaa972c2ed1840ba39 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#e783e395316c9eeaa972c2ed1840ba39> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Phaseolus vulgaris" ;
   mb:references "West,J. Am. Chem. Soc.,81,(1959),2424" ;
   mb:sp1 "" ;
   mb:family "Fabaceae" ;
   mb:kingdom "Plantae" ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/3885> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#e29c764b947c0a1997025562d9948cb5 .
+<C00000001> sio:SIO_000255 <annotation#e29c764b947c0a1997025562d9948cb5> .
 
-:C00000001\#e29c764b947c0a1997025562d9948cb5 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#e29c764b947c0a1997025562d9948cb5> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Phaseolus coccineus" ;
   mb:references "Durley,Phytochem.,10,(1971),1891" ;
   mb:sp1 "" ;
   mb:family "Fabaceae" ;
   mb:kingdom "Plantae" ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/3886> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#139402b7b61f4af1b02d7e52293960d4 .
+<C00000001> sio:SIO_000255 <annotation#139402b7b61f4af1b02d7e52293960d4> .
 
-:C00000001\#139402b7b61f4af1b02d7e52293960d4 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#139402b7b61f4af1b02d7e52293960d4> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Phaseolus lunatus" ;
   mb:references "Dobert,Plant Physiol.,98,(1992),221" ;
   mb:sp1 "" ;
@@ -510,36 +520,36 @@
   mb:pmid "16668617" ;
   dcterms:references  <http://identifiers.org/pubmed/16668617> ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/3884> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#e29c764b947c0a1997025562d9948cb5 .
+<C00000001> sio:SIO_000255 <annotation#e29c764b947c0a1997025562d9948cb5> .
 
-:C00000001\#e29c764b947c0a1997025562d9948cb5 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#e29c764b947c0a1997025562d9948cb5> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Phaseolus coccineus" ;
   mb:references "Brown,Phytochem.,12,(1973),2935" ;
   mb:sp1 "" ;
   mb:family "Fabaceae" ;
   mb:kingdom "Plantae" ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/3886> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#5a086b5cd3c3c27cc338074270ea8c62 .
+<C00000001> sio:SIO_000255 <annotation#5a086b5cd3c3c27cc338074270ea8c62> .
 
-:C00000001\#5a086b5cd3c3c27cc338074270ea8c62 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#5a086b5cd3c3c27cc338074270ea8c62> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Cenchrus americanus" ;
   mb:references "Devi,Plant Growth Reg.,15,(1994),215" ;
   mb:sp1 "" ;
   mb:family "Poaceae" ;
   mb:kingdom "Plantae" ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/4543> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#46632d7aa2ae565ce8fe38b71130847d .
+<C00000001> sio:SIO_000255 <annotation#46632d7aa2ae565ce8fe38b71130847d> .
 
-:C00000001\#46632d7aa2ae565ce8fe38b71130847d rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#46632d7aa2ae565ce8fe38b71130847d> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Paraburkholderia phymatum" ;
   mb:references "Lardi, M. et al., Int. J. Mol. Sci., 19, (2018), 1049." ;
   mb:sp1 "" ;
@@ -548,12 +558,12 @@
   mb:pmid "" ;
   dcterms:references  <http://identifiers.org/pubmed/> ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/148447> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#0095a2d91d74c9c2b451171fe2a1b70d .
+<C00000001> sio:SIO_000255 <annotation#0095a2d91d74c9c2b451171fe2a1b70d> .
 
-:C00000001\#0095a2d91d74c9c2b451171fe2a1b70d rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#0095a2d91d74c9c2b451171fe2a1b70d> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Oryza sativa" ;
   mb:references "Kurogochi,Planta,146,(1979),185" ;
   mb:sp1 "" ;
@@ -562,96 +572,96 @@
   mb:pmid "24318057" ;
   dcterms:references  <http://identifiers.org/pubmed/24318057> ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/4530> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#1ea5bebb0eaffc40f9cea18a0cadd828 .
+<C00000001> sio:SIO_000255 <annotation#1ea5bebb0eaffc40f9cea18a0cadd828> .
 
-:C00000001\#1ea5bebb0eaffc40f9cea18a0cadd828 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#1ea5bebb0eaffc40f9cea18a0cadd828> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Orobanche minor" ;
   mb:references "Suzuki,J.Plant Growth Reg.,13,(1994),63" ;
   mb:sp1 "" ;
   mb:family "Orobanchaceae" ;
   mb:kingdom "Plantae" ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/36748> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#9d3f0e510cedda39283a6e3ba1abe968 .
+<C00000001> sio:SIO_000255 <annotation#9d3f0e510cedda39283a6e3ba1abe968> .
 
-:C00000001\#9d3f0e510cedda39283a6e3ba1abe968 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#9d3f0e510cedda39283a6e3ba1abe968> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Nicotiana tabacum" ;
   mb:references "Park,Plant Cell Physiol.,24,(1983),1241" ;
   mb:sp1 "" ;
   mb:family "Solanaceae" ;
   mb:kingdom "Plantae" ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/4097> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#d363e212c072d5d7671de342c5829621 .
+<C00000001> sio:SIO_000255 <annotation#d363e212c072d5d7671de342c5829621> .
 
-:C00000001\#d363e212c072d5d7671de342c5829621 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#d363e212c072d5d7671de342c5829621> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Matthiola incana" ;
   mb:references "Hisamatsu,Phytochem.,47,(1998),3" ;
   mb:sp1 "" ;
   mb:family "Cruciferae" ;
   mb:kingdom "Plantae" ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/3724> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#c580f9e081c9a9a0f61862ab91a31fc1 .
+<C00000001> sio:SIO_000255 <annotation#c580f9e081c9a9a0f61862ab91a31fc1> .
 
-:C00000001\#c580f9e081c9a9a0f61862ab91a31fc1 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#c580f9e081c9a9a0f61862ab91a31fc1> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Marah macrocarpa" ;
   mb:references "MacMillan,Phytochem.,42,(1996),1263" ;
   mb:sp1 "" ;
   mb:family "Cucurbitaceae" ;
   mb:kingdom "Plantae" ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/48242> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#3a721f8106ae232e3144af3c85fa6614 .
+<C00000001> sio:SIO_000255 <annotation#3a721f8106ae232e3144af3c85fa6614> .
 
-:C00000001\#3a721f8106ae232e3144af3c85fa6614 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#3a721f8106ae232e3144af3c85fa6614> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Mangifera indica" ;
   mb:references "Davenport,J.Plant Growth Reg.,20,(2001),308" ;
   mb:sp1 "" ;
   mb:family "Anacardiaceae" ;
   mb:kingdom "Plantae" ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/29780> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#7d89310dfbea25e78699b3c2d0a84e18 .
+<C00000001> sio:SIO_000255 <annotation#7d89310dfbea25e78699b3c2d0a84e18> .
 
-:C00000001\#7d89310dfbea25e78699b3c2d0a84e18 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#7d89310dfbea25e78699b3c2d0a84e18> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Malus domestica" ;
   mb:references "Hedden,Phytochem.,32,(1993),231" ;
   mb:sp1 "" ;
   mb:family "Rosaceae" ;
   mb:kingdom "Plantae" ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/3750> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#f1269ffef9f4283a2b60cfb78f3f1299 .
+<C00000001> sio:SIO_000255 <annotation#f1269ffef9f4283a2b60cfb78f3f1299> .
 
-:C00000001\#f1269ffef9f4283a2b60cfb78f3f1299 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#f1269ffef9f4283a2b60cfb78f3f1299> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Lupinus albus" ;
   mb:references "Gaskin,Phytochem.31,(1992),1869" ;
   mb:sp1 "" ;
   mb:family "Fabaceae" ;
   mb:kingdom "Plantae" ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/3870> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#e2069f0c7848b67d882852ae4757b0fb .
+<C00000001> sio:SIO_000255 <annotation#e2069f0c7848b67d882852ae4757b0fb> .
 
-:C00000001\#e2069f0c7848b67d882852ae4757b0fb rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#e2069f0c7848b67d882852ae4757b0fb> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Lolium temulentum" ;
   mb:references "Gocal,Plant Physiol.,119,(1999),1271" ;
   mb:sp1 "" ;
@@ -660,24 +670,24 @@
   mb:pmid "10198085" ;
   dcterms:references  <http://identifiers.org/pubmed/10198085> ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/34176> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#9370b99c1c8ad3b28c499cab296368d0 .
+<C00000001> sio:SIO_000255 <annotation#9370b99c1c8ad3b28c499cab296368d0> .
 
-:C00000001\#9370b99c1c8ad3b28c499cab296368d0 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#9370b99c1c8ad3b28c499cab296368d0> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Lolium perenne" ;
   mb:references "Morvan-Bertrand,Physiol Plant,111,(2001),225" ;
   mb:sp1 "" ;
   mb:family "Poaceae" ;
   mb:kingdom "Plantae" ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/4522> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#6d6d4b9062ccc4546282e68c94aebe4a .
+<C00000001> sio:SIO_000255 <annotation#6d6d4b9062ccc4546282e68c94aebe4a> .
 
-:C00000001\#6d6d4b9062ccc4546282e68c94aebe4a rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#6d6d4b9062ccc4546282e68c94aebe4a> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Litchi chinensis" ;
   mb:references "Chen,HortScience,25,(1990),314" ;
   mb:sp1 "" ;
@@ -686,35 +696,35 @@
   mb:pmid "11537562" ;
   dcterms:references  <http://identifiers.org/pubmed/11537562> ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/151069> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#a3f2cee5e4221f97571fcccc3341e16f .
+<C00000001> sio:SIO_000255 <annotation#a3f2cee5e4221f97571fcccc3341e16f> .
 
-:C00000001\#a3f2cee5e4221f97571fcccc3341e16f rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#a3f2cee5e4221f97571fcccc3341e16f> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Lilium elegans" ;
   mb:references "Takayama,J. Japan Soc. Hort. Sci.,62,(1993),189" ;
   mb:sp1 "" ;
   mb:family "Liliaceae" ;
   mb:kingdom "Plantae" ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#92f758347b50144ed6fe3357491eaed7 .
+<C00000001> sio:SIO_000255 <annotation#92f758347b50144ed6fe3357491eaed7> .
 
-:C00000001\#92f758347b50144ed6fe3357491eaed7 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#92f758347b50144ed6fe3357491eaed7> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Leucaena leucocephala" ;
   mb:references "Arigayo,Agric. Biol. Chem.,47,(1983),2939" ;
   mb:sp1 "" ;
   mb:family "Fabaceae" ;
   mb:kingdom "Plantae" ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/3866> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#ee874f7a86a8dbdbd8f33e6cf0a765e9 .
+<C00000001> sio:SIO_000255 <annotation#ee874f7a86a8dbdbd8f33e6cf0a765e9> .
 
-:C00000001\#ee874f7a86a8dbdbd8f33e6cf0a765e9 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#ee874f7a86a8dbdbd8f33e6cf0a765e9> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Lactuca sativa" ;
   mb:references "Silk,Plant Physiol.,59,(1977),211" ;
   mb:sp1 "" ;
@@ -723,83 +733,83 @@
   mb:pmid "16659819" ;
   dcterms:references  <http://identifiers.org/pubmed/16659819> ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/4236> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#80e984d9d0d1a1a9c2f75360d7932425 .
+<C00000001> sio:SIO_000255 <annotation#80e984d9d0d1a1a9c2f75360d7932425> .
 
-:C00000001\#80e984d9d0d1a1a9c2f75360d7932425 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#80e984d9d0d1a1a9c2f75360d7932425> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Laburnum anagyroides" ;
   mb:references "Picciarelli,Phytochem.,30,(1991),1789" ;
   mb:sp1 "" ;
   mb:family "Fabaceae" ;
   mb:kingdom "Plantae" ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/49828> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#a913b8aced964ec4eb755a2df7e0bead .
+<C00000001> sio:SIO_000255 <annotation#a913b8aced964ec4eb755a2df7e0bead> .
 
-:C00000001\#a913b8aced964ec4eb755a2df7e0bead rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#a913b8aced964ec4eb755a2df7e0bead> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Juglans regia" ;
   mb:references "Tadeo,Physiol.Plant,91,(1994),37" ;
   mb:sp1 "" ;
   mb:family "Juglandaceae" ;
   mb:kingdom "Plantae" ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/51240> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#91568db40ba5391919cae034b192f398 .
+<C00000001> sio:SIO_000255 <annotation#91568db40ba5391919cae034b192f398> .
 
-:C00000001\#91568db40ba5391919cae034b192f398 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#91568db40ba5391919cae034b192f398> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Ipomoea tricolor" ;
   mb:references "Matsuo,Agric.Biol.Chem.,48,(1984),2935" ;
   mb:sp1 "" ;
   mb:family "Convolvulaceae" ;
   mb:kingdom "Plantae" ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/89664> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#81517ba447521d062450b0d4731ca6a5 .
+<C00000001> sio:SIO_000255 <annotation#81517ba447521d062450b0d4731ca6a5> .
 
-:C00000001\#81517ba447521d062450b0d4731ca6a5 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#81517ba447521d062450b0d4731ca6a5> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Ipomoea reptans" ;
   mb:references "Matsuo,Agric.Biol.Chem.,48,(1984),2935" ;
   mb:sp1 "" ;
   mb:family "Convolvulaceae" ;
   mb:kingdom "Plantae" ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#475a3a63745a07bc2d172ed9d46a4c06 .
+<C00000001> sio:SIO_000255 <annotation#475a3a63745a07bc2d172ed9d46a4c06> .
 
-:C00000001\#475a3a63745a07bc2d172ed9d46a4c06 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#475a3a63745a07bc2d172ed9d46a4c06> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Ipomoea batatas" ;
   mb:references "Matsuo,Agric. Biol. Chem.,48,(1984),2935" ;
   mb:sp1 "" ;
   mb:family "Convolvulaceae" ;
   mb:kingdom "Plantae" ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/4120> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#aa3561d12b4a04f0a164ea0bd5d3ab90 .
+<C00000001> sio:SIO_000255 <annotation#aa3561d12b4a04f0a164ea0bd5d3ab90> .
 
-:C00000001\#aa3561d12b4a04f0a164ea0bd5d3ab90 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#aa3561d12b4a04f0a164ea0bd5d3ab90> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Helianthus annuus" ;
   mb:references "Hutchison,Phytochem.,27,(1988),2695" ;
   mb:sp1 "" ;
   mb:family "Asteraceae" ;
   mb:kingdom "Plantae" ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/4232> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#48801563f665d1e5eb400a3c4036c2fc .
+<C00000001> sio:SIO_000255 <annotation#48801563f665d1e5eb400a3c4036c2fc> .
 
-:C00000001\#48801563f665d1e5eb400a3c4036c2fc rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#48801563f665d1e5eb400a3c4036c2fc> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Glycine max" ;
   mb:references "Bensen,Plant Physiol.,94,(1990),77" ;
   mb:sp1 "" ;
@@ -808,24 +818,24 @@
   mb:pmid "16667722" ;
   dcterms:references  <http://identifiers.org/pubmed/16667722> ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/3847> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#e9491e52894c53d54e5645b5fabac32d .
+<C00000001> sio:SIO_000255 <annotation#e9491e52894c53d54e5645b5fabac32d> .
 
-:C00000001\#e9491e52894c53d54e5645b5fabac32d rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#e9491e52894c53d54e5645b5fabac32d> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Gluconacetobacter diazotrophicus" ;
   mb:references "Bastian,Plant Growth Reg.,24, (1998),7" ;
   mb:sp1 "" ;
   mb:family "Acetobacteraceae" ;
   mb:kingdom "Bacteria" ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/33996> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#07c23224101ad68f99992898d0d5a142 .
+<C00000001> sio:SIO_000255 <annotation#07c23224101ad68f99992898d0d5a142> .
 
-:C00000001\#07c23224101ad68f99992898d0d5a142 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#07c23224101ad68f99992898d0d5a142> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Fusarium fujikuroi" ;
   mb:references "Tudynski,Appl. Microbiol. Biotechnol.,66,(2005),597" ;
   mb:sp1 "" ;
@@ -834,60 +844,60 @@
   mb:pmid "15578178" ;
   dcterms:references  <http://identifiers.org/pubmed/15578178> ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/5127> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#41b22c7b81e7d80bf60348ada8ac7f4e .
+<C00000001> sio:SIO_000255 <annotation#41b22c7b81e7d80bf60348ada8ac7f4e> .
 
-:C00000001\#41b22c7b81e7d80bf60348ada8ac7f4e rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#41b22c7b81e7d80bf60348ada8ac7f4e> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Gentiana triflora" ;
   mb:references "Koshioka,J.Plant Physiol,153,(1998),230" ;
   mb:sp1 "" ;
   mb:family "Gentianaceae" ;
   mb:kingdom "Plantae" ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/55190> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#0a93d8d3ff0f96b3738972be2f03de54 .
+<C00000001> sio:SIO_000255 <annotation#0a93d8d3ff0f96b3738972be2f03de54> .
 
-:C00000001\#0a93d8d3ff0f96b3738972be2f03de54 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#0a93d8d3ff0f96b3738972be2f03de54> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Fragaria x ananassa" ;
   mb:references "Taylor,J.Plant Growth Regul.,15,(1994),235" ;
   mb:sp1 "" ;
   mb:family "Rosaceae" ;
   mb:kingdom "Plantae" ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/3747> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#c5caf29dec812d65e2c13a520361e4c5 .
+<C00000001> sio:SIO_000255 <annotation#c5caf29dec812d65e2c13a520361e4c5> .
 
-:C00000001\#c5caf29dec812d65e2c13a520361e4c5 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#c5caf29dec812d65e2c13a520361e4c5> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Eustoma exaltatum subsp. russellianum" ;
   mb:references "Hisamatsu,J.Japan Soc.Hort.Sci.,67,(1998),866" ;
   mb:sp1 "" ;
   mb:family "Gentianaceae" ;
   mb:kingdom "Plantae" ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/52518> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#9cd3b1b3343a5f1429f85b18a65381c0 .
+<C00000001> sio:SIO_000255 <annotation#9cd3b1b3343a5f1429f85b18a65381c0> .
 
-:C00000001\#9cd3b1b3343a5f1429f85b18a65381c0 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#9cd3b1b3343a5f1429f85b18a65381c0> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Eucalyptus globulus" ;
   mb:references "Hasan,Physiol.Plant,90,(1994),475" ;
   mb:sp1 "" ;
   mb:family "Myrtaceae" ;
   mb:kingdom "Plantae" ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/34317> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#a5ca7837122b9c9dd708bcf02c397054 .
+<C00000001> sio:SIO_000255 <annotation#a5ca7837122b9c9dd708bcf02c397054> .
 
-:C00000001\#a5ca7837122b9c9dd708bcf02c397054 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#a5ca7837122b9c9dd708bcf02c397054> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Dendranthema grandifloru" ;
   mb:references "Nishijima,Biosci. Biotech. Biochem.,61,(1997),1362" ;
   mb:sp1 "" ;
@@ -895,36 +905,36 @@
   mb:kingdom "Plantae" ;
   mb:pmid "27393175" ;
   dcterms:references  <http://identifiers.org/pubmed/27393175> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#d3dad78a2277f5616fb550aaea4afc3a .
+<C00000001> sio:SIO_000255 <annotation#d3dad78a2277f5616fb550aaea4afc3a> .
 
-:C00000001\#d3dad78a2277f5616fb550aaea4afc3a rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#d3dad78a2277f5616fb550aaea4afc3a> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Daucus carota" ;
   mb:references "Noma,Agric. Biol. Chem.,43,(1982),1793" ;
   mb:sp1 "" ;
   mb:family "Apiaceae" ;
   mb:kingdom "Plantae" ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/4039> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#80e984d9d0d1a1a9c2f75360d7932425 .
+<C00000001> sio:SIO_000255 <annotation#80e984d9d0d1a1a9c2f75360d7932425> .
 
-:C00000001\#80e984d9d0d1a1a9c2f75360d7932425 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#80e984d9d0d1a1a9c2f75360d7932425> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Laburnum anagyroides" ;
   mb:references "Picciarelli,Phytochem.,30,(1991),1789" ;
   mb:sp1 "" ;
   mb:family "Fabaceae" ;
   mb:kingdom "Plantae" ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/49828> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#2376a05f45a1e11955014b5d613a1edf .
+<C00000001> sio:SIO_000255 <annotation#2376a05f45a1e11955014b5d613a1edf> .
 
-:C00000001\#2376a05f45a1e11955014b5d613a1edf rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#2376a05f45a1e11955014b5d613a1edf> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Cyathea australis" ;
   mb:references "Yamane,Plant Physiol.,78,(1985),899" ;
   mb:sp1 "" ;
@@ -933,12 +943,12 @@
   mb:pmid "16664349" ;
   dcterms:references  <http://identifiers.org/pubmed/16664349> ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/361531> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#22b4ec9b4f214ebb9e3c66ae03d35d46 .
+<C00000001> sio:SIO_000255 <annotation#22b4ec9b4f214ebb9e3c66ae03d35d46> .
 
-:C00000001\#22b4ec9b4f214ebb9e3c66ae03d35d46 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#22b4ec9b4f214ebb9e3c66ae03d35d46> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Cucurbita maxima" ;
   mb:references "Lange,Planta,189,(1993),340" ;
   mb:sp1 "" ;
@@ -947,12 +957,12 @@
   mb:pmid "24178490" ;
   dcterms:references  <http://identifiers.org/pubmed/24178490> ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/3661> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#3d772966ca8a52361d4ba773a42b399b .
+<C00000001> sio:SIO_000255 <annotation#3d772966ca8a52361d4ba773a42b399b> .
 
-:C00000001\#3d772966ca8a52361d4ba773a42b399b rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#3d772966ca8a52361d4ba773a42b399b> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Cucumis sativus" ;
   mb:references "Hemphill,Planta,103,(1972),241" ;
   mb:sp1 "" ;
@@ -961,12 +971,12 @@
   mb:pmid "24481557" ;
   dcterms:references  <http://identifiers.org/pubmed/24481557> ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/3659> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#73c1ddaf54bda061a85a46ad4c5bd186 .
+<C00000001> sio:SIO_000255 <annotation#73c1ddaf54bda061a85a46ad4c5bd186> .
 
-:C00000001\#73c1ddaf54bda061a85a46ad4c5bd186 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#73c1ddaf54bda061a85a46ad4c5bd186> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Cucumis melo" ;
   mb:references "Hemphill,Planta,103,(1972),241" ;
   mb:sp1 "" ;
@@ -975,12 +985,12 @@
   mb:pmid "24481557" ;
   dcterms:references  <http://identifiers.org/pubmed/24481557> ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/3656> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#d480ff04e4376f5fd58b676a9e3565dd .
+<C00000001> sio:SIO_000255 <annotation#d480ff04e4376f5fd58b676a9e3565dd> .
 
-:C00000001\#d480ff04e4376f5fd58b676a9e3565dd rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#d480ff04e4376f5fd58b676a9e3565dd> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Corylus avellana" ;
   mb:references "Williams,Planta,117,(1974),101" ;
   mb:sp1 "" ;
@@ -989,36 +999,36 @@
   mb:pmid "24458323" ;
   dcterms:references  <http://identifiers.org/pubmed/24458323> ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/13451> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#9fc3f09c0488c695243fac2ec6cbc015 .
+<C00000001> sio:SIO_000255 <annotation#9fc3f09c0488c695243fac2ec6cbc015> .
 
-:C00000001\#9fc3f09c0488c695243fac2ec6cbc015 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#9fc3f09c0488c695243fac2ec6cbc015> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Citrus unshiu" ;
   mb:references "Goto,Agric. Biol. Chem.,53,(1989),2817" ;
   mb:sp1 "" ;
   mb:family "Rutaceae" ;
   mb:kingdom "Plantae" ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/55188> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#b1caaf5b1eb20b5db48964dc8661fee6 .
+<C00000001> sio:SIO_000255 <annotation#b1caaf5b1eb20b5db48964dc8661fee6> .
 
-:C00000001\#b1caaf5b1eb20b5db48964dc8661fee6 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#b1caaf5b1eb20b5db48964dc8661fee6> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Citrus sinensis" ;
   mb:references "Poling,J. Agric. Food Chem.,39,(1991),677" ;
   mb:sp1 "" ;
   mb:family "Rutaceae" ;
   mb:kingdom "Plantae" ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/2711> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#8f2828b027d5ac56defe210ad834c098 .
+<C00000001> sio:SIO_000255 <annotation#8f2828b027d5ac56defe210ad834c098> .
 
-:C00000001\#8f2828b027d5ac56defe210ad834c098 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#8f2828b027d5ac56defe210ad834c098> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Citrus reticulata" ;
   mb:references "Talon,Plant Physiol.,99,(1992),1575" ;
   mb:sp1 "" ;
@@ -1027,12 +1037,12 @@
   mb:pmid "16669076" ;
   dcterms:references  <http://identifiers.org/pubmed/16669076> ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/85571> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#eb1d635b09313e658e40141d52e306a8 .
+<C00000001> sio:SIO_000255 <annotation#eb1d635b09313e658e40141d52e306a8> .
 
-:C00000001\#eb1d635b09313e658e40141d52e306a8 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#eb1d635b09313e658e40141d52e306a8> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Citrus limon" ;
   mb:references "Khalifah,Plant Physiol.,40,(1965),441" ;
   mb:sp1 "" ;
@@ -1041,12 +1051,12 @@
   mb:pmid "16656108" ;
   dcterms:references  <http://identifiers.org/pubmed/16656108> ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/2708> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#97fa61e05466f28faef8f50258d4765f .
+<C00000001> sio:SIO_000255 <annotation#97fa61e05466f28faef8f50258d4765f> .
 
-:C00000001\#97fa61e05466f28faef8f50258d4765f rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#97fa61e05466f28faef8f50258d4765f> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Cibotium glaucum" ;
   mb:references "Yamane,Plant Physiol.,86,(1988),857" ;
   mb:sp1 "" ;
@@ -1055,12 +1065,12 @@
   mb:pmid "16666000" ;
   dcterms:references  <http://identifiers.org/pubmed/16666000> ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/32105> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#7b04e3e0b75b7a3397583459d962fa71 .
+<C00000001> sio:SIO_000255 <annotation#7b04e3e0b75b7a3397583459d962fa71> .
 
-:C00000001\#7b04e3e0b75b7a3397583459d962fa71 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#7b04e3e0b75b7a3397583459d962fa71> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Castanea henryi" ;
   mb:references "Fan, X. et al., J. Agric. Food Chem., 65, (2017), 10332-10349." ;
   mb:sp1 "" ;
@@ -1069,60 +1079,60 @@
   mb:pmid "" ;
   dcterms:references  <http://identifiers.org/pubmed/> ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/168165> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#23d5810d037ba27646e78afb00c3bd5a .
+<C00000001> sio:SIO_000255 <annotation#23d5810d037ba27646e78afb00c3bd5a> .
 
-:C00000001\#23d5810d037ba27646e78afb00c3bd5a rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#23d5810d037ba27646e78afb00c3bd5a> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Carthamus tinctorius" ;
   mb:references "Potter,J.Plant Growth Regul.,12,(1993),133" ;
   mb:sp1 "" ;
   mb:family "Asteraceae" ;
   mb:kingdom "Plantae" ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/4222> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#773ae7ac1705b7ffcb700d9747d4e1dd .
+<C00000001> sio:SIO_000255 <annotation#773ae7ac1705b7ffcb700d9747d4e1dd> .
 
-:C00000001\#773ae7ac1705b7ffcb700d9747d4e1dd rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#773ae7ac1705b7ffcb700d9747d4e1dd> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Carica papaya" ;
   mb:references "Dathe,Agric. Biol. Chem.,55,(1991),2491" ;
   mb:sp1 "" ;
   mb:family "Caricaceae" ;
   mb:kingdom "Plantae" ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/3649> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#a4d4658c9f9d703c81f6f22e63fd5ac4 .
+<C00000001> sio:SIO_000255 <annotation#a4d4658c9f9d703c81f6f22e63fd5ac4> .
 
-:C00000001\#a4d4658c9f9d703c81f6f22e63fd5ac4 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#a4d4658c9f9d703c81f6f22e63fd5ac4> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Campanula isophylla" ;
   mb:references "Jensen,J.Plant Growth Regul.,15,(1996),167" ;
   mb:sp1 "" ;
   mb:family "Campanulaceae/Lobeliaceae" ;
   mb:kingdom "Plantae" ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/361389> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#ebd6375d5c1e105a3c7d0372e2d6480f .
+<C00000001> sio:SIO_000255 <annotation#ebd6375d5c1e105a3c7d0372e2d6480f> .
 
-:C00000001\#ebd6375d5c1e105a3c7d0372e2d6480f rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#ebd6375d5c1e105a3c7d0372e2d6480f> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Camellia sinensis" ;
   mb:references "Koshioka,Biosci. Biotech. Biochem.,57,(1993),1586" ;
   mb:sp1 "" ;
   mb:family "Theaceae" ;
   mb:kingdom "Plantae" ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/4442> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#afac7c391250f2708c3163cdd1ee873a .
+<C00000001> sio:SIO_000255 <annotation#afac7c391250f2708c3163cdd1ee873a> .
 
-:C00000001\#afac7c391250f2708c3163cdd1ee873a rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#afac7c391250f2708c3163cdd1ee873a> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Brassica napus" ;
   mb:references "Rood,Plant Physiol.,83,(1987),645" ;
   mb:sp1 "" ;
@@ -1131,12 +1141,12 @@
   mb:pmid "11539033" ;
   dcterms:references  <http://identifiers.org/pubmed/11539033> ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/3708> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#5ed503125c19409ae15bd700b020d121 .
+<C00000001> sio:SIO_000255 <annotation#5ed503125c19409ae15bd700b020d121> .
 
-:C00000001\#5ed503125c19409ae15bd700b020d121 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#5ed503125c19409ae15bd700b020d121> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Brassica rapa subsp. oleifera" ;
   mb:references "Rood,Physiol. Plant.,79,(1990),679" ;
   mb:sp1 "" ;
@@ -1145,59 +1155,59 @@
   mb:pmid "21087279" ;
   dcterms:references  <http://identifiers.org/pubmed/21087279> ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/145471> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#8fa557420dac73de20558185017415bb .
+<C00000001> sio:SIO_000255 <annotation#8fa557420dac73de20558185017415bb> .
 
-:C00000001\#8fa557420dac73de20558185017415bb rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#8fa557420dac73de20558185017415bb> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Betula pendula" ;
   mb:references "Zanewich,J.Plant Growth Regul.,13,(1994),159" ;
   mb:sp1 "" ;
   mb:family "Betulaceae" ;
   mb:kingdom "Plantae" ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/3505> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#47adede1876f49cf2e03f8c425c161e9 .
+<C00000001> sio:SIO_000255 <annotation#47adede1876f49cf2e03f8c425c161e9> .
 
-:C00000001\#47adede1876f49cf2e03f8c425c161e9 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#47adede1876f49cf2e03f8c425c161e9> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Begonia x cheimantha" ;
   mb:references "Oden,Physiol. Plant.,73,(1988),445" ;
   mb:sp1 "" ;
   mb:family "Begoniaceae" ;
   mb:kingdom "Plantae" ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#358e4ae8b92680d63638053723996c58 .
+<C00000001> sio:SIO_000255 <annotation#358e4ae8b92680d63638053723996c58> .
 
-:C00000001\#358e4ae8b92680d63638053723996c58 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#358e4ae8b92680d63638053723996c58> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Bacillus pumilus" ;
   mb:references "Guitierri-Manero,Physiol.Plant,111,(2001),206" ;
   mb:sp1 "" ;
   mb:family "Bacillaceae" ;
   mb:kingdom "Bacteria" ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/1408> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#94cf19e696e414486cbae887358d8983 .
+<C00000001> sio:SIO_000255 <annotation#94cf19e696e414486cbae887358d8983> .
 
-:C00000001\#94cf19e696e414486cbae887358d8983 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#94cf19e696e414486cbae887358d8983> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Bacillus licheniformis" ;
   mb:references "Guitierri-Manero,Physiol.Plant,111,(2001),206" ;
   mb:sp1 "" ;
   mb:family "Bacillaceae" ;
   mb:kingdom "Bacteria" ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/1402> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#a977c7d86cd6cbd30417fb86200d7441 .
+<C00000001> sio:SIO_000255 <annotation#a977c7d86cd6cbd30417fb86200d7441> .
 
-:C00000001\#a977c7d86cd6cbd30417fb86200d7441 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#a977c7d86cd6cbd30417fb86200d7441> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Azospirillum lipoferum" ;
   mb:references "Bottini,Plant Physiol.,90,(1989),45" ;
   mb:sp1 "" ;
@@ -1206,35 +1216,35 @@
   mb:pmid "16666766" ;
   dcterms:references  <http://identifiers.org/pubmed/16666766> ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/193> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#4df5a8fa9a1e16e270fdf85bcafc4f0f .
+<C00000001> sio:SIO_000255 <annotation#4df5a8fa9a1e16e270fdf85bcafc4f0f> .
 
-:C00000001\#4df5a8fa9a1e16e270fdf85bcafc4f0f rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#4df5a8fa9a1e16e270fdf85bcafc4f0f> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Azospirillum brasilense" ;
   mb:references "Janzen,Soil Biol.Biochem.,24,(1992),1061" ;
   mb:sp1 "" ;
   mb:family "-" ;
   mb:kingdom "-" ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/192> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#55398fde2ffd24a8f409c8e3abbefc61 .
+<C00000001> sio:SIO_000255 <annotation#55398fde2ffd24a8f409c8e3abbefc61> .
 
-:C00000001\#55398fde2ffd24a8f409c8e3abbefc61 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#55398fde2ffd24a8f409c8e3abbefc61> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Archidendron microcarpum" ;
   mb:references "Koshioka,Agric. Biol. Chem.,50,(1986),1899" ;
   mb:sp1 "" ;
   mb:family "Fabaceae" ;
   mb:kingdom "Plantae" ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#afe2528954bcc178dfcb7360a49aa342 .
+<C00000001> sio:SIO_000255 <annotation#afe2528954bcc178dfcb7360a49aa342> .
 
-:C00000001\#afe2528954bcc178dfcb7360a49aa342 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#afe2528954bcc178dfcb7360a49aa342> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Aralia cordata" ;
   mb:references "Nishijima,Biosci. Biotech. Biochem.,57,(1993),1953" ;
   mb:sp1 "" ;
@@ -1243,12 +1253,12 @@
   mb:pmid "7764222" ;
   dcterms:references  <http://identifiers.org/pubmed/7764222> ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/29746> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#5403b51818b6d9c5b7b2ed33f70a7dd1 .
+<C00000001> sio:SIO_000255 <annotation#5403b51818b6d9c5b7b2ed33f70a7dd1> .
 
-:C00000001\#5403b51818b6d9c5b7b2ed33f70a7dd1 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#5403b51818b6d9c5b7b2ed33f70a7dd1> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Arabidopsis thaliana" ;
   mb:references "Talon,Heynh. Planta,182,(1990),501" ;
   mb:sp1 "" ;
@@ -1257,59 +1267,59 @@
   mb:pmid "24197369" ;
   dcterms:references  <http://identifiers.org/pubmed/24197369> ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/3702> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#b6db3aca54e09d2d5f337fc7eb22df47 .
+<C00000001> sio:SIO_000255 <annotation#b6db3aca54e09d2d5f337fc7eb22df47> .
 
-:C00000001\#b6db3aca54e09d2d5f337fc7eb22df47 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#b6db3aca54e09d2d5f337fc7eb22df47> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Alcea rosea" ;
   mb:references "Harada,Phytochem.,6,(1967),1695" ;
   mb:sp1 "" ;
   mb:family "Malvaceae" ;
   mb:kingdom "Plantae" ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/65557> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#540f14f975cd1f71455840a30590f819 .
+<C00000001> sio:SIO_000255 <annotation#540f14f975cd1f71455840a30590f819> .
 
-:C00000001\#540f14f975cd1f71455840a30590f819 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#540f14f975cd1f71455840a30590f819> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Alstroemeria hybrida" ;
   mb:references "Kappers,J.Plant Growth Regul.,16,(1997),219" ;
   mb:sp1 "" ;
   mb:family "Alstroemeriaceae" ;
   mb:kingdom "Plantae" ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#cf09255fa24c822bd48d9ba89ba539b9 .
+<C00000001> sio:SIO_000255 <annotation#cf09255fa24c822bd48d9ba89ba539b9> .
 
-:C00000001\#cf09255fa24c822bd48d9ba89ba539b9 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#cf09255fa24c822bd48d9ba89ba539b9> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Alnus incana subsp. tenuifolia" ;
   mb:references "Zanewich,J.Plant Growth Regul.,13,(1994),159" ;
   mb:sp1 "" ;
   mb:family "Betulaceae" ;
   mb:kingdom "Plantae" ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/109073> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#5f14bcfbdbea34fb6fd8247fc5888346 .
+<C00000001> sio:SIO_000255 <annotation#5f14bcfbdbea34fb6fd8247fc5888346> .
 
-:C00000001\#5f14bcfbdbea34fb6fd8247fc5888346 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#5f14bcfbdbea34fb6fd8247fc5888346> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Allium cepa" ;
   mb:references "Nojiri,Biosci. Biotech. Biochem.,57,(1993),2031" ;
   mb:sp1 "" ;
   mb:family "Alliaceae" ;
   mb:kingdom "Plantae" ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/4679> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#4588c4a87c85e28c3e8e98a8cc1f6228 .
+<C00000001> sio:SIO_000255 <annotation#4588c4a87c85e28c3e8e98a8cc1f6228> .
 
-:C00000001\#4588c4a87c85e28c3e8e98a8cc1f6228 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#4588c4a87c85e28c3e8e98a8cc1f6228> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Agrostemma githago" ;
   mb:references "Jones,Planta,149,(1980),274" ;
   mb:sp1 "" ;
@@ -1318,17 +1328,17 @@
   mb:pmid "24306298" ;
   dcterms:references  <http://identifiers.org/pubmed/24306298> ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/39848> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
 
-:C00000001 sio:SIO_000255 :C00000001\#8aaa0989e685e44ada8f655f12dd0ee0 .
+<C00000001> sio:SIO_000255 <annotation#8aaa0989e685e44ada8f655f12dd0ee0> .
 
-:C00000001\#8aaa0989e685e44ada8f655f12dd0ee0 rdf:type mb:KNApSAcKCoreAnnotations ;
+<annotation#8aaa0989e685e44ada8f655f12dd0ee0> rdf:type mb:KNApSAcKCoreAnnotations ;
   mb:organism "Abelmoschus esculentus" ;
   mb:references "Kobayashi,Biosci. Biotech. Biochem.,60,(1996),159" ;
   mb:sp1 "" ;
   mb:family "Malvaceae" ;
   mb:kingdom "Plantae" ;
   rdfs:seeAlso <http://identifiers.org/taxonomy/455045> ;
-  rdf:type mb:KNApSAcKCoreAnnotations .
+  sio:SIO_000254 <C00000001> . #sio:is annotation of
 
