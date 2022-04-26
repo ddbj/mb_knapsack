@@ -108,9 +108,10 @@
      * 3. References_title_fromNatural_Activity_main.ttl
    * graph <http://metadb.riken.jp/db/biologicalActivity>
      * 4. BA_1_2_8plusMetaboliteA03.ttl
-* step: sparql(*)
+* step: sparql(*) 
 * input: https://knowledge.brc.riken.jp/sparql
 * output: [Activity_Species_fromNatural_Activity_act_list_BA_02.ttl](../kushida/変換結果20220108/SPARQLで取得20220121/Activity_Species_fromNatural_Activity_act_list_BA_02.ttl)
+
 ```
 CONSTRUCT {
 ?ba <http://www.w3.org/2000/01/rdf-schema#label> ?label. 
@@ -126,6 +127,7 @@ where {
     }
 }
 
+```
 ```
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
