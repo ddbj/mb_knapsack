@@ -45,9 +45,9 @@ where {
 
 ## Metabolite_Activity RDF作成方法
 ### 1. Metabolite_ActivityCateFunc_TargetSp_Ref
-step: [Metabolite_ActivityCateFunc_TargetSp_Ref.py](../kushida/変換スクリプト20220108/Metabolite_ActivityCateFunc_TargetSp_Ref.py)
-input: [Metabolite_Activity.tsv](../kushida/変換前20210927/Metabolite_Activity.tsv)
-output: [Metabolite_ActivityCateFunc_TargetSp_Ref.ttl](../kushida/変換結果20220108/python変換結果20220108/Metabolite_ActivityCateFunc_TargetSp_Ref.ttl)
+* step: [Metabolite_ActivityCateFunc_TargetSp_Ref.py](../kushida/変換スクリプト20220108/Metabolite_ActivityCateFunc_TargetSp_Ref.py)
+* input: [Metabolite_Activity.tsv](../kushida/変換前20210927/Metabolite_Activity.tsv)
+* output: [Metabolite_ActivityCateFunc_TargetSp_Ref.ttl](../kushida/変換結果20220108/python変換結果20220108/Metabolite_ActivityCateFunc_TargetSp_Ref.ttl)
 
 ### 2. Metabolite_Label_cid
 * step: [Metabolite_ActivityCateFunc_TargetSp_Ref.py](../kushida/変換スクリプト20220108/Metabolite_ActivityCateFunc_TargetSp_Ref.py)
