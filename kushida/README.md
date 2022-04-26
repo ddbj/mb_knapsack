@@ -5,6 +5,11 @@
 * input: [Natural_Activity_main_rev.tsv](../kushida/変換前20210927/Natural_Activity_main_rev.tsv)
 * output: [Species_Activity_References_fromNatural_Activity_main_02.ttl](../kushida/変換結果20220108/python変換結果20220108/Species_Activity_References_fromNatural_Activity_main_02.ttl)
 
+### 2. Activity-Species
+* step: [Activity_Species_fromNatural_Activity_act_list.py](../kushida/変換スクリプト20220108/Activity_Species_fromNatural_Activity_act_list.py)
+* input: [Natural_Activity_act_list.tsv](../kushida/変換前20210927/Natural_Activity_act_list.tsv)
+* output: [Activity_Species_fromNatural_Activity_act_list.ttl](../kushida/変換結果20220108/python変換結果20220108/Activity_Species_fromNatural_Activity_act_list.ttl)
+
 ### 2. References_title
 * step: [References_title_fromNatural_Activity_main.py](../kushida/変換スクリプト20220108/References_title_fromNatural_Activity_main.py)
 * input: [Natural_Activity_main_rev.tsv](../kushida/変換前20210927/Natural_Activity_main_rev.tsv)
@@ -38,10 +43,6 @@ where {
 
 ```
 
-### 4. Activity-Species
-* step: [Activity_Species_fromNatural_Activity_act_list.py](../kushida/変換スクリプト20220108/Activity_Species_fromNatural_Activity_act_list.py)
-* input: [Natural_Activity_act_list.tsv](../kushida/変換前20210927/Natural_Activity_act_list.tsv)
-* output: [Activity_Species_fromNatural_Activity_act_list.ttl](../kushida/変換結果20220108/python変換結果20220108/Activity_Species_fromNatural_Activity_act_list.ttl)
 
 ## Metabolite_Activity RDF作成方法
 ### 1. Metabolite_ActivityCateFunc_TargetSp_Ref
