@@ -56,7 +56,7 @@ where {
 
 ### 3. BA_1_2_8plusMetaboliteA03
 * step: Protegeで編集
-* input: [Natural_Activity_dictionary.tsv]
+* input: [Natural_Activity_dictionary.tsv](../kushida/変換前20210927/Natural_Activity_dictionary.tsv)
 * output: [BA_1_2_8plusMetaboliteA03.ttl](../kushida/変換結果20220108/Protegeで編集20220121/BA_1_2_8plusMetaboliteA03.ttl)
 
 
