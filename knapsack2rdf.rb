@@ -8,29 +8,217 @@ require 'zlib'
 module KNApSAcK
 class Core
 
-def initialize (selected = "all")
- @ids_data = {}
- @ranks = family_kingdom
- @refs  = references_pmid
- @ids = id_all
- @mws = mw_data
- to_ttl_prefix
- #@ids.sort.first(100).each_with_index do |id, i|
- @ids.sort.each_with_index do |id, i|
-     @id = id
-     next if (selected != "all" and selected != id.to_s)
-     #pp [id, selected]
-     #parse_by_id 'C00000091'
-     parse_by_id
-     warn "#{i}\t#{@id}"
-     to_ttl @ids_data[id]
 
- end
- #puts JSON.pretty_generate(@ids_data)
+def initialize (selected = nil)
+  if selected != nil
+    @selected = selected
+  end
+  #warn @selected
+  @ids_data = {}
+  @ranks = family_kingdom
+  @mws = mw_data
+  @sp2taxid = sp_taxid
+  @refs  = references_pmid
+  cid_inchi_key
+  cid_cas
+  cid_start_substance
+  cid_smiles_inchi
+  to_ttl_prefix
+  output_by_id
+
+end
+
+
+def output_by_id
+  begin
+    cids = {}
+    file_path = '有田先生用_20210806/id_data.dat'
+    #id	fid	comp	name	organism	reference
+
+    id = fid = comp = name = nil
+    File.foreach(file_path).each do |line|
+      id, fid, comp, name, organism, reference =  line.chomp.split("\t")
+      next if (@selected and !@selected[id])
+      cid_attrs = { 
+        :id => id, 
+        :fid => fid, 
+        :comp => comp, 
+        :name => name, 
+        :ikey => @cid2inchi_key[id],  #cid2inchi_key
+        :cas_id => @cid2cas[id],      #cid_cas
+        :substance => @cid2start_substance[id], #cid_start_substance
+        :smiles => @cid2smiles[id], #cid_smiles_inchi
+        :inchi => @cid2inchi[id],   #cid_smiles_inchi
+        :mw => @mws[id] || "NaN"
+      }
+      unless cids.key?(id)
+        to_ttl cid_attrs
+        cids[id] = 1 
+      end
+
+      #sp
+      sp1 = organism.split(" ").first
+      rank = @ranks[sp1] || {:sp1 => '', :family => '-', :kingdom => '-'}
+
+      #ref
+      reference = reference.to_s
+      ref_key = reference.gsub(":[Pathway]", ";[Pathway]").split(";").map{|x| x.gsub(",", ", ").gsub(".",". ")}.delete_if{|x| x == "[Pathway]"}
+
+      references_new =[]
+      pmids = []
+      ref_key.each do |r|
+          pmids.push @refs[r] if @refs[r] != ""
+          uri = "<reference##{Digest::MD5.hexdigest(r)}>"
+          references_new.push({
+            :title => r ,
+            :uri => "<reference##{Digest::MD5.hexdigest(r)}>" ,
+            :pmid => @refs[r] || ""
+          })
+      end
+
+      ann = {
+          :cid => id,
+          :uri => "<annotation##{Digest::MD5.hexdigest(organism)}>",
+          :organism => organism ,
+          #:sp1 => rank[:sp1],
+          :family => rank[:family],
+          :kingdom => rank[:kingdom],
+          :taxonomy => @sp2taxid[organism], 
+          :reference => reference,
+          :references_new => references_new,
+          :references => ref_key,
+          :pmids => pmids
+      }
+      to_ttl_annotation ann
+    end
+  rescue SystemCallError => e
+    puts %Q(class=[#{e.class}] message=[#{e.message}])
+  end
+end
+
+#in_chi_key.dat
+def cid_inchi_key
+  begin
+    @cid2inchi_key = {}
+    file_path = '有田先生用_20210806/in_chi_key.dat'
+    id = ikey = nil
+    File.foreach(file_path).each do |line|
+      #C00000091 UZKQTCBAMSWPJD-FARCUNLSSA-N
+      id, ikey =  line.chomp.split("\t")
+      @cid2inchi_key[id] = ikey
+    end
+
+
+    @cid2inchi_key
+    #@ids_data[@id][:ikey] = ikey
+  rescue SystemCallError => e
+    puts %Q(class=[#{e.class}] message=[#{e.message}])
+  end
+end
+
+def cid_cas
+  begin
+    @cid2cas ={}
+    file_path = '有田先生用_20210806/cas_id.dat'
+    id = cas_id = nil
+    File.foreach(file_path) do |line|
+      #C00000091       1637-39-4
+      id, cas_id=  line.chomp.split("\t")
+      @cid2cas[id] = cas_id
+    end
+    
+    #@ids_data[@id][:cas_id] = cas_id
+  rescue SystemCallError => e
+    puts %Q(class=[#{e.class}] message=[#{e.message}])
+  end
+end
+
+def cid_start_substance
+  begin
+    @cid2start_substance ={}
+    file_path = '有田先生用_20210806/start_substance.dat'
+    id = substance = nil
+    File.foreach(file_path) do |line|
+      id, substance =  line.chomp.split("\t")
+      @cid2start_substance[id] = substance
+    end
+    #@ids_data[@id][:substance] = substance
+  rescue SystemCallError => e
+    puts %Q(class=[#{e.class}] message=[#{e.message}])
+  end
+end
+
+def cid_smiles_inchi
+  begin
+    @cid2smiles = {}
+    @cid2inchi = {}
+    file_path = '有田先生用_20210806/smiles_inchi.dat'
+    id = smiles = inchi= nil
+    File.foreach(file_path) do |line|
+      id, smiles, inchi =  line.chomp.split("\t")
+      @cid2smiles[id] = smiles
+      @cid2inchi[id] = inchi
+    end
+    #@ids_data[@id][:smiles] = smiles
+    #@ids_data[@id][:inchi] = inchi
+  rescue SystemCallError => e
+    puts %Q(class=[#{e.class}] message=[#{e.message}])
+  end
+end
+
+# id_mapping/sp-taxid-20210806.tsv
+def sp_taxid
+  @sp2taxid ={}
+  file_path = 'id_mapping/sp-taxid-20210806.tsv'
+  File.foreach(file_path) do |line|
+      sp, taxid = line.chomp.split("\t")
+      @sp2taxid[sp] = taxid
+  end
+  @sp2taxid
+end
+
+# knapsack-references-uniq-20210823.pmid
+def references_pmid
+  @refs ={}
+  file_path = 'knapsack-references-uniq-20210823.pmid'
+  File.foreach(file_path) do |line|
+      pmid, references = line.chomp.split("\t")
+      @refs[references] = pmid
+  end
+  @refs
+end
+
+# knapsack_mw-tmp.txt.gz
+def mw_data
+  file_path = 'knapsack_mw-tmp.txt.gz'
+  mws ={}
+  gz = Zlib::GzipReader.open(file_path)
+  gz.each_line do |line|
+    #puts line
+    cid, mw = line.chomp.split("\t")
+    mws[cid] = mw
+  end
+  mws
+end
+
+# family_kingdom.dat
+def family_kingdom 
+  @ranks ={}
+  begin
+    file_path = '有田先生用_20210806/family_kingdom.dat'
+    sp1 = family =  kindom = nil
+    File.foreach(file_path) do |line|
+      sp1, family, kingdom =  line.chomp.split("\t")
+      @ranks[sp1] = {:sp1 => sp1, :family => family, :kingdom => kingdom } 
+    end
+    @ranks
+  rescue SystemCallError => e
+    puts %Q(class=[#{e.class}] message=[#{e.message}])
+  end
 end
 
 def to_ttl_prefix
-puts "
+  puts "
 @base <http://purl.jp/knapsack/> .
 @prefix : <http://purl.jp/knapsack/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -45,14 +233,12 @@ puts "
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 
 
-"
+  "
 end
-
+  
 def to_ttl h
-    #subject = "<http://mb-wiki.nig.ac.jp/resource/#{h[:id]}>"
-    #subject =":#{h[:id]}"
-    subject ="<#{h[:id]}>"
-puts "
+  subject ="<#{h[:id]}>"
+  puts "
 #{subject}
   rdf:type mb:KNApSAcKCoreRecord ;
   dc:identifier \"#{h[:id]}\" ;
@@ -71,9 +257,8 @@ puts "
   dcterms:hasPart <#{h[:id]}#x-mdl-molfile> ;  
   dcterms:hasPart <#{h[:id]}#x-chemdraw> ;  
   dcterms:hasPart <#{h[:id]}#gif> . 
-"
 
-puts "
+
 <#{h[:id]}#x-mdl-molfile> 
   rdf:type cheminf:CHEMINF_000058 ;
   dcterms:format <nrn:mimetype:chemical/x-mdl-molfile> ; 
@@ -89,9 +274,6 @@ puts "
   dcterms:format <nrn:mimetype:image/gif> ; 
   rdfs:seeAlso <https://mb.metabolomics.jp/wiki/File:#{h[:id]}.gif> .
 
-"
-
-puts "
 <#{h[:id]}#molecular_formula>
   rdf:type cheminf:CHEMINF_000042 ;
   sio:SIO_000300 \"#{h[:comp]}\" .
@@ -122,195 +304,62 @@ puts "
 <#{h[:id]}#start_substance>
   rdf:type mb:Start_substance ;
   sio:SIO_000300 \"#{h[:substance]}\" .
-"
-
-cas =
-"
+  "
+  
+  cas =
+  "
 <#{h[:id]}#cas>
   rdf:type cheminf:CHEMINF_000446 ;
   sio:SIO_000300 \"#{h[:cas_id]}\";
   rdfs:seeAlso <http://identifiers.org/cas/#{h[:cas_id]}>.
-"
+  "
 
-#h[:annotations].first(1).each do |ann|
-h[:annotations].each do |ann|
-  #s = "#{subject}\\/#{ann[:organism].gsub(' ','-')}"
-  #s = "#{subject}\\/#{URI.encode(ann[:organism].gsub(".","_").gsub("(","_").gsub(")","_"))}"
-  #s = "<http://mb-wiki.nig.ac.jp/resource/#{h[:id]}/organism##{URI.encode(ann[:organism])}>"
-  #s = "#{subject}\\##{Digest::MD5.hexdigest(ann[:organism])}"
-  s = "<annotation##{Digest::MD5.hexdigest(ann[:organism])}>"
+end
+
+def wiki_title str
+  #Marc|ias,__F._A.__et_al._,__Phytochemistry,__1998,__48,__631-636_(isol,__pmr,__cmr)>
+  #Lycopersicon_esculentum_var._`Tangella'
+  str.sub("Marc|ias","Marclias").sub("`Tangella'","'Tangella'").sub("`Yalaha`","'Yalaha'").gsub(" ","_").gsub("<","").gsub(">","")
+  #str.gsub(/[<>|`]/){|s| "_" }
+end
+
+def to_ttl_annotation ann
   puts "
-#{subject} sio:SIO_000255 #{s} ." #sio:has-annotation
+<#{ann[:cid]}> sio:SIO_000255 #{ann[:uri]} ." #sio:has-annotation
+
+  ann[:references_new].each do |ref|
+    puts "
+<#{ann[:cid]}> dcterms:isReferencedBy #{ref[:uri]} ."
+  end
+
   puts "
-#{s} rdf:type mb:KNApSAcKCoreAnnotations ;
+#{ann[:uri]} rdf:type mb:KNApSAcKCoreAnnotation ;
   mb:organism \"#{ann[:organism]}\" ;
   mb:references \"#{ann[:reference]}\" ;
   mb:sp1 \"#{ann[:sp1]}\" ;
   mb:family \"#{ann[:family]}\" ;
   mb:kingdom \"#{ann[:kingdom]}\" ;"
-  ann[:pmids].each do |pmid|
-    puts "  mb:pmid \"#{pmid}\" ;"
-    puts "  dcterms:references  <http://identifiers.org/pubmed/#{pmid}> ;" 
+  ann[:references_new].each do |ref|
+    puts "  dcterms:isReferencedBy #{ref[:uri]} ;"
   end
+
   puts "  rdfs:seeAlso <http://identifiers.org/taxonomy/#{ann[:taxonomy]}> ;" if ann[:taxonomy].to_i > 0
-  puts "  sio:SIO_000254 #{subject} . #sio:is annotation of" 
-  #puts "  rdf:type mb:KNApSAcKCoreAnnotations ."
-
+  puts "  foaf:homepage <https://mb.metabolomics.jp/wiki/Species:#{wiki_title(ann[:organism])}> ; "
+  puts "  sio:SIO_000254 <#{ann[:cid]}> . #sio:is annotation of" 
   puts 
-  #pp ann
-end
 
-end
-
-def parse_by_id
- #mw_data
- id_data
- in_chi_key
- id_cas
- start_substance
- smiles_inchi
- #puts JSON.pretty_generate(@ids_data)
-end
-
-def id_all
-  @id_hash = {}
-  file_path = '有田先生用_20210806/id_data.dat'
-  File.foreach(file_path) do |line|
-      id = line.chomp.split("\t").first
-      @id_hash[id] = 1
-  end
-  @ids = @id_hash.keys
-end
-
-def references_pmid
-    @refs ={}
-    file_path = 'knapsack-references-uniq-20210823.pmid'
-    File.foreach(file_path) do |line|
-        pmid, references = line.chomp.split("\t")
-        @refs[references] = pmid
+  ### references_new
+  ann[:references_new].each do |ref|
+    puts "
+#{ref[:uri]} rdf:type mb:KNApSAcKReference ;
+"
+    if ref[:pmid] !=""
+      puts "  dc:identifier \"#{ref[:pmid]}\" ;"
+      puts "  dcterms:references  <http://identifiers.org/pubmed/#{ref[:pmid]}> ;"
     end
-    @refs
-end
-
-def mw_data
-   file_path = 'knapsack_mw-tmp.txt.gz'
-   mws ={}
-   gz = Zlib::GzipReader.open(file_path)
-   gz.each_line do |line|
-     #puts line
-     cid, mw = line.chomp.split("\t")
-     mws[cid] = mw
-   end
-   mws
-end
-
-def id_data
-  begin
-    #file_path = '有田先生用_20210806/id_data.dat'
-    file_path = 'knapsack_20210806_id_data.tsv' # OpenRefine tax_id mapping
-    annotations = []
-    id = fid = comp = name = nil
-    File.foreach(file_path).grep(/#{@id}/) do |line|
-      # C00000091 C10H13N5O_C00000091 C10H13N5O trans-Zeatin  Abies balsamea  Little,Phytochem.,18,(1979),1219
-      id, fid, comp, name, organism, reference, taxonomy_id =  line.chomp.split("\t")
-      sp1 = organism.split(" ").first
-      rank = @ranks[sp1] || {:sp1 => '', :family => '-', :kingdom => '-'}
-      reference = reference.to_s
-      ref_key = reference.gsub(":[Pathway]", ";[Pathway]").split(";").map{|x| x.gsub(",", ", ").gsub(".",". ")}.delete_if{|x| x == "[Pathway]"}
-      pmids = []
-      ref_key.each do |r|
-          pmids.push @refs[r] if @refs[r] != ""
-      end
-      annotations.push({
-          :organism => organism ,
-          #:sp1 => rank[:sp1],
-          :family => rank[:family],
-          :kingdom => rank[:kingdom],
-          :taxonomy => taxonomy_id, 
-          :reference => reference,
-          :references => ref_key,
-          #:references => reference.gsub(":[Pathway]", ";[Pathway]").split(";").map{|x| x.gsub(",", ", ").gsub(".",". ")}.delete_if{|x| x == "[Pathway]" }
-          :pmids => pmids
-      })
-    end
-    @ids_data[@id] = { :id => id, :fid => fid, :comp => comp, :name => name, :annotations => annotations, :mw => @mws[id]}
-  rescue SystemCallError => e
-    puts %Q(class=[#{e.class}] message=[#{e.message}])
-  end
-end
-
-#in_chi_key.dat
-def in_chi_key
-  begin
-    file_path = '有田先生用_20210806/in_chi_key.dat'
-    id = ikey = nil
-    File.foreach(file_path).grep(/#{@id}/) do |line|
-      #C00000091 UZKQTCBAMSWPJD-FARCUNLSSA-N
-      id, ikey =  line.chomp.split("\t")
-    end
-    #d = { :id => id, :ikey => ikey}
-    @ids_data[@id][:ikey] = ikey
-  rescue SystemCallError => e
-    puts %Q(class=[#{e.class}] message=[#{e.message}])
-  end
-end
-
-def id_cas
-  begin
-    file_path = '有田先生用_20210806/cas_id.dat'
-    id = cas_id = nil
-    File.foreach(file_path).grep(/#{@id}/) do |line|
-      #C00000091       1637-39-4
-      id, cas_id=  line.chomp.split("\t")
-    end
-    @ids_data[@id][:cas_id] = cas_id
-  rescue SystemCallError => e
-    puts %Q(class=[#{e.class}] message=[#{e.message}])
-  end
-end
-
-def start_substance
-  begin
-    file_path = '有田先生用_20210806/start_substance.dat'
-    id = substance = nil
-    File.foreach(file_path).grep(/#{@id}/) do |line|
-      #C00000091       1637-39-4
-      id, substance =  line.chomp.split("\t")
-    end
-    @ids_data[@id][:substance] = substance
-  rescue SystemCallError => e
-    puts %Q(class=[#{e.class}] message=[#{e.message}])
-  end
-end
-
-def smiles_inchi
-  begin
-    file_path = '有田先生用_20210806/smiles_inchi.dat'
-    id = smiles = inchi= nil
-    File.foreach(file_path).grep(/#{@id}/) do |line|
-      #C00000091       1637-39-4
-      id, smiles, inchi =  line.chomp.split("\t")
-    end
-    @ids_data[@id][:smiles] = smiles
-    @ids_data[@id][:inchi] = inchi
-  rescue SystemCallError => e
-    puts %Q(class=[#{e.class}] message=[#{e.message}])
-  end
-end
-
-# family_kingdom.dat
-def family_kingdom 
-  @ranks ={}
-  begin
-    file_path = '有田先生用_20210806/family_kingdom.dat'
-    sp1 = family =  kindom = nil
-    File.foreach(file_path) do |line|
-      sp1, family, kingdom =  line.chomp.split("\t")
-      @ranks[sp1] = {:sp1 => sp1, :family => family, :kingdom => kingdom } 
-    end
-    @ranks
-  rescue SystemCallError => e
-    puts %Q(class=[#{e.class}] message=[#{e.message}])
+    puts "  dc:title \"#{ref[:title]}\" ;"
+    puts "  foaf:homepage <https://mb.metabolomics.jp/wiki/Reference:#{wiki_title(ref[:title])}> . "
+    puts
   end
 end
 
