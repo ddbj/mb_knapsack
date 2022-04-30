@@ -334,7 +334,7 @@ def to_ttl_annotation ann
 
   puts "
 #{ann[:uri]} rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism \"#{ann[:organism]}\" ;
+  mb:sp \"#{ann[:organism]}\" ;
   mb:references \"#{ann[:reference]}\" ;
   mb:sp1 \"#{ann[:sp1]}\" ;
   mb:family \"#{ann[:family]}\" ;

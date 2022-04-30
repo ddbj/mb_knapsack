@@ -15,7 +15,7 @@ end
 #	input: Metabolite_Activity.tsv
 def parse_ma_main
  puts "
-<KnapsackMetaboliteActivity> rdf:type owl:Class ;
+mb:KnapsackMetaboliteActivity rdf:type owl:Class ;
   rdfs:label \"(Obsolete)KnapsackMetaboliteActivity\"@en ;
   sio:SIO_001278 <http://www.knapsackfamily.com/MetaboliteActivity/MA_dictionary.pdf> .
 "
@@ -67,11 +67,11 @@ def parse_ma_main
 
     unless targetsp == ""
     puts "
-#{annotation_uri} rdf:type <KNApSAcKMetaboliteActivityAnnotation> ;  
+#{annotation_uri} rdf:type mb:KNApSAcKMetaboliteActivityAnnotation ;  
     mb:sp \"#{targetsp}\" ;
-    mb:reference #{reference_uri} .
-
-#{activity_uri} sio:SIO_00025 #{annotation_uri} .  # sio:has-annotation
+    dcterms:isReferencedBy #{reference_uri} .
+    
+#{activity_uri} sio:SIO_000255 #{annotation_uri} .  # sio:has-annotation
 
     "
 
@@ -82,7 +82,7 @@ def parse_ma_main
 "
     puts "
 #{activity_uri} rdf:type owl:Class ;
-    rdfs:subClassOf <KnapsackMetaboliteActivity> ;
+    rdfs:subClassOf mb:KnapsackMetaboliteActivity ;
     rdfs:label \"#{function}\"@en ;
     sio:SIO_001278 <http://www.knapsackfamily.com/MetaboliteActivity/MA_dictionary.pdf> . #sio:is-data-item-in
 "

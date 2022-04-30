@@ -38,7 +38,7 @@ def parse_na_main
 #{annotation_uri} rdf:type <KNApSAcKNaturalActivityAnnotation> ;  
     mb:sp \"#{sp}\" ;
     mb:activity #{activity_uri} ;
-    mb:reference #{reference_uri} .
+    dcterms:isReferencedBy #{reference_uri} .
 
 #{reference_uri} rdf:type mb:KNApSAcKReference ;
     dc:title \"#{reference}\" .
