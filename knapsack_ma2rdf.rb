@@ -2,9 +2,12 @@ require 'digest/md5'
 require 'pp'
 
 module KNApSAcK
-class NaturalActivity
+class MetaboliteActivity
 
-def initialize
+def initialize (selected = nil)
+  if selected != nil
+    @selected = selected
+  end
   to_ttl_prefix
   references_pmid # @refs
   parse_na_dict # @activity_ja
@@ -28,6 +31,7 @@ mb:KnapsackMetaboliteActivity rdf:type owl:Class ;
    #Individual descriptions of biological activities 
    cid, metabolite, category, function, targetsp, references = line.chomp.split("\t")
    next if cid == "cid"
+   next if (@selected and cid != @selected)
    #next if sp == "(1432 rows)"
    
    references.to_s.split(";").each do |reference|
@@ -46,8 +50,8 @@ mb:KnapsackMetaboliteActivity rdf:type owl:Class ;
   mb:category \"#{category}\" ;
   mb:function \"#{function}\" ;
   mb:targetsp \"#{targetsp}\" ;
-  mb:reference #{reference_uri} ;
-  sio:SIO_00025 #{annotation_uri} ; # sio:has-annotation
+  dcterms:isReferencedBy #{reference_uri} ;
+  sio:SIO_000255 #{annotation_uri} ; # sio:has-annotation
   mb:has-activity #{activity_uri} ;
   rdfs:label \"#{metabolite}\" .
 "   
@@ -58,7 +62,7 @@ mb:KnapsackMetaboliteActivity rdf:type owl:Class ;
   mb:category \"#{category}\" ;
   mb:function \"#{function}\" ;
   mb:targetsp \"#{targetsp}\" ;
-  mb:reference #{reference_uri} ;
+  dcterms:isReferencedBy #{reference_uri} ;
   mb:has-activity #{activity_uri} ;
   rdfs:label \"#{metabolite}\" 
     ].
@@ -142,4 +146,4 @@ end
 end
 end
 
-kn = KNApSAcK::NaturalActivity.new
+kn = KNApSAcK::MetaboliteActivity.new(ARGV.shift)
