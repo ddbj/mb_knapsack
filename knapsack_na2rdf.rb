@@ -16,7 +16,7 @@ end
 #	input: Natural_Activity_main_rev.tsv
 def parse_na_main
  puts "
-<KnapsackBiologicalActivity> rdf:type owl:Class ;
+mb:KnapsackBiologicalActivity rdf:type owl:Class ;
   rdfs:label \"(Obsolete)KnapsackBiologicalActivity\"@en ;
   #rdfs:subClassOf <http://purl.jp/bio/4/id/kb0000002422> ;
   sio:SIO_001278 <http://www.knapsackfamily.com/BiologicalActivity/NA_dictionary.pdf> .
@@ -35,7 +35,7 @@ def parse_na_main
     reference_uri = "<reference##{Digest::MD5.hexdigest(reference)}>"
     #pp [annotation_uri, sp, activity, reference_uri, reference]
     puts "
-#{annotation_uri} rdf:type <KNApSAcKNaturalActivityAnnotation> ;  
+#{annotation_uri} rdf:type mb:KNApSAcKBiologicalActivityAnnotation ;  
     mb:sp \"#{sp}\" ;
     mb:activity #{activity_uri} ;
     dcterms:isReferencedBy #{reference_uri} .
@@ -44,7 +44,7 @@ def parse_na_main
     dc:title \"#{reference}\" .
 
 #{activity_uri} rdf:type owl:Class ;
-    rdfs:subClassOf mb:KNApSAcKActivity ;
+    rdfs:subClassOf mb:KnapsackBiologicalActivity ;
     rdfs:label \"#{activity}\"@en ;
     skos:altLabel \"#{@activity_ja[activity]}\"@ja ;
     sio:SIO_001278 <http://www.knapsackfamily.com/BiologicalActivity/NA_dictionary.pdf> . #sio:is-data-item-in
@@ -76,7 +76,7 @@ def parse_na_act
 
       puts "
 #{activity_uri} rdfs:label \"#{activity}\" ;
-  sio:SIO_00025 #{annotation_uri} . #sio:has-annotation   
+  sio:SIO_000255 #{annotation_uri} . #sio:has-annotation   
 
 #{annotation_uri} mb:sp2 \"#{sp2}\" .
 "
