@@ -1143,7 +1143,9 @@
       </text>
     </g>
     <g transform='translate(-0.5 -0.5)'>
-      <text x='478' y='2470' class='st5 st6 st7' dominant-baseline='middle'/>
+      <text x='478' y='2470' class='st5 st6 st7' dominant-baseline='middle'>
+        knapsack_core_sio_attribute
+      </text>
     </g>
     <g transform='translate(-0.5 -0.5)'>
       <text x='642' y='2470' class='st8 st6 st7' text-anchor='end' dominant-baseline='middle'>
@@ -1166,11 +1168,13 @@
     </g>
     <g transform='translate(-0.5 -0.5)'>
       <text x='478' y='2568' class='st3 st4'>
-        Names
+        MolecularEntityName
       </text>
     </g>
     <g transform='translate(-0.5 -0.5)'>
-      <text x='478' y='2540' class='st5 st6 st7' dominant-baseline='middle'/>
+      <text x='478' y='2540' class='st5 st6 st7' dominant-baseline='middle'>
+        knapsack_core_sio_attribute
+      </text>
     </g>
     <g transform='translate(-0.5 -0.5)'>
       <text x='642' y='2540' class='st8 st6 st7' text-anchor='end' dominant-baseline='middle'>
@@ -1197,7 +1201,9 @@
       </text>
     </g>
     <g transform='translate(-0.5 -0.5)'>
-      <text x='478' y='2610' class='st5 st6 st7' dominant-baseline='middle'/>
+      <text x='478' y='2610' class='st5 st6 st7' dominant-baseline='middle'>
+        knapsack_core_sio_attribute
+      </text>
     </g>
     <g transform='translate(-0.5 -0.5)'>
       <text x='642' y='2610' class='st8 st6 st7' text-anchor='end' dominant-baseline='middle'>
@@ -1224,7 +1230,9 @@
       </text>
     </g>
     <g transform='translate(-0.5 -0.5)'>
-      <text x='478' y='2680' class='st5 st6 st7' dominant-baseline='middle'/>
+      <text x='478' y='2680' class='st5 st6 st7' dominant-baseline='middle'>
+        knapsack_core_haspart
+      </text>
     </g>
     <g transform='translate(-0.5 -0.5)'>
       <text x='642' y='2680' class='st8 st6 st7' text-anchor='end' dominant-baseline='middle'>
@@ -1242,16 +1250,17 @@
     <polyline points='470,2760 470,2740 650,2740 650,2760' class='st2'/>
     <g>
       <text x='478' y='2775' class='st3 st4' dominant-baseline='middle'>
-      </text>
-    </g>
-    <g>
-      <text x='478' y='2750' class='st5 st6 st7' dominant-baseline='middle'>
         ChemDraw
       </text>
     </g>
     <g>
+      <text x='478' y='2750' class='st5 st6 st7' dominant-baseline='middle'>
+        knapsack_core_haspart
+      </text>
+    </g>
+    <g>
       <text x='642' y='2750' class='st8 st6 st7' text-anchor='end' dominant-baseline='middle'>
-        NilClass
+        String
       </text>
     </g>
   </g>
@@ -1274,7 +1283,9 @@
       </text>
     </g>
     <g transform='translate(-0.5 -0.5)'>
-      <text x='478' y='2820' class='st5 st6 st7' dominant-baseline='middle'/>
+      <text x='478' y='2820' class='st5 st6 st7' dominant-baseline='middle'>
+        knapsack_core_haspart
+      </text>
     </g>
     <g transform='translate(-0.5 -0.5)'>
       <text x='642' y='2820' class='st8 st6 st7' text-anchor='end' dominant-baseline='middle'>
@@ -1301,7 +1312,9 @@
       </text>
     </g>
     <g transform='translate(-0.5 -0.5)'>
-      <text x='478' y='2890' class='st5 st6 st7' dominant-baseline='middle'/>
+      <text x='478' y='2890' class='st5 st6 st7' dominant-baseline='middle'>
+        knapsack_core_cheminf_attribute
+      </text>
     </g>
     <g transform='translate(-0.5 -0.5)'>
       <text x='642' y='2890' class='st8 st6 st7' text-anchor='end' dominant-baseline='middle'>
@@ -1328,7 +1341,9 @@
       </text>
     </g>
     <g transform='translate(-0.5 -0.5)'>
-      <text x='478' y='2960' class='st5 st6 st7' dominant-baseline='middle'/>
+      <text x='478' y='2960' class='st5 st6 st7' dominant-baseline='middle'>
+        knapsack_core_cheminf_attribute
+      </text>
     </g>
     <g transform='translate(-0.5 -0.5)'>
       <text x='642' y='2960' class='st8 st6 st7' text-anchor='end' dominant-baseline='middle'>
@@ -1355,7 +1370,9 @@
       </text>
     </g>
     <g transform='translate(-0.5 -0.5)'>
-      <text x='478' y='3030' class='st5 st6 st7' dominant-baseline='middle'/>
+      <text x='478' y='3030' class='st5 st6 st7' dominant-baseline='middle'>
+        knapsack_core_cheminf_attribute
+      </text>
     </g>
     <g transform='translate(-0.5 -0.5)'>
       <text x='642' y='3030' class='st8 st6 st7' text-anchor='end' dominant-baseline='middle'>
@@ -1382,7 +1399,9 @@
       </text>
     </g>
     <g transform='translate(-0.5 -0.5)'>
-      <text x='478' y='3100' class='st5 st6 st7' dominant-baseline='middle'/>
+      <text x='478' y='3100' class='st5 st6 st7' dominant-baseline='middle'>
+        knapsack_core_cheminf_attribute
+      </text>
     </g>
     <g transform='translate(-0.5 -0.5)'>
       <text x='642' y='3100' class='st8 st6 st7' text-anchor='end' dominant-baseline='middle'>
@@ -1396,26 +1415,21 @@
     cheminf:CHEMINF_000200 +
   </text>
   <g>
+    <rect x='470' y='3160' width='180' height='50' class='st9'/>
+    <polyline points='470,3180 470,3160 650,3160 650,3180' class='st2'/>
     <g>
-      <path d='M650,3202 c0,4.4 -3.6,8 -8,8 h-164 c-4.4,0 -8,-3.6 -8,-8 v-34 c0,-4.4 3.6,-8 8,-8 h164 c4.4,0 8,3.6 8,8 v34 z' class='st9uri'/>
-      <path d='M650,3202 c0,4.4 -3.6,8 -8,8 h-164 c-4.4,0 -8,-3.6 -8,-8 v-34 c0,-4.4 3.6,-8 8,-8 h164 c4.4,0 8,3.6 8,8 v34 z' class='st1'/>
-    </g>
-    <g class='st2'>
-      <path d='M470,3180 v-12 c0,-4.4 3.6,-8 8,-8 h164 c4.4,0 8,3.6 8,8 v12'/>
-    </g>
-    <g transform='translate(-0.5 -0.5)'>
-      <text x='478' y='3198' class='st3 st4'>
-        &lt;C00000001#cas&gt;
+      <text x='478' y='3195' class='st3 st4' dominant-baseline='middle'>
+        {&quot;cas&quot;=&gt;&quot;&lt;C00000001#cas&gt;&quot;}
       </text>
     </g>
-    <g transform='translate(-0.5 -0.5)'>
+    <g>
       <text x='478' y='3170' class='st5 st6 st7' dominant-baseline='middle'>
-        cas
+        knapsack_core_cheminf_attribute
       </text>
     </g>
-    <g transform='translate(-0.5 -0.5)'>
+    <g>
       <text x='642' y='3170' class='st8 st6 st7' text-anchor='end' dominant-baseline='middle'>
-        URI
+        Hash
       </text>
     </g>
   </g>
@@ -1438,7 +1452,9 @@
       </text>
     </g>
     <g transform='translate(-0.5 -0.5)'>
-      <text x='478' y='3240' class='st5 st6 st7' dominant-baseline='middle'/>
+      <text x='478' y='3240' class='st5 st6 st7' dominant-baseline='middle'>
+        knapsack_core_annotation
+      </text>
     </g>
     <g transform='translate(-0.5 -0.5)'>
       <text x='642' y='3240' class='st8 st6 st7' text-anchor='end' dominant-baseline='middle'>
@@ -1465,7 +1481,9 @@
       </text>
     </g>
     <g transform='translate(-0.5 -0.5)'>
-      <text x='478' y='3310' class='st5 st6 st7' dominant-baseline='middle'/>
+      <text x='478' y='3310' class='st5 st6 st7' dominant-baseline='middle'>
+        knapsack_core_annotation
+      </text>
     </g>
     <g transform='translate(-0.5 -0.5)'>
       <text x='642' y='3310' class='st8 st6 st7' text-anchor='end' dominant-baseline='middle'>
@@ -1492,7 +1510,9 @@
       </text>
     </g>
     <g transform='translate(-0.5 -0.5)'>
-      <text x='478' y='3380' class='st5 st6 st7' dominant-baseline='middle'/>
+      <text x='478' y='3380' class='st5 st6 st7' dominant-baseline='middle'>
+        knapsack_core_reference
+      </text>
     </g>
     <g transform='translate(-0.5 -0.5)'>
       <text x='642' y='3380' class='st8 st6 st7' text-anchor='end' dominant-baseline='middle'>
@@ -1519,7 +1539,9 @@
       </text>
     </g>
     <g transform='translate(-0.5 -0.5)'>
-      <text x='478' y='3450' class='st5 st6 st7' dominant-baseline='middle'/>
+      <text x='478' y='3450' class='st5 st6 st7' dominant-baseline='middle'>
+        knapsack_core_reference
+      </text>
     </g>
     <g transform='translate(-0.5 -0.5)'>
       <text x='642' y='3450' class='st8 st6 st7' text-anchor='end' dominant-baseline='middle'>
@@ -1920,7 +1942,7 @@
     </g>
     <g>
       <text x='478' y='4220' class='st5 st6 st7' dominant-baseline='middle'>
-        molecular_formula2
+        molecular_formula
       </text>
     </g>
     <g>
@@ -1939,12 +1961,12 @@
     </g>
     <g transform='translate(-0.5 -0.5)'>
       <text x='58' y='4318' class='st3 st4'>
-        &lt;C00000001#names&gt;
+        &lt;C00000001#molecular_entity_name&gt;
       </text>
     </g>
     <g transform='translate(-0.5 -0.5)'>
       <text x='58' y='4290' class='st5 st6 st7' dominant-baseline='middle'>
-        Names
+        MolecularEntityName
       </text>
     </g>
     <g transform='translate(-0.5 -0.5)'>
@@ -1995,7 +2017,7 @@
     </g>
     <g>
       <text x='478' y='4360' class='st5 st6 st7' dominant-baseline='middle'>
-        names2
+        molecular_entity_name
       </text>
     </g>
     <g>
