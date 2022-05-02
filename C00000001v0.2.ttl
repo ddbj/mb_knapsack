@@ -23,7 +23,7 @@
   foaf:homepage <https://mb.metabolomics.jp/wiki/Compound:C00000001> ;
   rdfs:seeAlso <http://www.knapsackfamily.com/knapsack_core/info.php?sname=C_ID&word=C00000001> ;
   sio:SIO_000008 <C00000001#molecular_formula> ;         #sio:has-attribute
-  sio:SIO_000008 <C00000001#names> ;
+  sio:SIO_000008 <C00000001#molecular_entity_name> ;
   sio:SIO_000008 <C00000001#molecular_weight> ;
   cheminf:CHEMINF_000200 <C00000001#smiles> ;            #cheminf:has-attribute
   cheminf:CHEMINF_000200 <C00000001#standard_inchikey> ;
@@ -54,7 +54,7 @@
   rdf:type cheminf:CHEMINF_000042 ;
   sio:SIO_000300 "C19H24O6" .
 
-<C00000001#names>
+<C00000001#molecular_entity_name>
   rdf:type cheminf:CHEMINF_000043 ;
   sio:SIO_000300 "Gibberellin A1;GA1" .
 
