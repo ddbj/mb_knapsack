@@ -87,7 +87,7 @@
 <C00000001> dcterms:isReferencedBy <reference#e4eed3a4031ee5bf1093e535bc69fbde> .
 
 <annotation#7137d093c966c72ab4dd902c8c2e54c9> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Zea mays" ;
+  mb:sp "Zea mays" ;
   mb:references "Fujioka,Proc. Natl. Acad. Sci. USA,85,(1988),9031" ;
   mb:sp1 "" ;
   mb:family "Poaceae" ;
@@ -108,7 +108,7 @@
 <C00000001> dcterms:isReferencedBy <reference#f78afaad11b8078c81b31222f8f159d3> .
 
 <annotation#b877c85460137f060ebabcbfb01b6a9a> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Vitis vinifera" ;
+  mb:sp "Vitis vinifera" ;
   mb:references "Perez,Am.J.Viticulture,51,(2000),315" ;
   mb:sp1 "" ;
   mb:family "Vitaceae" ;
@@ -129,7 +129,7 @@
 <C00000001> dcterms:isReferencedBy <reference#2977d1ef0f8fff932e73d74e6ea720bb> .
 
 <annotation#725fb9f0e5f1a6556baccdc1e3f76965> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Vigna unguiculata" ;
+  mb:sp "Vigna unguiculata" ;
   mb:references "Garcia-Martinez,Plant Physiol.,85,(1987),212" ;
   mb:sp1 "" ;
   mb:family "Fabaceae" ;
@@ -152,7 +152,7 @@
 <C00000001> dcterms:isReferencedBy <reference#7593d2ef99a8b812ebdc94bde2040d14> .
 
 <annotation#e9e260c263ee642547957f2d1375c0df> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Triticum aestivum" ;
+  mb:sp "Triticum aestivum" ;
   mb:references "Lin,Phytochem.,26,(1987),2485" ;
   mb:sp1 "" ;
   mb:family "Poaceae" ;
@@ -173,7 +173,7 @@
 <C00000001> dcterms:isReferencedBy <reference#f78afaad11b8078c81b31222f8f159d3> .
 
 <annotation#6feb1b534d0a5922785935ca4227b592> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Trifolium repens" ;
+  mb:sp "Trifolium repens" ;
   mb:references "Perez,Am.J.Viticulture,51,(2000),315" ;
   mb:sp1 "" ;
   mb:family "Fabaceae" ;
@@ -194,7 +194,7 @@
 <C00000001> dcterms:isReferencedBy <reference#8428ae5b90797efd5f9d76ef145f1f6f> .
 
 <annotation#18b24176c038147be449f9dc8b9f27aa> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Thlaspi arvense" ;
+  mb:sp "Thlaspi arvense" ;
   mb:references "Metzger,Plant Physiol.,80,(1985),396" ;
   mb:sp1 "" ;
   mb:family "Cruciferae" ;
@@ -217,7 +217,7 @@
 <C00000001> dcterms:isReferencedBy <reference#0102b6160e4a478451ce740a4eeb2735> .
 
 <annotation#10b0f8dfb50b7dd0098da57db6c7d268> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Spinacia oleracea" ;
+  mb:sp "Spinacia oleracea" ;
   mb:references "Suzuki,J.Plant Growth Reg.,13,(1994),63" ;
   mb:sp1 "" ;
   mb:family "Chenopodiaceae" ;
@@ -238,7 +238,7 @@
 <C00000001> dcterms:isReferencedBy <reference#87142c53de169ce8ca2de88a186b22b2> .
 
 <annotation#85596a1e1676e224501305268d6a3dd1> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Sonneratia apetala" ;
+  mb:sp "Sonneratia apetala" ;
   mb:references "Ganguly,Phytochem.,13,(1974),1911" ;
   mb:sp1 "" ;
   mb:family "Lythraceae" ;
@@ -259,7 +259,7 @@
 <C00000001> dcterms:isReferencedBy <reference#46893dd9ce12dd5b7c9a798f214be33a> .
 
 <annotation#4c93d24c0c1a42c8f34e37ec7d40c794> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Silene armeria" ;
+  mb:sp "Silene armeria" ;
   mb:references "Talon,Plant Physiol.,92,(1990),1094" ;
   mb:sp1 "" ;
   mb:family "Caryophyllaceae" ;
@@ -282,7 +282,7 @@
 <C00000001> dcterms:isReferencedBy <reference#a64dc1b1c55effa1470ff7894bdf127d> .
 
 <annotation#16cf33e984b18c3854b218eb3d6e2509> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Sechium edule" ;
+  mb:sp "Sechium edule" ;
   mb:references "Albone,Planta,162,(1984),560" ;
   mb:sp1 "" ;
   mb:family "Cucurbitaceae" ;
@@ -305,7 +305,7 @@
 <C00000001> dcterms:isReferencedBy <reference#25dc21cd3b838f37d5e9da49e2583440> .
 
 <annotation#29323059f620cb075d9d8baa3d6b2b29> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Secale cereale" ;
+  mb:sp "Secale cereale" ;
   mb:references "Browning,Nature,265,(1977),375" ;
   mb:sp1 "" ;
   mb:family "Poaceae" ;
@@ -328,7 +328,7 @@
 <C00000001> dcterms:isReferencedBy <reference#451ecb32e3108edb4a5471d4b1376507> .
 
 <annotation#cae4c7c02b42f0a2fdd16610e2bed70e> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Sasa kurilensis" ;
+  mb:sp "Sasa kurilensis" ;
   mb:references "Yanagisawa,Biosci. Biotech. Biochem.,56,(1992),81" ;
   mb:sp1 "" ;
   mb:family "Poaceae" ;
@@ -351,7 +351,7 @@
 <C00000001> dcterms:isReferencedBy <reference#509721db77eb3304f7f7348aaa667b6d> .
 
 <annotation#44b63af5987fad5be87f209378073ccd> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Saccharum spp." ;
+  mb:sp "Saccharum spp." ;
   mb:references "KuhnleJ.Plant.Growth Reg.,2,(1983),59" ;
   mb:sp1 "" ;
   mb:family "Poaceae" ;
@@ -371,7 +371,7 @@
 <C00000001> dcterms:isReferencedBy <reference#03c29e63366012e3744df659df69c993> .
 
 <annotation#d921ea4266e0a0da2045d1a3a8fcc422> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Rumex palustris" ;
+  mb:sp "Rumex palustris" ;
   mb:references "RijindersPlanta,203,(1997),20" ;
   mb:sp1 "" ;
   mb:family "Polygonaceae" ;
@@ -392,7 +392,7 @@
 <C00000001> dcterms:isReferencedBy <reference#03c29e63366012e3744df659df69c993> .
 
 <annotation#2cb7fe9c188246e4d98e23930d3b8c63> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Rumex acetosa" ;
+  mb:sp "Rumex acetosa" ;
   mb:references "RijindersPlanta,203,(1997),20" ;
   mb:sp1 "" ;
   mb:family "Polygonaceae" ;
@@ -413,7 +413,7 @@
 <C00000001> dcterms:isReferencedBy <reference#d45f2474f6ca6a324b82283fdd0a8d4d> .
 
 <annotation#293297cc043059a11d27de3d2f1d1753> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Rhizobium phaseoli" ;
+  mb:sp "Rhizobium phaseoli" ;
   mb:references "Atzhorn,Planta,175,(1988),532" ;
   mb:sp1 "" ;
   mb:family "Rhizobiaceae" ;
@@ -436,7 +436,7 @@
 <C00000001> dcterms:isReferencedBy <reference#9e496d71c372dc19a38b97600f9269ea> .
 
 <annotation#dd7ea7ea2dc7b6fb9617bbd5f4714676> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Raphanus sativus" ;
+  mb:sp "Raphanus sativus" ;
   mb:references "Nakayama,Agric. Biol. Chem.,54,(1990),837" ;
   mb:sp1 "" ;
   mb:family "Cruciferae" ;
@@ -459,7 +459,7 @@
 <C00000001> dcterms:isReferencedBy <reference#ab3ecdbb26b6f97c36ee7583e5d58b96> .
 
 <annotation#090690b475c6343d0e52b2fd5867b05f> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Psophocarpus tetragonolobus" ;
+  mb:sp "Psophocarpus tetragonolobus" ;
   mb:references "Murakami,JARQ,20,(1987),225" ;
   mb:sp1 "" ;
   mb:family "Fabaceae" ;
@@ -480,7 +480,7 @@
 <C00000001> dcterms:isReferencedBy <reference#7860ad5bc4d1dfe4c208fbfd69b517b0> .
 
 <annotation#cd8b331df92cb407017948ef09e4e9ce> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Pseudotsuga menziesii" ;
+  mb:sp "Pseudotsuga menziesii" ;
   mb:references "DoumasPhysiol Plant,85,(1992),489" ;
   mb:sp1 "" ;
   mb:family "Pinaceae" ;
@@ -503,7 +503,7 @@
 <C00000001> dcterms:isReferencedBy <reference#db604cbbc45b4c519a6610b253038260> .
 
 <annotation#31354a7d2c484806fda78d02cab1ce7f> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Prunus subhirtella" ;
+  mb:sp "Prunus subhirtella" ;
   mb:references "Kobayashi,Biosci. Biotech.Biochem.,60,(1996),159" ;
   mb:sp1 "" ;
   mb:family "Rosaceae" ;
@@ -524,7 +524,7 @@
 <C00000001> dcterms:isReferencedBy <reference#32744103b5f86b6eebf9f22adb434bd1> .
 
 <annotation#2de6e7d9c5d11624a992cb15d75845ae> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Prunus persica" ;
+  mb:sp "Prunus persica" ;
   mb:references "Luna,Plant Physiol.,93,(1990),20" ;
   mb:sp1 "" ;
   mb:family "Rosaceae" ;
@@ -549,7 +549,7 @@
 <C00000001> dcterms:isReferencedBy <reference#cec77a959cbafd3d5153fa7a51f21d1a> .
 
 <annotation#04e4413b7723bc7237435d98cc03b417> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Prunus avium" ;
+  mb:sp "Prunus avium" ;
   mb:references "Blake,Phytochem.,35,(1994),1383;Blake,Phytochem.,55,(2000),887" ;
   mb:sp1 "" ;
   mb:family "Rosaceae" ;
@@ -576,7 +576,7 @@
 <C00000001> dcterms:isReferencedBy <reference#499d3283ba05e507a7027acd9914e2e9> .
 
 <annotation#edb0b9797a1ab628485f7755f6ea29d5> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Prunus armeniaca" ;
+  mb:sp "Prunus armeniaca" ;
   mb:references "Bottini,Plant Physiol.,78,(1985),417" ;
   mb:sp1 "" ;
   mb:family "Rosaceae" ;
@@ -599,7 +599,7 @@
 <C00000001> dcterms:isReferencedBy <reference#6a27af92f669b9565d60aeedff487fdc> .
 
 <annotation#13dd96e1f07ba9df5e268e9bca96f81c> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Populus tremuloides" ;
+  mb:sp "Populus tremuloides" ;
   mb:references "Zanewich,J.Plant Growth Reg.,13,(1994),159" ;
   mb:sp1 "" ;
   mb:family "Salicaceae" ;
@@ -620,7 +620,7 @@
 <C00000001> dcterms:isReferencedBy <reference#c1cdbe143d17a856d6c34ea91d18bb50> .
 
 <annotation#8f253db182b81c5f92e952cf38fed225> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Polianthes tuberosa" ;
+  mb:sp "Polianthes tuberosa" ;
   mb:references "Chang,Physiol. Plant,112,(2001),429" ;
   mb:sp1 "" ;
   mb:family "Agavaceae" ;
@@ -642,7 +642,7 @@
 <C00000001> dcterms:isReferencedBy <reference#ce6317a3e85bbb99131aff8c20460944> .
 
 <annotation#8b9e69cac4086051217dcac61198c4cf> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Pisum sativum" ;
+  mb:sp "Pisum sativum" ;
   mb:references "Garcia-Martinez,Planta,184,(1991),53" ;
   mb:sp1 "" ;
   mb:family "Fabaceae" ;
@@ -665,7 +665,7 @@
 <C00000001> dcterms:isReferencedBy <reference#2ee8d08dc531e09dd0a872e7732147ab> .
 
 <annotation#f3d671a7154e11e635bb1d19de169459> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Pimpinella anisum" ;
+  mb:sp "Pimpinella anisum" ;
   mb:references "Noma,Agric. Biol. Chem.,43,(1982),1793" ;
   mb:sp1 "" ;
   mb:family "Apiaceae" ;
@@ -686,7 +686,7 @@
 <C00000001> dcterms:isReferencedBy <reference#4ecb983ea3a0708ba63ef08cd0837318> .
 
 <annotation#d23b59b6f6901bb0cf9be465ce675341> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Picea sitchensis" ;
+  mb:sp "Picea sitchensis" ;
   mb:references "Moritz,Planta,181,(1990),538" ;
   mb:sp1 "" ;
   mb:family "Pinaceae" ;
@@ -709,7 +709,7 @@
 <C00000001> dcterms:isReferencedBy <reference#2011be0d3c2a3a11dd27999469821bff> .
 
 <annotation#3020460dfb1019d8ef9822d59d956b76> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Picea abies" ;
+  mb:sp "Picea abies" ;
   mb:references "Oden,Plant Physiol.,84,(1987),516" ;
   mb:sp1 "" ;
   mb:family "Pinaceae" ;
@@ -732,7 +732,7 @@
 <C00000001> dcterms:isReferencedBy <reference#451ecb32e3108edb4a5471d4b1376507> .
 
 <annotation#985be81a817e8cbdf7f7ce00acd9eefb> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Phyllostachys edulis" ;
+  mb:sp "Phyllostachys edulis" ;
   mb:references "Yanagisawa,Biosci. Biotech. Biochem.,56,(1992),81" ;
   mb:sp1 "" ;
   mb:family "Poaceae" ;
@@ -755,7 +755,7 @@
 <C00000001> dcterms:isReferencedBy <reference#451ecb32e3108edb4a5471d4b1376507> .
 
 <annotation#bc5fdef2902d5b94812398fdfc595318> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Phyllostachys bambusoides" ;
+  mb:sp "Phyllostachys bambusoides" ;
   mb:references "Yanagisawa,Biosci. Biotech. Biochem.,56,(1992),81" ;
   mb:sp1 "" ;
   mb:family "Poaceae" ;
@@ -778,7 +778,7 @@
 <C00000001> dcterms:isReferencedBy <reference#2a2c992ef25bccc06072cc983366bd21> .
 
 <annotation#e783e395316c9eeaa972c2ed1840ba39> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Phaseolus vulgaris" ;
+  mb:sp "Phaseolus vulgaris" ;
   mb:references "West,J. Am. Chem. Soc.,81,(1959),2424" ;
   mb:sp1 "" ;
   mb:family "Fabaceae" ;
@@ -799,7 +799,7 @@
 <C00000001> dcterms:isReferencedBy <reference#1fb242944e2c6b7c17f420c67b5621a9> .
 
 <annotation#434c9482c7257132db2a2421e21b04f5> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Phaseolus multiflorus" ;
+  mb:sp "Phaseolus multiflorus" ;
   mb:references "Durley,Phytochem.,10,(1971),1891" ;
   mb:sp1 "" ;
   mb:family "Fabaceae" ;
@@ -819,7 +819,7 @@
 <C00000001> dcterms:isReferencedBy <reference#be9926974efb6216593f4bd8d28a9cda> .
 
 <annotation#139402b7b61f4af1b02d7e52293960d4> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Phaseolus lunatus" ;
+  mb:sp "Phaseolus lunatus" ;
   mb:references "Dobert,Plant Physiol.,98,(1992),221" ;
   mb:sp1 "" ;
   mb:family "Fabaceae" ;
@@ -842,7 +842,7 @@
 <C00000001> dcterms:isReferencedBy <reference#ae6f8bf415224bccdce62261a1bb564d> .
 
 <annotation#e29c764b947c0a1997025562d9948cb5> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Phaseolus coccineus" ;
+  mb:sp "Phaseolus coccineus" ;
   mb:references "Brown,Phytochem.,12,(1973),2935" ;
   mb:sp1 "" ;
   mb:family "Fabaceae" ;
@@ -863,7 +863,7 @@
 <C00000001> dcterms:isReferencedBy <reference#49a222b8c9abd7f6e4af244d08017755> .
 
 <annotation#2c75157c3f845bbe23907cdb157041e3> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Pennisetum glaucum" ;
+  mb:sp "Pennisetum glaucum" ;
   mb:references "Devi,Plant Growth Reg.,15,(1994),215" ;
   mb:sp1 "" ;
   mb:family "Poaceae" ;
@@ -883,7 +883,7 @@
 <C00000001> dcterms:isReferencedBy <reference#0ff82b1045eea28c92500e9355ae83ff> .
 
 <annotation#46632d7aa2ae565ce8fe38b71130847d> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Paraburkholderia phymatum" ;
+  mb:sp "Paraburkholderia phymatum" ;
   mb:references "Lardi, M. et al., Int. J. Mol. Sci., 19, (2018), 1049." ;
   mb:sp1 "" ;
   mb:family "-" ;
@@ -904,7 +904,7 @@
 <C00000001> dcterms:isReferencedBy <reference#cb8420e4a669241b9c08eb106e9c753d> .
 
 <annotation#0095a2d91d74c9c2b451171fe2a1b70d> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Oryza sativa" ;
+  mb:sp "Oryza sativa" ;
   mb:references "Kurogochi,Planta,146,(1979),185" ;
   mb:sp1 "" ;
   mb:family "Poaceae" ;
@@ -927,7 +927,7 @@
 <C00000001> dcterms:isReferencedBy <reference#0102b6160e4a478451ce740a4eeb2735> .
 
 <annotation#1ea5bebb0eaffc40f9cea18a0cadd828> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Orobanche minor" ;
+  mb:sp "Orobanche minor" ;
   mb:references "Suzuki,J.Plant Growth Reg.,13,(1994),63" ;
   mb:sp1 "" ;
   mb:family "Orobanchaceae" ;
@@ -948,7 +948,7 @@
 <C00000001> dcterms:isReferencedBy <reference#37cfe206795165a5e2f19951a29462ac> .
 
 <annotation#9d3f0e510cedda39283a6e3ba1abe968> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Nicotiana tabacum" ;
+  mb:sp "Nicotiana tabacum" ;
   mb:references "Park,Plant Cell Physiol.,24,(1983),1241" ;
   mb:sp1 "" ;
   mb:family "Solanaceae" ;
@@ -969,7 +969,7 @@
 <C00000001> dcterms:isReferencedBy <reference#14f896770fcded6b75de1fe4554b8881> .
 
 <annotation#d363e212c072d5d7671de342c5829621> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Matthiola incana" ;
+  mb:sp "Matthiola incana" ;
   mb:references "Hisamatsu,Phytochem.,47,(1998),3" ;
   mb:sp1 "" ;
   mb:family "Cruciferae" ;
@@ -990,7 +990,7 @@
 <C00000001> dcterms:isReferencedBy <reference#de388c1f94361ee085ca0652f73abed0> .
 
 <annotation#9438897c6918698c2ea182e96e542b59> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Marah macrocarpus" ;
+  mb:sp "Marah macrocarpus" ;
   mb:references "MacMillan,Phytochem.,42,(1996),1263" ;
   mb:sp1 "" ;
   mb:family "Cucurbitaceae" ;
@@ -1010,7 +1010,7 @@
 <C00000001> dcterms:isReferencedBy <reference#395307475d5c19cd20b79f340131ebf0> .
 
 <annotation#3a721f8106ae232e3144af3c85fa6614> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Mangifera indica" ;
+  mb:sp "Mangifera indica" ;
   mb:references "Davenport,J.Plant Growth Reg.,20,(2001),308" ;
   mb:sp1 "" ;
   mb:family "Anacardiaceae" ;
@@ -1031,7 +1031,7 @@
 <C00000001> dcterms:isReferencedBy <reference#220819b12b7af680ec9fdb38992a97e8> .
 
 <annotation#7d89310dfbea25e78699b3c2d0a84e18> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Malus domestica" ;
+  mb:sp "Malus domestica" ;
   mb:references "Hedden,Phytochem.,32,(1993),231" ;
   mb:sp1 "" ;
   mb:family "Rosaceae" ;
@@ -1052,7 +1052,7 @@
 <C00000001> dcterms:isReferencedBy <reference#c99f9e12c50124b38761adf1248a8a3c> .
 
 <annotation#f1269ffef9f4283a2b60cfb78f3f1299> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Lupinus albus" ;
+  mb:sp "Lupinus albus" ;
   mb:references "Gaskin,Phytochem.31,(1992),1869" ;
   mb:sp1 "" ;
   mb:family "Fabaceae" ;
@@ -1073,7 +1073,7 @@
 <C00000001> dcterms:isReferencedBy <reference#a56a1a494bc07ab4cbdf1e67d4bd87c3> .
 
 <annotation#e2069f0c7848b67d882852ae4757b0fb> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Lolium temulentum" ;
+  mb:sp "Lolium temulentum" ;
   mb:references "Gocal,Plant Physiol.,119,(1999),1271" ;
   mb:sp1 "" ;
   mb:family "Poaceae" ;
@@ -1096,7 +1096,7 @@
 <C00000001> dcterms:isReferencedBy <reference#41a4ad78f2723ab914c100bf078873e9> .
 
 <annotation#9370b99c1c8ad3b28c499cab296368d0> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Lolium perenne" ;
+  mb:sp "Lolium perenne" ;
   mb:references "Morvan-Bertrand,Physiol Plant,111,(2001),225" ;
   mb:sp1 "" ;
   mb:family "Poaceae" ;
@@ -1117,7 +1117,7 @@
 <C00000001> dcterms:isReferencedBy <reference#d8293d9a1025e0377de04722313639e4> .
 
 <annotation#6d6d4b9062ccc4546282e68c94aebe4a> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Litchi chinensis" ;
+  mb:sp "Litchi chinensis" ;
   mb:references "Chen,HortScience,25,(1990),314" ;
   mb:sp1 "" ;
   mb:family "Sapindaceae" ;
@@ -1140,7 +1140,7 @@
 <C00000001> dcterms:isReferencedBy <reference#f513378703fb6c123d9249596740cddb> .
 
 <annotation#a3f2cee5e4221f97571fcccc3341e16f> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Lilium elegans" ;
+  mb:sp "Lilium elegans" ;
   mb:references "Takayama,J. Japan Soc. Hort. Sci.,62,(1993),189" ;
   mb:sp1 "" ;
   mb:family "Liliaceae" ;
@@ -1160,7 +1160,7 @@
 <C00000001> dcterms:isReferencedBy <reference#b2772e638d7b01b3e28a3391ac37946b> .
 
 <annotation#92f758347b50144ed6fe3357491eaed7> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Leucaena leucocephala" ;
+  mb:sp "Leucaena leucocephala" ;
   mb:references "Arigayo,Agric. Biol. Chem.,47,(1983),2939" ;
   mb:sp1 "" ;
   mb:family "Fabaceae" ;
@@ -1181,7 +1181,7 @@
 <C00000001> dcterms:isReferencedBy <reference#6def142e8b2f9db04c6d9a868650e067> .
 
 <annotation#ee874f7a86a8dbdbd8f33e6cf0a765e9> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Lactuca sativa" ;
+  mb:sp "Lactuca sativa" ;
   mb:references "Silk,Plant Physiol.,59,(1977),211" ;
   mb:sp1 "" ;
   mb:family "Asteraceae" ;
@@ -1204,7 +1204,7 @@
 <C00000001> dcterms:isReferencedBy <reference#26e6f7ffb7b57c4a6c606cfbade3b4f7> .
 
 <annotation#80e984d9d0d1a1a9c2f75360d7932425> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Laburnum anagyroides" ;
+  mb:sp "Laburnum anagyroides" ;
   mb:references "Picciarelli,Phytochem.,30,(1991),1789" ;
   mb:sp1 "" ;
   mb:family "Fabaceae" ;
@@ -1225,7 +1225,7 @@
 <C00000001> dcterms:isReferencedBy <reference#27056482b3ff07804eff71340a0a484b> .
 
 <annotation#a913b8aced964ec4eb755a2df7e0bead> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Juglans regia" ;
+  mb:sp "Juglans regia" ;
   mb:references "Tadeo,Physiol.Plant,91,(1994),37" ;
   mb:sp1 "" ;
   mb:family "Juglandaceae" ;
@@ -1246,7 +1246,7 @@
 <C00000001> dcterms:isReferencedBy <reference#c45ad8cf3b200bb92bd025c78cde2e5b> .
 
 <annotation#91568db40ba5391919cae034b192f398> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Ipomoea tricolor" ;
+  mb:sp "Ipomoea tricolor" ;
   mb:references "Matsuo,Agric.Biol.Chem.,48,(1984),2935" ;
   mb:sp1 "" ;
   mb:family "Convolvulaceae" ;
@@ -1267,7 +1267,7 @@
 <C00000001> dcterms:isReferencedBy <reference#c45ad8cf3b200bb92bd025c78cde2e5b> .
 
 <annotation#81517ba447521d062450b0d4731ca6a5> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Ipomoea reptans" ;
+  mb:sp "Ipomoea reptans" ;
   mb:references "Matsuo,Agric.Biol.Chem.,48,(1984),2935" ;
   mb:sp1 "" ;
   mb:family "Convolvulaceae" ;
@@ -1287,7 +1287,7 @@
 <C00000001> dcterms:isReferencedBy <reference#a49f7f7065a582c6c71cad98508b8e51> .
 
 <annotation#475a3a63745a07bc2d172ed9d46a4c06> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Ipomoea batatas" ;
+  mb:sp "Ipomoea batatas" ;
   mb:references "Matsuo,Agric. Biol. Chem.,48,(1984),2935" ;
   mb:sp1 "" ;
   mb:family "Convolvulaceae" ;
@@ -1308,7 +1308,7 @@
 <C00000001> dcterms:isReferencedBy <reference#4b58b3268bdefacd61c8c33b1abe4bf0> .
 
 <annotation#aa3561d12b4a04f0a164ea0bd5d3ab90> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Helianthus annuus" ;
+  mb:sp "Helianthus annuus" ;
   mb:references "Hutchison,Phytochem.,27,(1988),2695" ;
   mb:sp1 "" ;
   mb:family "Asteraceae" ;
@@ -1329,7 +1329,7 @@
 <C00000001> dcterms:isReferencedBy <reference#acc467019aedf0fb1fa9ab377d26dfbf> .
 
 <annotation#48801563f665d1e5eb400a3c4036c2fc> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Glycine max" ;
+  mb:sp "Glycine max" ;
   mb:references "Bensen,Plant Physiol.,94,(1990),77" ;
   mb:sp1 "" ;
   mb:family "Fabaceae" ;
@@ -1352,7 +1352,7 @@
 <C00000001> dcterms:isReferencedBy <reference#8f6b1c6659b5a526385b6495ae5d3757> .
 
 <annotation#e9491e52894c53d54e5645b5fabac32d> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Gluconacetobacter diazotrophicus" ;
+  mb:sp "Gluconacetobacter diazotrophicus" ;
   mb:references "Bastian,Plant Growth Reg.,24, (1998),7" ;
   mb:sp1 "" ;
   mb:family "Acetobacteraceae" ;
@@ -1373,7 +1373,7 @@
 <C00000001> dcterms:isReferencedBy <reference#3aadf0459828e05d48d432e5becfc1bd> .
 
 <annotation#ca11806fb0f631e0e4a3fb7d706acabf> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Gibberella fujikuroi" ;
+  mb:sp "Gibberella fujikuroi" ;
   mb:references "Tudynski,Appl. Microbiol. Biotechnol.,66,(2005),597" ;
   mb:sp1 "" ;
   mb:family "Nectriaceae" ;
@@ -1395,7 +1395,7 @@
 <C00000001> dcterms:isReferencedBy <reference#58705252db6066f89d818fbdf3f8d6e6> .
 
 <annotation#41b22c7b81e7d80bf60348ada8ac7f4e> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Gentiana triflora" ;
+  mb:sp "Gentiana triflora" ;
   mb:references "Koshioka,J.Plant Physiol,153,(1998),230" ;
   mb:sp1 "" ;
   mb:family "Gentianaceae" ;
@@ -1416,7 +1416,7 @@
 <C00000001> dcterms:isReferencedBy <reference#e20f4d2e1b42dace6c248f4850ae596c> .
 
 <annotation#0a93d8d3ff0f96b3738972be2f03de54> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Fragaria x ananassa" ;
+  mb:sp "Fragaria x ananassa" ;
   mb:references "Taylor,J.Plant Growth Regul.,15,(1994),235" ;
   mb:sp1 "" ;
   mb:family "Rosaceae" ;
@@ -1437,7 +1437,7 @@
 <C00000001> dcterms:isReferencedBy <reference#94c5e43c9ddc6fa921fa33d242e0ad87> .
 
 <annotation#2bc54009e2e2d970babcd5fc933079d3> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Eustoma grandiflorum" ;
+  mb:sp "Eustoma grandiflorum" ;
   mb:references "Hisamatsu,J.Japan Soc.Hort.Sci.,67,(1998),866" ;
   mb:sp1 "" ;
   mb:family "Gentianaceae" ;
@@ -1457,7 +1457,7 @@
 <C00000001> dcterms:isReferencedBy <reference#4b63a509c918d22664603a6c59317d9e> .
 
 <annotation#9cd3b1b3343a5f1429f85b18a65381c0> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Eucalyptus globulus" ;
+  mb:sp "Eucalyptus globulus" ;
   mb:references "Hasan,Physiol.Plant,90,(1994),475" ;
   mb:sp1 "" ;
   mb:family "Myrtaceae" ;
@@ -1478,7 +1478,7 @@
 <C00000001> dcterms:isReferencedBy <reference#3a1a6e88eb911b59e55ed3ef4c4c106f> .
 
 <annotation#a5ca7837122b9c9dd708bcf02c397054> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Dendranthema grandifloru" ;
+  mb:sp "Dendranthema grandifloru" ;
   mb:references "Nishijima,Biosci. Biotech. Biochem.,61,(1997),1362" ;
   mb:sp1 "" ;
   mb:family "Asteraceae" ;
@@ -1500,7 +1500,7 @@
 <C00000001> dcterms:isReferencedBy <reference#2ee8d08dc531e09dd0a872e7732147ab> .
 
 <annotation#d3dad78a2277f5616fb550aaea4afc3a> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Daucus carota" ;
+  mb:sp "Daucus carota" ;
   mb:references "Noma,Agric. Biol. Chem.,43,(1982),1793" ;
   mb:sp1 "" ;
   mb:family "Apiaceae" ;
@@ -1521,7 +1521,7 @@
 <C00000001> dcterms:isReferencedBy <reference#26e6f7ffb7b57c4a6c606cfbade3b4f7> .
 
 <annotation#121218bf9c8d09d29e0c50ba43eedb7b> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Cytisus laburnum" ;
+  mb:sp "Cytisus laburnum" ;
   mb:references "Picciarelli,Phytochem.,30,(1991),1789" ;
   mb:sp1 "" ;
   mb:family "Fabaceae" ;
@@ -1541,7 +1541,7 @@
 <C00000001> dcterms:isReferencedBy <reference#5476cc9541059230417fba2e20f1826c> .
 
 <annotation#2376a05f45a1e11955014b5d613a1edf> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Cyathea australis" ;
+  mb:sp "Cyathea australis" ;
   mb:references "Yamane,Plant Physiol.,78,(1985),899" ;
   mb:sp1 "" ;
   mb:family "Cyatheaceae" ;
@@ -1564,7 +1564,7 @@
 <C00000001> dcterms:isReferencedBy <reference#3ecfc3917f212402c55f03e76c918640> .
 
 <annotation#22b4ec9b4f214ebb9e3c66ae03d35d46> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Cucurbita maxima" ;
+  mb:sp "Cucurbita maxima" ;
   mb:references "Lange,Planta,189,(1993),340" ;
   mb:sp1 "" ;
   mb:family "Cucurbitaceae" ;
@@ -1587,7 +1587,7 @@
 <C00000001> dcterms:isReferencedBy <reference#b82ed32281c6e0928350670efe8c66a3> .
 
 <annotation#3d772966ca8a52361d4ba773a42b399b> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Cucumis sativus" ;
+  mb:sp "Cucumis sativus" ;
   mb:references "Hemphill,Planta,103,(1972),241" ;
   mb:sp1 "" ;
   mb:family "Cucurbitaceae" ;
@@ -1610,7 +1610,7 @@
 <C00000001> dcterms:isReferencedBy <reference#b82ed32281c6e0928350670efe8c66a3> .
 
 <annotation#73c1ddaf54bda061a85a46ad4c5bd186> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Cucumis melo" ;
+  mb:sp "Cucumis melo" ;
   mb:references "Hemphill,Planta,103,(1972),241" ;
   mb:sp1 "" ;
   mb:family "Cucurbitaceae" ;
@@ -1633,7 +1633,7 @@
 <C00000001> dcterms:isReferencedBy <reference#d97fc65448d5bb90b5611a1cbaa40a31> .
 
 <annotation#d480ff04e4376f5fd58b676a9e3565dd> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Corylus avellana" ;
+  mb:sp "Corylus avellana" ;
   mb:references "Williams,Planta,117,(1974),101" ;
   mb:sp1 "" ;
   mb:family "Betulaceae" ;
@@ -1656,7 +1656,7 @@
 <C00000001> dcterms:isReferencedBy <reference#576a2b538a6ea320940e3384ed52de0b> .
 
 <annotation#9fc3f09c0488c695243fac2ec6cbc015> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Citrus unshiu" ;
+  mb:sp "Citrus unshiu" ;
   mb:references "Goto,Agric. Biol. Chem.,53,(1989),2817" ;
   mb:sp1 "" ;
   mb:family "Rutaceae" ;
@@ -1677,7 +1677,7 @@
 <C00000001> dcterms:isReferencedBy <reference#86c09bd76d25c7db6ef27bfc76d97d1e> .
 
 <annotation#b1caaf5b1eb20b5db48964dc8661fee6> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Citrus sinensis" ;
+  mb:sp "Citrus sinensis" ;
   mb:references "Poling,J. Agric. Food Chem.,39,(1991),677" ;
   mb:sp1 "" ;
   mb:family "Rutaceae" ;
@@ -1698,7 +1698,7 @@
 <C00000001> dcterms:isReferencedBy <reference#a6a31baf0b2ac9bda7b4963dd5a13b82> .
 
 <annotation#8f2828b027d5ac56defe210ad834c098> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Citrus reticulata" ;
+  mb:sp "Citrus reticulata" ;
   mb:references "Talon,Plant Physiol.,99,(1992),1575" ;
   mb:sp1 "" ;
   mb:family "Rutaceae" ;
@@ -1721,7 +1721,7 @@
 <C00000001> dcterms:isReferencedBy <reference#acdb1a20cb2093320e3e704d1e87f335> .
 
 <annotation#eb1d635b09313e658e40141d52e306a8> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Citrus limon" ;
+  mb:sp "Citrus limon" ;
   mb:references "Khalifah,Plant Physiol.,40,(1965),441" ;
   mb:sp1 "" ;
   mb:family "Rutaceae" ;
@@ -1744,7 +1744,7 @@
 <C00000001> dcterms:isReferencedBy <reference#560bf55405829cfb939eea4093c171d7> .
 
 <annotation#97fa61e05466f28faef8f50258d4765f> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Cibotium glaucum" ;
+  mb:sp "Cibotium glaucum" ;
   mb:references "Yamane,Plant Physiol.,86,(1988),857" ;
   mb:sp1 "" ;
   mb:family "Cbotiaceae/Dicksoniaceae" ;
@@ -1767,7 +1767,7 @@
 <C00000001> dcterms:isReferencedBy <reference#6a429f5812220d3407c80187242e2606> .
 
 <annotation#7b04e3e0b75b7a3397583459d962fa71> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Castanea henryi" ;
+  mb:sp "Castanea henryi" ;
   mb:references "Fan, X. et al., J. Agric. Food Chem., 65, (2017), 10332-10349." ;
   mb:sp1 "" ;
   mb:family "Fagaceae" ;
@@ -1788,7 +1788,7 @@
 <C00000001> dcterms:isReferencedBy <reference#3d6942b489d75c64407d27367282499a> .
 
 <annotation#23d5810d037ba27646e78afb00c3bd5a> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Carthamus tinctorius" ;
+  mb:sp "Carthamus tinctorius" ;
   mb:references "Potter,J.Plant Growth Regul.,12,(1993),133" ;
   mb:sp1 "" ;
   mb:family "Asteraceae" ;
@@ -1809,7 +1809,7 @@
 <C00000001> dcterms:isReferencedBy <reference#47fd82172bd3293df798fdf9c67687a8> .
 
 <annotation#773ae7ac1705b7ffcb700d9747d4e1dd> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Carica papaya" ;
+  mb:sp "Carica papaya" ;
   mb:references "Dathe,Agric. Biol. Chem.,55,(1991),2491" ;
   mb:sp1 "" ;
   mb:family "Caricaceae" ;
@@ -1830,7 +1830,7 @@
 <C00000001> dcterms:isReferencedBy <reference#9b65d3afdb757fb5892bae481d004bb0> .
 
 <annotation#a4d4658c9f9d703c81f6f22e63fd5ac4> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Campanula isophylla" ;
+  mb:sp "Campanula isophylla" ;
   mb:references "Jensen,J.Plant Growth Regul.,15,(1996),167" ;
   mb:sp1 "" ;
   mb:family "Campanulaceae/Lobeliaceae" ;
@@ -1851,7 +1851,7 @@
 <C00000001> dcterms:isReferencedBy <reference#8689dae937df52638b1d5a034e27cff2> .
 
 <annotation#ebd6375d5c1e105a3c7d0372e2d6480f> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Camellia sinensis" ;
+  mb:sp "Camellia sinensis" ;
   mb:references "Koshioka,Biosci. Biotech. Biochem.,57,(1993),1586" ;
   mb:sp1 "" ;
   mb:family "Theaceae" ;
@@ -1872,7 +1872,7 @@
 <C00000001> dcterms:isReferencedBy <reference#05746cc97fbc65d68a69b7b3897f0a80> .
 
 <annotation#afac7c391250f2708c3163cdd1ee873a> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Brassica napus" ;
+  mb:sp "Brassica napus" ;
   mb:references "Rood,Plant Physiol.,83,(1987),645" ;
   mb:sp1 "" ;
   mb:family "Cruciferae" ;
@@ -1895,7 +1895,7 @@
 <C00000001> dcterms:isReferencedBy <reference#3452b5ea2cc7074b66894693212d6b6c> .
 
 <annotation#4061e6344c87e45f063316f7705939ad> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Brassica campestris" ;
+  mb:sp "Brassica campestris" ;
   mb:references "Rood,Physiol. Plant.,79,(1990),679" ;
   mb:sp1 "" ;
   mb:family "Cruciferae" ;
@@ -1917,7 +1917,7 @@
 <C00000001> dcterms:isReferencedBy <reference#c3931525bf2ada1d83771673c7adda1c> .
 
 <annotation#8fa557420dac73de20558185017415bb> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Betula pendula" ;
+  mb:sp "Betula pendula" ;
   mb:references "Zanewich,J.Plant Growth Regul.,13,(1994),159" ;
   mb:sp1 "" ;
   mb:family "Betulaceae" ;
@@ -1938,7 +1938,7 @@
 <C00000001> dcterms:isReferencedBy <reference#2b406ff03596b370d686adb4de9b544d> .
 
 <annotation#47adede1876f49cf2e03f8c425c161e9> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Begonia x cheimantha" ;
+  mb:sp "Begonia x cheimantha" ;
   mb:references "Oden,Physiol. Plant.,73,(1988),445" ;
   mb:sp1 "" ;
   mb:family "Begoniaceae" ;
@@ -1958,7 +1958,7 @@
 <C00000001> dcterms:isReferencedBy <reference#ae7279452742611894f427f778763c87> .
 
 <annotation#358e4ae8b92680d63638053723996c58> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Bacillus pumilus" ;
+  mb:sp "Bacillus pumilus" ;
   mb:references "Guitierri-Manero,Physiol.Plant,111,(2001),206" ;
   mb:sp1 "" ;
   mb:family "Bacillaceae" ;
@@ -1979,7 +1979,7 @@
 <C00000001> dcterms:isReferencedBy <reference#ae7279452742611894f427f778763c87> .
 
 <annotation#94cf19e696e414486cbae887358d8983> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Bacillus licheniformis" ;
+  mb:sp "Bacillus licheniformis" ;
   mb:references "Guitierri-Manero,Physiol.Plant,111,(2001),206" ;
   mb:sp1 "" ;
   mb:family "Bacillaceae" ;
@@ -2000,7 +2000,7 @@
 <C00000001> dcterms:isReferencedBy <reference#20dca3297fed428730c1ad7e9c69dc66> .
 
 <annotation#a977c7d86cd6cbd30417fb86200d7441> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Azospirillum lipoferum" ;
+  mb:sp "Azospirillum lipoferum" ;
   mb:references "Bottini,Plant Physiol.,90,(1989),45" ;
   mb:sp1 "" ;
   mb:family "-" ;
@@ -2023,7 +2023,7 @@
 <C00000001> dcterms:isReferencedBy <reference#a213810f6a6419adeacde0b5677664dc> .
 
 <annotation#4df5a8fa9a1e16e270fdf85bcafc4f0f> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Azospirillum brasilense" ;
+  mb:sp "Azospirillum brasilense" ;
   mb:references "Janzen,Soil Biol.Biochem.,24,(1992),1061" ;
   mb:sp1 "" ;
   mb:family "-" ;
@@ -2044,7 +2044,7 @@
 <C00000001> dcterms:isReferencedBy <reference#63509476d0f7071b7398fada50405f0e> .
 
 <annotation#55398fde2ffd24a8f409c8e3abbefc61> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Archidendron microcarpum" ;
+  mb:sp "Archidendron microcarpum" ;
   mb:references "Koshioka,Agric. Biol. Chem.,50,(1986),1899" ;
   mb:sp1 "" ;
   mb:family "Fabaceae" ;
@@ -2064,7 +2064,7 @@
 <C00000001> dcterms:isReferencedBy <reference#3c4f985101d46f33e46690e84a5f9935> .
 
 <annotation#afe2528954bcc178dfcb7360a49aa342> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Aralia cordata" ;
+  mb:sp "Aralia cordata" ;
   mb:references "Nishijima,Biosci. Biotech. Biochem.,57,(1993),1953" ;
   mb:sp1 "" ;
   mb:family "Araliaceae" ;
@@ -2087,7 +2087,7 @@
 <C00000001> dcterms:isReferencedBy <reference#152d0c1ee2f3ee468d8cb54548d3bc0b> .
 
 <annotation#5403b51818b6d9c5b7b2ed33f70a7dd1> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Arabidopsis thaliana" ;
+  mb:sp "Arabidopsis thaliana" ;
   mb:references "Talon,Heynh. Planta,182,(1990),501" ;
   mb:sp1 "" ;
   mb:family "Cruciferae" ;
@@ -2110,7 +2110,7 @@
 <C00000001> dcterms:isReferencedBy <reference#d6b3815f4a7e6b37d841c638063ae482> .
 
 <annotation#101879dd80600b9e9ca88e9e9ebce89d> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Althaea rosea" ;
+  mb:sp "Althaea rosea" ;
   mb:references "Harada,Phytochem.,6,(1967),1695" ;
   mb:sp1 "" ;
   mb:family "Malvaceae" ;
@@ -2130,7 +2130,7 @@
 <C00000001> dcterms:isReferencedBy <reference#a64c537089788e8b5ba92d38a44bc155> .
 
 <annotation#540f14f975cd1f71455840a30590f819> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Alstroemeria hybrida" ;
+  mb:sp "Alstroemeria hybrida" ;
   mb:references "Kappers,J.Plant Growth Regul.,16,(1997),219" ;
   mb:sp1 "" ;
   mb:family "Alstroemeriaceae" ;
@@ -2150,7 +2150,7 @@
 <C00000001> dcterms:isReferencedBy <reference#c3931525bf2ada1d83771673c7adda1c> .
 
 <annotation#d88766172bd505732d85a07aee8d519b> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Alnus tenuifolia" ;
+  mb:sp "Alnus tenuifolia" ;
   mb:references "Zanewich,J.Plant Growth Regul.,13,(1994),159" ;
   mb:sp1 "" ;
   mb:family "Betulaceae" ;
@@ -2170,7 +2170,7 @@
 <C00000001> dcterms:isReferencedBy <reference#52656451930b4270c77b8b909ed0249e> .
 
 <annotation#5f14bcfbdbea34fb6fd8247fc5888346> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Allium cepa" ;
+  mb:sp "Allium cepa" ;
   mb:references "Nojiri,Biosci. Biotech. Biochem.,57,(1993),2031" ;
   mb:sp1 "" ;
   mb:family "Alliaceae" ;
@@ -2191,7 +2191,7 @@
 <C00000001> dcterms:isReferencedBy <reference#2585aa2f83ba6604c1b83858ee1e5f65> .
 
 <annotation#4588c4a87c85e28c3e8e98a8cc1f6228> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Agrostemma githago" ;
+  mb:sp "Agrostemma githago" ;
   mb:references "Jones,Planta,149,(1980),274" ;
   mb:sp1 "" ;
   mb:family "Caryophyllaceae" ;
@@ -2214,7 +2214,7 @@
 <C00000001> dcterms:isReferencedBy <reference#723433eee2d1696bd0ae76dea1d45f3b> .
 
 <annotation#8aaa0989e685e44ada8f655f12dd0ee0> rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:organism "Abelmoschus esculentus" ;
+  mb:sp "Abelmoschus esculentus" ;
   mb:references "Kobayashi,Biosci. Biotech. Biochem.,60,(1996),159" ;
   mb:sp1 "" ;
   mb:family "Malvaceae" ;
