@@ -247,7 +247,7 @@ def to_ttl h
   foaf:homepage <https://mb.metabolomics.jp/wiki/Compound:#{h[:id]}> ;
   rdfs:seeAlso <http://www.knapsackfamily.com/knapsack_core/info.php?sname=C_ID&word=#{h[:id]}> ;
   sio:SIO_000008 <#{h[:id]}#molecular_formula> ;         #sio:has-attribute
-  sio:SIO_000008 <#{h[:id]}#names> ;
+  sio:SIO_000008 <#{h[:id]}#molecular_entity_name> ;
   sio:SIO_000008 <#{h[:id]}#molecular_weight> ;
   cheminf:CHEMINF_000200 <#{h[:id]}#smiles> ;            #cheminf:has-attribute
   cheminf:CHEMINF_000200 <#{h[:id]}#standard_inchikey> ;
@@ -278,7 +278,7 @@ def to_ttl h
   rdf:type cheminf:CHEMINF_000042 ;
   sio:SIO_000300 \"#{h[:comp]}\" .
 
-<#{h[:id]}#names>
+<#{h[:id]}#molecular_entity_name>
   rdf:type cheminf:CHEMINF_000043 ;
   sio:SIO_000300 \"#{h[:name]}\" .
 
