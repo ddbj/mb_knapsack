@@ -91,8 +91,8 @@ mb:KnapsackMetaboliteActivity rdf:type owl:Class ;
     sio:SIO_001278 <http://www.knapsackfamily.com/MetaboliteActivity/MA_dictionary.pdf> . #sio:is-data-item-in
 "
 
-if @refs[reference]
-  puts "#{reference_uri} dcterms:references @refs[references] ."
+if @refs.has_key?(reference_uri)
+  puts "#{reference_uri} dcterms:references @refs[reference_uri] ."
 end
 
 #    rdfs:subClassOf <http://purl.jp/bio/4/id/kb0000001321> ;
@@ -115,13 +115,13 @@ end
   @activity_ja
  end
 
-# input: knapsack-references-uniq-20210823.pmid
-def references_pmid
+ # input: id_mapping/reference-pmid-20210823.tsv
+ def references_pmid
   @refs ={}
-  file_path = 'knapsack-references-uniq-20210823.pmid'
+  file_path = './id_mapping/reference-pmid-20210823.tsv'
   File.foreach(file_path) do |line|
-      pmid, references = line.chomp.split("\t")
-      @refs[references] = pmid
+    ref_uri, pmid, title =  line.chomp.split("\t")
+    @refs[ref_uri] = pmid
   end
   @refs
 end

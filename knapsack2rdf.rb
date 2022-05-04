@@ -59,22 +59,19 @@ def output_by_id
       #sp
       sp1 = organism.split(" ").first
       rank = @ranks[sp1] || {:sp1 => '', :family => '-', :kingdom => '-'}
-
-      #ref
-      reference = reference.to_s
-      ref_key = reference.gsub(":[Pathway]", ";[Pathway]").split(";").map{|x| x.gsub(",", ", ").gsub(".",". ")}.delete_if{|x| x == "[Pathway]"}
-
       references_new =[]
-      pmids = []
-      ref_key.each do |r|
-          pmids.push @refs[r] if @refs[r] != ""
-          uri = "<reference##{Digest::MD5.hexdigest(r)}>"
-          references_new.push({
-            :title => r ,
-            :uri => "<reference##{Digest::MD5.hexdigest(r)}>" ,
-            :pmid => @refs[r] || ""
-          })
+      reference.to_s.gsub(":[Pathway]", ";[Pathway]").split(";").each do |title|
+        r = title.gsub(",", ", ").gsub(".",". ")
+        next if r == "[Pathway]"
+        ref_uri = "<reference##{Digest::MD5.hexdigest(title)}>"
+        pmid = @refs[ref_uri] || ""
+        references_new.push({
+          :title => title ,
+          :uri => ref_uri ,
+          :pmid => pmid
+        })        
       end
+
 
       ann = {
           :cid => id,
@@ -84,10 +81,8 @@ def output_by_id
           :family => rank[:family],
           :kingdom => rank[:kingdom],
           :taxonomy => @sp2taxid[organism], 
-          :reference => reference,
-          :references_new => references_new,
-          :references => ref_key,
-          :pmids => pmids
+          :reference => reference.to_s,
+          :references_new => references_new
       }
       to_ttl_annotation ann
     end
@@ -177,13 +172,12 @@ def sp_taxid
   @sp2taxid
 end
 
-# knapsack-references-uniq-20210823.pmid
 def references_pmid
   @refs ={}
-  file_path = 'knapsack-references-uniq-20210823.pmid'
+  file_path = './id_mapping/reference-pmid-20210823.tsv'
   File.foreach(file_path) do |line|
-      pmid, references = line.chomp.split("\t")
-      @refs[references] = pmid
+    ref_uri, pmid, title =  line.chomp.split("\t")
+    @refs[ref_uri] = pmid
   end
   @refs
 end
