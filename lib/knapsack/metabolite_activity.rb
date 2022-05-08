@@ -18,11 +18,7 @@ end
 
 #	input: Metabolite_Activity.tsv
 def parse_ma_main
- puts "
-mb:KnapsackMetaboliteActivity rdf:type owl:Class ;
-  rdfs:label \"(Obsolete)KnapsackMetaboliteActivity\"@en ;
-  sio:SIO_001278 <http://www.knapsackfamily.com/MetaboliteActivity/MA_dictionary.pdf> .
-"
+
  file_path = 'kushida/変換前20210927/Metabolite_Activity.tsv'
  File.foreach(file_path) do |line|
    #cid	metabolite	category	function	targetsp	reference

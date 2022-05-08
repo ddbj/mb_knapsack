@@ -16,12 +16,7 @@ end
 
 #	input: Natural_Activity_main_rev.tsv
 def parse_na_main
- puts "
-mb:KnapsackBiologicalActivity rdf:type owl:Class ;
-  rdfs:label \"(Obsolete)KnapsackBiologicalActivity\"@en ;
-  #rdfs:subClassOf <http://purl.jp/bio/4/id/kb0000002422> ;
-  sio:SIO_001278 <http://www.knapsackfamily.com/BiologicalActivity/NA_dictionary.pdf> .
-"
+
  file_path = 'kushida/変換前20210927/Natural_Activity_main_rev.tsv'
  File.foreach(file_path) do |line|
    #sp	activity	reference
