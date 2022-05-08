@@ -3,10 +3,11 @@ require 'digest/md5'
 
 module KNApSAcK
 class NaturalActivity
+    include Helper
 
 def initialize
   to_ttl_prefix
-  references_pmid # @refs
+  @refs = references_pmid # @refs
   parse_na_dict # @activity_ja
   parse_na_act  # @activity_sp2
   parse_na_main
@@ -98,33 +99,6 @@ def parse_na_act
   @activity_ja
  end
 
- # input: id_mapping/reference-pmid-20210823.tsv
- def references_pmid
-  @refs ={}
-  file_path = './id_mapping/reference-pmid-20210823.tsv'
-  File.foreach(file_path) do |line|
-    ref_uri, pmid, title =  line.chomp.split("\t")
-    @refs[ref_uri] = pmid
-  end
-  @refs
-end
-
-def to_ttl_prefix
-puts "
-@base <http://purl.jp/knapsack/> .
-@prefix : <http://purl.jp/knapsack/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix mb: <http://ddbj.nig.ac.jp/ontolofies/metabobank/> .
-@prefix sio: <http://semanticscience.org/resource/> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-
-
-"
-end
 
 end
 end
