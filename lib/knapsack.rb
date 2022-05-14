@@ -14,7 +14,7 @@ module Helper
     file_path = './id_mapping/reference-pmid-20210823.tsv'
     File.foreach(file_path) do |line|
       ref_uri, pmid, title =  line.chomp.split("\t")
-      @refs[ref_uri] = pmid
+      @refs[ref_uri] = pmid if pmid == ""
     end
     @refs
   end
@@ -51,3 +51,4 @@ require_relative 'knapsack/metabolite_activity.rb'
 require_relative 'knapsack/natural_activity.rb'
 require_relative 'knapsack/reference.rb'
 require_relative 'knapsack/biological_activity.rb'
+require_relative 'knapsack/resource.rb'

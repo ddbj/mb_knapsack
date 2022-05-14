@@ -39,14 +39,13 @@ def parse_na_main
 #{reference_uri} rdf:type mb:KNApSAcKReference ;
     dc:title \"#{reference}\" .
 
-#{activity_uri} rdf:type owl:Class ;
-    rdfs:subClassOf mb:KnapsackBiologicalActivity ;
+#{activity_uri} rdf:type mb:KnapsackNaturalActivity ;
     rdfs:label \"#{activity}\"@en ;
     skos:altLabel \"#{@activity_ja[activity]}\"@ja ;
     sio:SIO_001278 <http://www.knapsackfamily.com/BiologicalActivity/NA_dictionary.pdf> . #sio:is-data-item-in
 "
 if @refs.has_key?(reference_uri)
-  puts "#{reference_uri} dcterms:references @refs[reference_uri] ."
+  puts "#{reference_uri} dcterms:references #{@refs[reference_uri]} ."
 end
 
 #    rdfs:subClassOf <http://purl.jp/bio/4/id/kb0000001321> ;

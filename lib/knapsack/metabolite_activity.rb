@@ -82,14 +82,13 @@ def parse_ma_main
     dc:title \"#{reference}\" .
 "
     puts "
-#{activity_uri} rdf:type owl:Class ;
-    rdfs:subClassOf mb:KnapsackMetaboliteActivity ;
+#{activity_uri} rdf:type mb:KnapsackMetaboliteActivity ;
     rdfs:label \"#{function}\"@en ;
     sio:SIO_001278 <http://www.knapsackfamily.com/MetaboliteActivity/MA_dictionary.pdf> . #sio:is-data-item-in
 "
 
-if @refs.has_key?(reference_uri)
-  puts "#{reference_uri} dcterms:references @refs[reference_uri] ."
+if @refs.has_key?(reference_uri) and @refs[reference_uri] !=""
+  puts "#{reference_uri} dcterms:references #{@refs[reference_uri]} ."
 end
 
 #    rdfs:subClassOf <http://purl.jp/bio/4/id/kb0000001321> ;
