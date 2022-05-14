@@ -30,22 +30,31 @@ def parse_na_main
     activity_uri = "<activity##{Digest::MD5.hexdigest(activity)}>"
     reference_uri = "<reference##{Digest::MD5.hexdigest(reference)}>"
     #pp [annotation_uri, sp, activity, reference_uri, reference]
+
+# Annotation/Reference/Activity  
     puts "
 #{annotation_uri} rdf:type knapsack:KNApSAcKNaturalActivityAnnotation ;  
     knapsack:sp \"#{sp}\" ;
     knapsack:activity #{activity_uri} ;
-    dcterms:isReferencedBy #{reference_uri} .
-
-#{reference_uri} rdf:type knapsack:KNApSAcKReference ;
-    dc:title \"#{reference}\" .
+    dcterms:references #{reference_uri} .
 
 #{activity_uri} rdf:type knapsack:KnapsackNaturalActivity ;
     rdfs:label \"#{activity}\"@en ;
     skos:altLabel \"#{@activity_ja[activity]}\"@ja ;
+    dcterms:references #{reference_uri} ;
     sio:SIO_001278 <http://www.knapsackfamily.com/BiologicalActivity/NA_dictionary.pdf> . #sio:is-data-item-in
+
+#{reference_uri} rdf:type knapsack:KNApSAcKReference ;
+    dc:title \"#{reference}\" ;
+    dcterms:isReferencedBy #{annotation_uri} ;
+    dcterms:isReferencedBy #{activity_uri} ;
+    rdf:type bibo:Article .
+
 "
+
 if @refs.has_key?(reference_uri)
-  puts "#{reference_uri} dcterms:references #{@refs[reference_uri]} ."
+  puts "#{reference_uri} foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/#{@refs[reference_uri]}> ."
+  puts "#{reference_uri} rdfs:seeAlso <http://identifiers.org/pubmed/#{@refs[reference_uri]}> ."
 end
 
 #    rdfs:subClassOf <http://purl.jp/bio/4/id/kb0000001321> ;

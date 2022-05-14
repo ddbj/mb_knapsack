@@ -11,10 +11,12 @@ module Helper
  # input: id_mapping/reference-pmid-20210823.tsv
  def references_pmid
     @refs ={}
-    file_path = './id_mapping/reference-pmid-20210823.tsv'
+    #file_path = './id_mapping/reference-pmid-20210823.tsv'
+    file_path = './id_mapping/reference-pmid-20220504.tsv'
+    #file_path = './id_mapping/reference_uri-pmid.tsv'
     File.foreach(file_path) do |line|
       ref_uri, pmid, title =  line.chomp.split("\t")
-      @refs[ref_uri] = pmid if pmid == ""
+      @refs[ref_uri] = pmid if pmid != ""
     end
     @refs
   end
@@ -23,22 +25,23 @@ module Helper
   puts "
   @base <http://purl.jp/knapsack/> .
   @prefix : <http://purl.jp/knapsack/> .
-  @prefix knapsack: <http://purl.jp/knapsack/resource#> .  
+  @prefix knapsack: <http://purl.jp/knapsack/resource#> .
   @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
   @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
   @prefix dc: <http://purl.org/dc/elements/1.1/> .
   @prefix dcterms: <http://purl.org/dc/terms/> .
   @prefix sio: <http://semanticscience.org/resource/> .
-  #core  
+  #core
   @prefix cheminf: <http://semanticscience.org/resource/> .
   @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+  @prefix bibo: <http://purl.org/ontology/bibo/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
   @prefix obo: <http://purl.obolibrary.org/obo/> .
   #biological_activity
   @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
   @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-  
+
   "
   end    
 end
@@ -52,3 +55,4 @@ require_relative 'knapsack/natural_activity.rb'
 require_relative 'knapsack/reference.rb'
 require_relative 'knapsack/biological_activity.rb'
 require_relative 'knapsack/resource.rb'
+require_relative 'knapsack/xrefs.rb'

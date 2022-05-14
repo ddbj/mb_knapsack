@@ -64,6 +64,7 @@ def output_by_id
         r = title.gsub(",", ", ").gsub(".",". ")
         next if r == "[Pathway]"
         ref_uri = "<reference##{Digest::MD5.hexdigest(title)}>"
+        #ref_uri = "<reference##{Digest::MD5.hexdigest(r)}>"
         pmid = @refs[ref_uri] || ""
         references_new.push({
           :title => title ,
@@ -278,7 +279,7 @@ def to_ttl h
   rdfs:seeAlso <http://identifiers.org/inchi/#{h[:inchi]}>.
   
 <#{h[:id]}#start_substance>
-  rdf:type kanpsack:Start_substance ;
+  rdf:type knapsack:Start_substance ;
   sio:SIO_000300 \"#{h[:substance]}\" .
   "
   
@@ -295,7 +296,7 @@ end
 def wiki_title str
   #Marc|ias,__F._A.__et_al._,__Phytochemistry,__1998,__48,__631-636_(isol,__pmr,__cmr)>
   #Lycopersicon_esculentum_var._`Tangella'
-  str.sub("Marc|ias","Marclias").sub("`Tangella'","'Tangella'").sub("`Yalaha`","'Yalaha'").gsub(" ","_").gsub("<","").gsub(">","")
+  str.sub("Marc|ias","Marclias").sub("`Tangella'","'Tangella'").sub("`Yalaha`","'Yalaha'").gsub(" ","_").gsub("<","").gsub(">","").gsub("[","_").gsub("]","_")
   #str.gsub(/[<>|`]/){|s| "_" }
 end
 
@@ -305,7 +306,7 @@ def to_ttl_annotation ann
 
   ann[:references_new].each do |ref|
     puts "
-<#{ann[:cid]}> dcterms:isReferencedBy #{ref[:uri]} ."
+<#{ann[:cid]}> dcterms:references #{ref[:uri]} ."
   end
 
   puts "
@@ -315,8 +316,9 @@ def to_ttl_annotation ann
   knapsack:sp1 \"#{ann[:sp1]}\" ;
   knapsack:family \"#{ann[:family]}\" ;
   knapsack:kingdom \"#{ann[:kingdom]}\" ;"
+  
   ann[:references_new].each do |ref|
-    puts "  dcterms:isReferencedBy #{ref[:uri]} ;"
+    puts "  dcterms:references #{ref[:uri]} ;"
   end
 
   puts "  rdfs:seeAlso <http://identifiers.org/taxonomy/#{ann[:taxonomy]}> ;" if ann[:taxonomy].to_i > 0
@@ -328,13 +330,21 @@ def to_ttl_annotation ann
   ann[:references_new].each do |ref|
     puts "
 #{ref[:uri]} rdf:type knapsack:KNApSAcKReference ;
+  dc:title \"#{ref[:title]}\" ;
+  dcterms:isReferencedBy #{ann[:uri]} ;
+  foaf:homepage <https://mb.metabolomics.jp/wiki/Reference:#{wiki_title(ref[:title])}> ;
 "
+
+    #if @refs.has_key?(ref[:uri])
+    #  reference_uri = ref[:uri]
+    #  puts "  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/#{@refs[reference_uri]}> ;"
+    #  puts "  rdfs:seeAlso <http://identifiers.org/pubmed/#{@refs[reference_uri]}> ;"
+    #end
     if ref[:pmid] !=""
-      puts "  dc:identifier \"#{ref[:pmid]}\" ;"
-      puts "  dcterms:references  <http://identifiers.org/pubmed/#{ref[:pmid]}> ;"
+      puts "  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/#{ref[:pmid]}> ;"
+      puts "  rdfs:seeAlso <http://identifiers.org/pubmed/#{ref[:pmid]}> ;"
     end
-    puts "  dc:title \"#{ref[:title]}\" ;"
-    puts "  foaf:homepage <https://mb.metabolomics.jp/wiki/Reference:#{wiki_title(ref[:title])}> . "
+    puts "  rdf:type bibo:Article . "
     puts
   end
 end

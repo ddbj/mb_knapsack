@@ -1,179 +1,189 @@
 
-@base <http://purl.jp/knapsack/> .
-@prefix : <http://purl.jp/knapsack/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix mb: <http://ddbj.nig.ac.jp/ontolofies/metabobank/> .
-@prefix sio: <http://semanticscience.org/resource/> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
+  @base <http://purl.jp/knapsack/> .
+  @prefix : <http://purl.jp/knapsack/> .
+  @prefix knapsack: <http://purl.jp/knapsack/resource#> .
+  @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+  @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+  @prefix dc: <http://purl.org/dc/elements/1.1/> .
+  @prefix dcterms: <http://purl.org/dc/terms/> .
+  @prefix sio: <http://semanticscience.org/resource/> .
+  #core
+  @prefix cheminf: <http://semanticscience.org/resource/> .
+  @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+  @prefix bibo: <http://purl.org/ontology/bibo/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+  @prefix obo: <http://purl.obolibrary.org/obo/> .
+  #biological_activity
+  @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+  @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 
-
-mb:KnapsackMetaboliteActivity rdf:type owl:Class ;
-  rdfs:label "(Obsolete)KnapsackMetaboliteActivity"@en ;
-  sio:SIO_001278 <http://www.knapsackfamily.com/MetaboliteActivity/MA_dictionary.pdf> .
+  
 
 <C00000001>
-  rdf:type mb:KNApSAcKMetaboliteRecord ;
+  rdf:type knapsack:KNApSAcKMetaboliteActivityRecord ;
   dc:identifier "C00000001" ;
-  mb:category "Enhance plant growth" ;
-  mb:function "exhibit alpha-amylase activity in aleurone" ;
-  mb:targetsp "Hordeum vulgare" ;
-  dcterms:isReferencedBy <reference#0ed21477f86f5a0e270b3fccc668904a> ;
+  knapsack:category "Enhance plant growth" ;
+  knapsack:function "exhibit alpha-amylase activity in aleurone" ;
+  knapsack:targetsp "Hordeum vulgare" ;
+  dcterms:references <reference#0ed21477f86f5a0e270b3fccc668904a> ;
   sio:SIO_000255 <annotation#d0a06d1c3e50afefc2a4136e3ad0001a> ; # sio:has-annotation
-  mb:has-activity <activity#e6114a598fe889c30e545c94477e309c> ;
+  knapsack:has-activity <activity#e6114a598fe889c30e545c94477e309c> ;
   rdfs:label "Gibberellin A1;GA1" .
 
-<annotation#d0a06d1c3e50afefc2a4136e3ad0001a> rdf:type mb:KNApSAcKMetaboliteActivityAnnotation ;  
-    mb:sp "Hordeum vulgare" ;
-    dcterms:isReferencedBy <reference#0ed21477f86f5a0e270b3fccc668904a> .
-    
+<annotation#d0a06d1c3e50afefc2a4136e3ad0001a> rdf:type knapsack:KNApSAcKMetaboliteActivityAnnotation ;  
+    knapsack:sp "Hordeum vulgare" ;
+    dcterms:references <reference#0ed21477f86f5a0e270b3fccc668904a> .
+
 <activity#e6114a598fe889c30e545c94477e309c> sio:SIO_000255 <annotation#d0a06d1c3e50afefc2a4136e3ad0001a> .  # sio:has-annotation
 
-    
-
-<reference#0ed21477f86f5a0e270b3fccc668904a> rdf:type mb:KNApSAcKReference ;
-    dc:title "Reeve,J.Exp.Bot.,25,(1974),431-445" .
-
-<activity#e6114a598fe889c30e545c94477e309c> rdf:type owl:Class ;
-    rdfs:subClassOf mb:KnapsackMetaboliteActivity ;
+<activity#e6114a598fe889c30e545c94477e309c> rdf:type knapsack:KnapsackMetaboliteActivity ;
     rdfs:label "exhibit alpha-amylase activity in aleurone"@en ;
     sio:SIO_001278 <http://www.knapsackfamily.com/MetaboliteActivity/MA_dictionary.pdf> . #sio:is-data-item-in
 
+<reference#0ed21477f86f5a0e270b3fccc668904a> rdf:type knapsack:KNApSAcKReference ;
+    dc:title "Reeve,J.Exp.Bot.,25,(1974),431-445" ;
+    dcterms:isReferencedBy <annotation#d0a06d1c3e50afefc2a4136e3ad0001a> ;
+    dcterms:isReferencedBy <activity#e6114a598fe889c30e545c94477e309c> ;
+    rdf:type bibo:Article .
+    
+
 <C00000001>
-  rdf:type mb:KNApSAcKMetaboliteRecord ;
+  rdf:type knapsack:KNApSAcKMetaboliteActivityRecord ;
   dc:identifier "C00000001" ;
-  mb:category "Enhance stem growth" ;
-  mb:function "induce epicotyl elongation" ;
-  mb:targetsp "Pisum sativum cv. Progress No. 9" ;
-  dcterms:isReferencedBy <reference#0ed21477f86f5a0e270b3fccc668904a> ;
+  knapsack:category "Enhance stem growth" ;
+  knapsack:function "induce epicotyl elongation" ;
+  knapsack:targetsp "Pisum sativum cv. Progress No. 9" ;
+  dcterms:references <reference#0ed21477f86f5a0e270b3fccc668904a> ;
   sio:SIO_000255 <annotation#5f8385c86de263100c082cb53860bb60> ; # sio:has-annotation
-  mb:has-activity <activity#f2c8a9a42a4f780707c49b0e5de44f72> ;
+  knapsack:has-activity <activity#f2c8a9a42a4f780707c49b0e5de44f72> ;
   rdfs:label "Gibberellin A1;GA1" .
 
-<annotation#5f8385c86de263100c082cb53860bb60> rdf:type mb:KNApSAcKMetaboliteActivityAnnotation ;  
-    mb:sp "Pisum sativum cv. Progress No. 9" ;
-    dcterms:isReferencedBy <reference#0ed21477f86f5a0e270b3fccc668904a> .
-    
+<annotation#5f8385c86de263100c082cb53860bb60> rdf:type knapsack:KNApSAcKMetaboliteActivityAnnotation ;  
+    knapsack:sp "Pisum sativum cv. Progress No. 9" ;
+    dcterms:references <reference#0ed21477f86f5a0e270b3fccc668904a> .
+
 <activity#f2c8a9a42a4f780707c49b0e5de44f72> sio:SIO_000255 <annotation#5f8385c86de263100c082cb53860bb60> .  # sio:has-annotation
 
-    
-
-<reference#0ed21477f86f5a0e270b3fccc668904a> rdf:type mb:KNApSAcKReference ;
-    dc:title "Reeve,J.Exp.Bot.,25,(1974),431-445" .
-
-<activity#f2c8a9a42a4f780707c49b0e5de44f72> rdf:type owl:Class ;
-    rdfs:subClassOf mb:KnapsackMetaboliteActivity ;
+<activity#f2c8a9a42a4f780707c49b0e5de44f72> rdf:type knapsack:KnapsackMetaboliteActivity ;
     rdfs:label "induce epicotyl elongation"@en ;
     sio:SIO_001278 <http://www.knapsackfamily.com/MetaboliteActivity/MA_dictionary.pdf> . #sio:is-data-item-in
 
+<reference#0ed21477f86f5a0e270b3fccc668904a> rdf:type knapsack:KNApSAcKReference ;
+    dc:title "Reeve,J.Exp.Bot.,25,(1974),431-445" ;
+    dcterms:isReferencedBy <annotation#5f8385c86de263100c082cb53860bb60> ;
+    dcterms:isReferencedBy <activity#f2c8a9a42a4f780707c49b0e5de44f72> ;
+    rdf:type bibo:Article .
+    
+
 <C00000001>
-  rdf:type mb:KNApSAcKMetaboliteRecord ;
+  rdf:type knapsack:KNApSAcKMetaboliteActivityRecord ;
   dc:identifier "C00000001" ;
-  mb:category "Enhance stem growth" ;
-  mb:function "induce hypocotyl elongation" ;
-  mb:targetsp "Lactuca sativa" ;
-  dcterms:isReferencedBy <reference#0ed21477f86f5a0e270b3fccc668904a> ;
+  knapsack:category "Enhance stem growth" ;
+  knapsack:function "induce hypocotyl elongation" ;
+  knapsack:targetsp "Lactuca sativa" ;
+  dcterms:references <reference#0ed21477f86f5a0e270b3fccc668904a> ;
   sio:SIO_000255 <annotation#ee874f7a86a8dbdbd8f33e6cf0a765e9> ; # sio:has-annotation
-  mb:has-activity <activity#3f60859a701da86b59eca658899844d0> ;
+  knapsack:has-activity <activity#3f60859a701da86b59eca658899844d0> ;
   rdfs:label "Gibberellin A1;GA1" .
 
-<annotation#ee874f7a86a8dbdbd8f33e6cf0a765e9> rdf:type mb:KNApSAcKMetaboliteActivityAnnotation ;  
-    mb:sp "Lactuca sativa" ;
-    dcterms:isReferencedBy <reference#0ed21477f86f5a0e270b3fccc668904a> .
-    
+<annotation#ee874f7a86a8dbdbd8f33e6cf0a765e9> rdf:type knapsack:KNApSAcKMetaboliteActivityAnnotation ;  
+    knapsack:sp "Lactuca sativa" ;
+    dcterms:references <reference#0ed21477f86f5a0e270b3fccc668904a> .
+
 <activity#3f60859a701da86b59eca658899844d0> sio:SIO_000255 <annotation#ee874f7a86a8dbdbd8f33e6cf0a765e9> .  # sio:has-annotation
 
-    
-
-<reference#0ed21477f86f5a0e270b3fccc668904a> rdf:type mb:KNApSAcKReference ;
-    dc:title "Reeve,J.Exp.Bot.,25,(1974),431-445" .
-
-<activity#3f60859a701da86b59eca658899844d0> rdf:type owl:Class ;
-    rdfs:subClassOf mb:KnapsackMetaboliteActivity ;
+<activity#3f60859a701da86b59eca658899844d0> rdf:type knapsack:KnapsackMetaboliteActivity ;
     rdfs:label "induce hypocotyl elongation"@en ;
     sio:SIO_001278 <http://www.knapsackfamily.com/MetaboliteActivity/MA_dictionary.pdf> . #sio:is-data-item-in
 
+<reference#0ed21477f86f5a0e270b3fccc668904a> rdf:type knapsack:KNApSAcKReference ;
+    dc:title "Reeve,J.Exp.Bot.,25,(1974),431-445" ;
+    dcterms:isReferencedBy <annotation#ee874f7a86a8dbdbd8f33e6cf0a765e9> ;
+    dcterms:isReferencedBy <activity#3f60859a701da86b59eca658899844d0> ;
+    rdf:type bibo:Article .
+    
+
 <C00000001>
-  rdf:type mb:KNApSAcKMetaboliteRecord ;
+  rdf:type knapsack:KNApSAcKMetaboliteActivityRecord ;
   dc:identifier "C00000001" ;
-  mb:category "Enhance stem growth" ;
-  mb:function "induce leaf-sheath elongation" ;
-  mb:targetsp "Oryza sativa cv. Tanginbozu" ;
-  dcterms:isReferencedBy <reference#0ed21477f86f5a0e270b3fccc668904a> ;
+  knapsack:category "Enhance stem growth" ;
+  knapsack:function "induce leaf-sheath elongation" ;
+  knapsack:targetsp "Oryza sativa cv. Tanginbozu" ;
+  dcterms:references <reference#0ed21477f86f5a0e270b3fccc668904a> ;
   sio:SIO_000255 <annotation#ebae90d803675221b48eb61026b6a934> ; # sio:has-annotation
-  mb:has-activity <activity#0d640c7f43c9eea1639ae08baed86cbd> ;
+  knapsack:has-activity <activity#0d640c7f43c9eea1639ae08baed86cbd> ;
   rdfs:label "Gibberellin A1;GA1" .
 
-<annotation#ebae90d803675221b48eb61026b6a934> rdf:type mb:KNApSAcKMetaboliteActivityAnnotation ;  
-    mb:sp "Oryza sativa cv. Tanginbozu" ;
-    dcterms:isReferencedBy <reference#0ed21477f86f5a0e270b3fccc668904a> .
-    
+<annotation#ebae90d803675221b48eb61026b6a934> rdf:type knapsack:KNApSAcKMetaboliteActivityAnnotation ;  
+    knapsack:sp "Oryza sativa cv. Tanginbozu" ;
+    dcterms:references <reference#0ed21477f86f5a0e270b3fccc668904a> .
+
 <activity#0d640c7f43c9eea1639ae08baed86cbd> sio:SIO_000255 <annotation#ebae90d803675221b48eb61026b6a934> .  # sio:has-annotation
 
-    
-
-<reference#0ed21477f86f5a0e270b3fccc668904a> rdf:type mb:KNApSAcKReference ;
-    dc:title "Reeve,J.Exp.Bot.,25,(1974),431-445" .
-
-<activity#0d640c7f43c9eea1639ae08baed86cbd> rdf:type owl:Class ;
-    rdfs:subClassOf mb:KnapsackMetaboliteActivity ;
+<activity#0d640c7f43c9eea1639ae08baed86cbd> rdf:type knapsack:KnapsackMetaboliteActivity ;
     rdfs:label "induce leaf-sheath elongation"@en ;
     sio:SIO_001278 <http://www.knapsackfamily.com/MetaboliteActivity/MA_dictionary.pdf> . #sio:is-data-item-in
 
+<reference#0ed21477f86f5a0e270b3fccc668904a> rdf:type knapsack:KNApSAcKReference ;
+    dc:title "Reeve,J.Exp.Bot.,25,(1974),431-445" ;
+    dcterms:isReferencedBy <annotation#ebae90d803675221b48eb61026b6a934> ;
+    dcterms:isReferencedBy <activity#0d640c7f43c9eea1639ae08baed86cbd> ;
+    rdf:type bibo:Article .
+    
+
 <C00000001>
-  rdf:type mb:KNApSAcKMetaboliteRecord ;
+  rdf:type knapsack:KNApSAcKMetaboliteActivityRecord ;
   dc:identifier "C00000001" ;
-  mb:category "Enhance stem growth" ;
-  mb:function "induce leaf-sheath elongation" ;
-  mb:targetsp "Zea mays d1" ;
-  dcterms:isReferencedBy <reference#38f11889f07684f24d585ccc92406e20> ;
+  knapsack:category "Enhance stem growth" ;
+  knapsack:function "induce leaf-sheath elongation" ;
+  knapsack:targetsp "Zea mays d1" ;
+  dcterms:references <reference#38f11889f07684f24d585ccc92406e20> ;
   sio:SIO_000255 <annotation#3391421396b62e89c8cc2b3d7e4ec34d> ; # sio:has-annotation
-  mb:has-activity <activity#0d640c7f43c9eea1639ae08baed86cbd> ;
+  knapsack:has-activity <activity#0d640c7f43c9eea1639ae08baed86cbd> ;
   rdfs:label "Gibberellin A1;GA1" .
 
-<annotation#3391421396b62e89c8cc2b3d7e4ec34d> rdf:type mb:KNApSAcKMetaboliteActivityAnnotation ;  
-    mb:sp "Zea mays d1" ;
-    dcterms:isReferencedBy <reference#38f11889f07684f24d585ccc92406e20> .
-    
+<annotation#3391421396b62e89c8cc2b3d7e4ec34d> rdf:type knapsack:KNApSAcKMetaboliteActivityAnnotation ;  
+    knapsack:sp "Zea mays d1" ;
+    dcterms:references <reference#38f11889f07684f24d585ccc92406e20> .
+
 <activity#0d640c7f43c9eea1639ae08baed86cbd> sio:SIO_000255 <annotation#3391421396b62e89c8cc2b3d7e4ec34d> .  # sio:has-annotation
 
-    
-
-<reference#38f11889f07684f24d585ccc92406e20> rdf:type mb:KNApSAcKReference ;
-    dc:title "Crozier,Can.J.Bot.,48,(1970),867-877" .
-
-<activity#0d640c7f43c9eea1639ae08baed86cbd> rdf:type owl:Class ;
-    rdfs:subClassOf mb:KnapsackMetaboliteActivity ;
+<activity#0d640c7f43c9eea1639ae08baed86cbd> rdf:type knapsack:KnapsackMetaboliteActivity ;
     rdfs:label "induce leaf-sheath elongation"@en ;
     sio:SIO_001278 <http://www.knapsackfamily.com/MetaboliteActivity/MA_dictionary.pdf> . #sio:is-data-item-in
+
+<reference#38f11889f07684f24d585ccc92406e20> rdf:type knapsack:KNApSAcKReference ;
+    dc:title "Crozier,Can.J.Bot.,48,(1970),867-877" ;
+    dcterms:isReferencedBy <annotation#3391421396b62e89c8cc2b3d7e4ec34d> ;
+    dcterms:isReferencedBy <activity#0d640c7f43c9eea1639ae08baed86cbd> ;
+    rdf:type bibo:Article .
+    
 
 <C00000001>
-  rdf:type mb:KNApSAcKMetaboliteRecord ;
+  rdf:type knapsack:KNApSAcKMetaboliteActivityRecord ;
   dc:identifier "C00000001" ;
-  mb:category "Enhance stem growth" ;
-  mb:function "induce leaf-sheath elongation" ;
-  mb:targetsp "Zea mays d3" ;
-  dcterms:isReferencedBy <reference#38f11889f07684f24d585ccc92406e20> ;
+  knapsack:category "Enhance stem growth" ;
+  knapsack:function "induce leaf-sheath elongation" ;
+  knapsack:targetsp "Zea mays d3" ;
+  dcterms:references <reference#38f11889f07684f24d585ccc92406e20> ;
   sio:SIO_000255 <annotation#acadfdfafdd87fc252e8360efeb36ffc> ; # sio:has-annotation
-  mb:has-activity <activity#0d640c7f43c9eea1639ae08baed86cbd> ;
+  knapsack:has-activity <activity#0d640c7f43c9eea1639ae08baed86cbd> ;
   rdfs:label "Gibberellin A1;GA1" .
 
-<annotation#acadfdfafdd87fc252e8360efeb36ffc> rdf:type mb:KNApSAcKMetaboliteActivityAnnotation ;  
-    mb:sp "Zea mays d3" ;
-    dcterms:isReferencedBy <reference#38f11889f07684f24d585ccc92406e20> .
-    
+<annotation#acadfdfafdd87fc252e8360efeb36ffc> rdf:type knapsack:KNApSAcKMetaboliteActivityAnnotation ;  
+    knapsack:sp "Zea mays d3" ;
+    dcterms:references <reference#38f11889f07684f24d585ccc92406e20> .
+
 <activity#0d640c7f43c9eea1639ae08baed86cbd> sio:SIO_000255 <annotation#acadfdfafdd87fc252e8360efeb36ffc> .  # sio:has-annotation
 
-    
-
-<reference#38f11889f07684f24d585ccc92406e20> rdf:type mb:KNApSAcKReference ;
-    dc:title "Crozier,Can.J.Bot.,48,(1970),867-877" .
-
-<activity#0d640c7f43c9eea1639ae08baed86cbd> rdf:type owl:Class ;
-    rdfs:subClassOf mb:KnapsackMetaboliteActivity ;
+<activity#0d640c7f43c9eea1639ae08baed86cbd> rdf:type knapsack:KnapsackMetaboliteActivity ;
     rdfs:label "induce leaf-sheath elongation"@en ;
     sio:SIO_001278 <http://www.knapsackfamily.com/MetaboliteActivity/MA_dictionary.pdf> . #sio:is-data-item-in
+
+<reference#38f11889f07684f24d585ccc92406e20> rdf:type knapsack:KNApSAcKReference ;
+    dc:title "Crozier,Can.J.Bot.,48,(1970),867-877" ;
+    dcterms:isReferencedBy <annotation#acadfdfafdd87fc252e8360efeb36ffc> ;
+    dcterms:isReferencedBy <activity#0d640c7f43c9eea1639ae08baed86cbd> ;
+    rdf:type bibo:Article .
+    

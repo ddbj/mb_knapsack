@@ -47,7 +47,7 @@ def parse_ma_main
   knapsack:category \"#{category}\" ;
   knapsack:function \"#{function}\" ;
   knapsack:targetsp \"#{targetsp}\" ;
-  dcterms:isReferencedBy #{reference_uri} ;
+  dcterms:references #{reference_uri} ;
   sio:SIO_000255 #{annotation_uri} ; # sio:has-annotation
   knapsack:has-activity #{activity_uri} ;
   rdfs:label \"#{metabolite}\" .
@@ -59,7 +59,7 @@ def parse_ma_main
   knapsack:category \"#{category}\" ;
   knapsack:function \"#{function}\" ;
   knapsack:targetsp \"#{targetsp}\" ;
-  dcterms:isReferencedBy #{reference_uri} ;
+  dcterms:references #{reference_uri} ;
   knapsack:has-activity #{activity_uri} ;
   rdfs:label \"#{metabolite}\" 
     ].
@@ -67,33 +67,32 @@ def parse_ma_main
     end
 
     unless targetsp == ""
-    puts "
+      puts "
 #{annotation_uri} rdf:type knapsack:KNApSAcKMetaboliteActivityAnnotation ;  
     knapsack:sp \"#{targetsp}\" ;
-    dcterms:isReferencedBy #{reference_uri} .
-    
+    dcterms:references #{reference_uri} .
+
 #{activity_uri} sio:SIO_000255 #{annotation_uri} .  # sio:has-annotation
-
-    "
-
-    end
-    puts "
-#{reference_uri} rdf:type knapsack:KNApSAcKReference ;
-    dc:title \"#{reference}\" .
 "
+    end
+
     puts "
 #{activity_uri} rdf:type knapsack:KnapsackMetaboliteActivity ;
     rdfs:label \"#{function}\"@en ;
     sio:SIO_001278 <http://www.knapsackfamily.com/MetaboliteActivity/MA_dictionary.pdf> . #sio:is-data-item-in
+"    
+    puts "
+#{reference_uri} rdf:type knapsack:KNApSAcKReference ;
+    dc:title \"#{reference}\" ;
+    dcterms:isReferencedBy #{annotation_uri} ;
+    dcterms:isReferencedBy #{activity_uri} ;
+    rdf:type bibo:Article .
+    
 "
-
-if @refs.has_key?(reference_uri) and @refs[reference_uri] !=""
-  puts "#{reference_uri} dcterms:references #{@refs[reference_uri]} ."
-end
-
-#    rdfs:subClassOf <http://purl.jp/bio/4/id/kb0000001321> ;
-#    skos:exactMatch "http://purl.obolibrary.org/obo/CHEBI_64995" .
-
+    if @refs.has_key?(reference_uri)
+      puts "#{reference_uri} foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/#{@refs[reference_uri]}> ."
+      puts "#{reference_uri} rdfs:seeAlso <http://identifiers.org/pubmed/#{@refs[reference_uri]}> ."
+    end
    end
  end
 end
