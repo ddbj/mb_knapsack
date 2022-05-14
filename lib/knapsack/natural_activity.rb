@@ -31,15 +31,15 @@ def parse_na_main
     reference_uri = "<reference##{Digest::MD5.hexdigest(reference)}>"
     #pp [annotation_uri, sp, activity, reference_uri, reference]
     puts "
-#{annotation_uri} rdf:type mb:KNApSAcKBiologicalActivityAnnotation ;  
-    mb:sp \"#{sp}\" ;
-    mb:activity #{activity_uri} ;
+#{annotation_uri} rdf:type knapsack:KNApSAcKNaturalActivityAnnotation ;  
+    knapsack:sp \"#{sp}\" ;
+    knapsack:activity #{activity_uri} ;
     dcterms:isReferencedBy #{reference_uri} .
 
-#{reference_uri} rdf:type mb:KNApSAcKReference ;
+#{reference_uri} rdf:type knapsack:KNApSAcKReference ;
     dc:title \"#{reference}\" .
 
-#{activity_uri} rdf:type mb:KnapsackNaturalActivity ;
+#{activity_uri} rdf:type knapsack:KnapsackNaturalActivity ;
     rdfs:label \"#{activity}\"@en ;
     skos:altLabel \"#{@activity_ja[activity]}\"@ja ;
     sio:SIO_001278 <http://www.knapsackfamily.com/BiologicalActivity/NA_dictionary.pdf> . #sio:is-data-item-in
@@ -73,7 +73,7 @@ def parse_na_act
 #{activity_uri} rdfs:label \"#{activity}\" ;
   sio:SIO_000255 #{annotation_uri} . #sio:has-annotation   
 
-#{annotation_uri} mb:sp2 \"#{sp2}\" .
+#{annotation_uri} knapsack:sp2 \"#{sp2}\" .
 "
     end
   end

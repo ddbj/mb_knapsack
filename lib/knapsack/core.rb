@@ -216,10 +216,10 @@ def to_ttl h
   subject ="<#{h[:id]}>"
   puts "
 #{subject}
-  rdf:type mb:KNApSAcKCoreRecord ;
+  rdf:type knapsack:KNApSAcKCoreRecord ;
   dc:identifier \"#{h[:id]}\" ;
   rdfs:label \"#{h[:name]}\" ;
-  mb:fid \"#{h[:fid]}\" ;
+  knapsack:fid \"#{h[:fid]}\" ;
   foaf:homepage <https://mb.metabolomics.jp/wiki/Compound:#{h[:id]}> ;
   rdfs:seeAlso <http://www.knapsackfamily.com/knapsack_core/info.php?sname=C_ID&word=#{h[:id]}> ;
   sio:SIO_000008 <#{h[:id]}#molecular_formula> ;         #sio:has-attribute
@@ -241,12 +241,12 @@ def to_ttl h
   rdfs:seeAlso <https://mb.metabolomics.jp/wiki/Mol:#{h[:id]}> .
 
 <#{h[:id]}#x-chemdraw> 
-  rdf:type mb:CDXfile ;
+  rdf:type knapsack:CDXfile ;
   dcterms:format <nrn:mimetype:chemical/x-chemdraw> ; 
   rdfs:seeAlso <https://mb.metabolomics.jp/wiki/File:#{h[:id]}.cdx> .
 
 <#{h[:id]}#gif> 
-  rdf:type mb:SDfile ;
+  rdf:type knapsack:SDfile ;
   dcterms:format <nrn:mimetype:image/gif> ; 
   rdfs:seeAlso <https://mb.metabolomics.jp/wiki/File:#{h[:id]}.gif> .
 
@@ -278,7 +278,7 @@ def to_ttl h
   rdfs:seeAlso <http://identifiers.org/inchi/#{h[:inchi]}>.
   
 <#{h[:id]}#start_substance>
-  rdf:type mb:Start_substance ;
+  rdf:type kanpsack:Start_substance ;
   sio:SIO_000300 \"#{h[:substance]}\" .
   "
   
@@ -309,12 +309,12 @@ def to_ttl_annotation ann
   end
 
   puts "
-#{ann[:uri]} rdf:type mb:KNApSAcKCoreAnnotation ;
-  mb:sp \"#{ann[:organism]}\" ;
-  mb:references \"#{ann[:reference]}\" ;
-  mb:sp1 \"#{ann[:sp1]}\" ;
-  mb:family \"#{ann[:family]}\" ;
-  mb:kingdom \"#{ann[:kingdom]}\" ;"
+#{ann[:uri]} rdf:type knapsack:KNApSAcKCoreAnnotation ;
+  knapsack:sp \"#{ann[:organism]}\" ;
+  knapsack:references \"#{ann[:reference]}\" ;
+  knapsack:sp1 \"#{ann[:sp1]}\" ;
+  knapsack:family \"#{ann[:family]}\" ;
+  knapsack:kingdom \"#{ann[:kingdom]}\" ;"
   ann[:references_new].each do |ref|
     puts "  dcterms:isReferencedBy #{ref[:uri]} ;"
   end
@@ -327,7 +327,7 @@ def to_ttl_annotation ann
   ### references_new
   ann[:references_new].each do |ref|
     puts "
-#{ref[:uri]} rdf:type mb:KNApSAcKReference ;
+#{ref[:uri]} rdf:type knapsack:KNApSAcKReference ;
 "
     if ref[:pmid] !=""
       puts "  dc:identifier \"#{ref[:pmid]}\" ;"

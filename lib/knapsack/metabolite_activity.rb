@@ -42,25 +42,25 @@ def parse_ma_main
     unless cid == "" and targetsp == ""
       puts "
 #{compound_uri}
-  rdf:type mb:KNApSAcKMetaboliteRecord ;
+  rdf:type knapsack:KNApSAcKMetaboliteActivityRecord ;
   dc:identifier \"#{cid}\" ;
-  mb:category \"#{category}\" ;
-  mb:function \"#{function}\" ;
-  mb:targetsp \"#{targetsp}\" ;
+  knapsack:category \"#{category}\" ;
+  knapsack:function \"#{function}\" ;
+  knapsack:targetsp \"#{targetsp}\" ;
   dcterms:isReferencedBy #{reference_uri} ;
   sio:SIO_000255 #{annotation_uri} ; # sio:has-annotation
-  mb:has-activity #{activity_uri} ;
+  knapsack:has-activity #{activity_uri} ;
   rdfs:label \"#{metabolite}\" .
 "   
     else 
       puts "
 [
-  rdf:type mb:KNApSAcKMetaboliteRecord ;
-  mb:category \"#{category}\" ;
-  mb:function \"#{function}\" ;
-  mb:targetsp \"#{targetsp}\" ;
+  rdf:type knapsack:KNApSAcKMetaboliteActivityRecord ;
+  knapsack:category \"#{category}\" ;
+  knapsack:function \"#{function}\" ;
+  knapsack:targetsp \"#{targetsp}\" ;
   dcterms:isReferencedBy #{reference_uri} ;
-  mb:has-activity #{activity_uri} ;
+  knapsack:has-activity #{activity_uri} ;
   rdfs:label \"#{metabolite}\" 
     ].
 "  
@@ -68,8 +68,8 @@ def parse_ma_main
 
     unless targetsp == ""
     puts "
-#{annotation_uri} rdf:type mb:KNApSAcKMetaboliteActivityAnnotation ;  
-    mb:sp \"#{targetsp}\" ;
+#{annotation_uri} rdf:type knapsack:KNApSAcKMetaboliteActivityAnnotation ;  
+    knapsack:sp \"#{targetsp}\" ;
     dcterms:isReferencedBy #{reference_uri} .
     
 #{activity_uri} sio:SIO_000255 #{annotation_uri} .  # sio:has-annotation
@@ -78,11 +78,11 @@ def parse_ma_main
 
     end
     puts "
-#{reference_uri} rdf:type mb:KNApSAcKReference ;
+#{reference_uri} rdf:type knapsack:KNApSAcKReference ;
     dc:title \"#{reference}\" .
 "
     puts "
-#{activity_uri} rdf:type mb:KnapsackMetaboliteActivity ;
+#{activity_uri} rdf:type knapsack:KnapsackMetaboliteActivity ;
     rdfs:label \"#{function}\"@en ;
     sio:SIO_001278 <http://www.knapsackfamily.com/MetaboliteActivity/MA_dictionary.pdf> . #sio:is-data-item-in
 "
