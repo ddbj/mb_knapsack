@@ -1,19 +1,19 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix mb: <http://ddbj.nig.ac.jp/ontolofies/metabobank/> .
+@prefix knapsack: <http://purl.jp/knapsack/resource#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sio: <http://semanticscience.org/resource/> .
 
 
-mb:KnapsackBiologicalActivity rdf:type owl:Class ;
+knapsack:KnapsackBiologicalActivity rdf:type owl:Class ;
     rdfs:label "(Obsolete)KnapsackBiologicalActivity"@en .
     
-mb:KnapsackNaturalActivity rdf:type owl:Class ;
-    rdfs:subClassOf mb:KnapsackBiologicalActivity ;
+knapsack:KnapsackNaturalActivity rdf:type owl:Class ;
+    rdfs:subClassOf knapsack:KnapsackBiologicalActivity ;
     rdfs:label "(Obsolete)KnapsackNaturalActivity"@en ;
     sio:SIO_001278 <http://www.knapsackfamily.com/BiologicalActivity/NA_dictionary.pdf> .
 
-mb:KnapsackMetaboliteActivity rdf:type owl:Class ;
-    rdfs:subClassOf mb:KnapsackBiologicalActivity ;
+knapsack:KnapsackMetaboliteActivity rdf:type owl:Class ;
+    rdfs:subClassOf knapsack:KnapsackBiologicalActivity ;
     rdfs:label "(Obsolete)KnapsackMetaboliteActivity"@en ;
     sio:SIO_001278 <http://www.knapsackfamily.com/MetaboliteActivity/MA_dictionary.pdf> .
