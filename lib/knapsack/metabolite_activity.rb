@@ -49,7 +49,7 @@ def parse_ma_main
   knapsack:targetsp \"#{targetsp}\" ;
   dcterms:references #{reference_uri} ;
   sio:SIO_000255 #{annotation_uri} ; # sio:has-annotation
-  knapsack:has-activity #{activity_uri} ;
+  sio:SIO_000225 #{activity_uri} ;   # sio:has-function
   rdfs:label \"#{metabolite}\" .
 "   
     else 
@@ -60,7 +60,7 @@ def parse_ma_main
   knapsack:function \"#{function}\" ;
   knapsack:targetsp \"#{targetsp}\" ;
   dcterms:references #{reference_uri} ;
-  knapsack:has-activity #{activity_uri} ;
+  sio:SIO_000225 #{activity_uri} ;   # sio:has-function
   rdfs:label \"#{metabolite}\" 
     ].
 "  
