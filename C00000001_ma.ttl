@@ -28,7 +28,7 @@
   knapsack:targetsp "Hordeum vulgare" ;
   dcterms:references <reference#0ed21477f86f5a0e270b3fccc668904a> ;
   sio:SIO_000255 <annotation#d0a06d1c3e50afefc2a4136e3ad0001a> ; # sio:has-annotation
-  knapsack:has-activity <activity#e6114a598fe889c30e545c94477e309c> ;
+  sio:SIO_000225 <activity#e6114a598fe889c30e545c94477e309c> ;   # sio:has-function
   rdfs:label "Gibberellin A1;GA1" .
 
 <annotation#d0a06d1c3e50afefc2a4136e3ad0001a> rdf:type knapsack:KNApSAcKMetaboliteActivityAnnotation ;  
@@ -56,7 +56,7 @@
   knapsack:targetsp "Pisum sativum cv. Progress No. 9" ;
   dcterms:references <reference#0ed21477f86f5a0e270b3fccc668904a> ;
   sio:SIO_000255 <annotation#5f8385c86de263100c082cb53860bb60> ; # sio:has-annotation
-  knapsack:has-activity <activity#f2c8a9a42a4f780707c49b0e5de44f72> ;
+  sio:SIO_000225 <activity#f2c8a9a42a4f780707c49b0e5de44f72> ;   # sio:has-function
   rdfs:label "Gibberellin A1;GA1" .
 
 <annotation#5f8385c86de263100c082cb53860bb60> rdf:type knapsack:KNApSAcKMetaboliteActivityAnnotation ;  
@@ -84,7 +84,7 @@
   knapsack:targetsp "Lactuca sativa" ;
   dcterms:references <reference#0ed21477f86f5a0e270b3fccc668904a> ;
   sio:SIO_000255 <annotation#ee874f7a86a8dbdbd8f33e6cf0a765e9> ; # sio:has-annotation
-  knapsack:has-activity <activity#3f60859a701da86b59eca658899844d0> ;
+  sio:SIO_000225 <activity#3f60859a701da86b59eca658899844d0> ;   # sio:has-function
   rdfs:label "Gibberellin A1;GA1" .
 
 <annotation#ee874f7a86a8dbdbd8f33e6cf0a765e9> rdf:type knapsack:KNApSAcKMetaboliteActivityAnnotation ;  
@@ -112,7 +112,7 @@
   knapsack:targetsp "Oryza sativa cv. Tanginbozu" ;
   dcterms:references <reference#0ed21477f86f5a0e270b3fccc668904a> ;
   sio:SIO_000255 <annotation#ebae90d803675221b48eb61026b6a934> ; # sio:has-annotation
-  knapsack:has-activity <activity#0d640c7f43c9eea1639ae08baed86cbd> ;
+  sio:SIO_000225 <activity#0d640c7f43c9eea1639ae08baed86cbd> ;   # sio:has-function
   rdfs:label "Gibberellin A1;GA1" .
 
 <annotation#ebae90d803675221b48eb61026b6a934> rdf:type knapsack:KNApSAcKMetaboliteActivityAnnotation ;  
@@ -140,7 +140,7 @@
   knapsack:targetsp "Zea mays d1" ;
   dcterms:references <reference#38f11889f07684f24d585ccc92406e20> ;
   sio:SIO_000255 <annotation#3391421396b62e89c8cc2b3d7e4ec34d> ; # sio:has-annotation
-  knapsack:has-activity <activity#0d640c7f43c9eea1639ae08baed86cbd> ;
+  sio:SIO_000225 <activity#0d640c7f43c9eea1639ae08baed86cbd> ;   # sio:has-function
   rdfs:label "Gibberellin A1;GA1" .
 
 <annotation#3391421396b62e89c8cc2b3d7e4ec34d> rdf:type knapsack:KNApSAcKMetaboliteActivityAnnotation ;  
@@ -168,7 +168,7 @@
   knapsack:targetsp "Zea mays d3" ;
   dcterms:references <reference#38f11889f07684f24d585ccc92406e20> ;
   sio:SIO_000255 <annotation#acadfdfafdd87fc252e8360efeb36ffc> ; # sio:has-annotation
-  knapsack:has-activity <activity#0d640c7f43c9eea1639ae08baed86cbd> ;
+  sio:SIO_000225 <activity#0d640c7f43c9eea1639ae08baed86cbd> ;   # sio:has-function
   rdfs:label "Gibberellin A1;GA1" .
 
 <annotation#acadfdfafdd87fc252e8360efeb36ffc> rdf:type knapsack:KNApSAcKMetaboliteActivityAnnotation ;  

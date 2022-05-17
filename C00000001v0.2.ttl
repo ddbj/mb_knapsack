@@ -107,7 +107,7 @@
   dc:title "Fujioka,Proc. Natl. Acad. Sci. USA,85,(1988),9031" ;
   dcterms:isReferencedBy <annotation#7137d093c966c72ab4dd902c8c2e54c9> ;
   foaf:homepage <https://mb.metabolomics.jp/wiki/Reference:Fujioka,Proc._Natl._Acad._Sci._USA,85,(1988),9031> ;
-  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/16594001>.
+  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/16594001> ;
   rdfs:seeAlso <http://identifiers.org/pubmed/16594001> ;
   rdf:type bibo:Article . 
 
@@ -155,7 +155,7 @@
   dc:title "Garcia-Martinez,Plant Physiol.,85,(1987),212" ;
   dcterms:isReferencedBy <annotation#725fb9f0e5f1a6556baccdc1e3f76965> ;
   foaf:homepage <https://mb.metabolomics.jp/wiki/Reference:Garcia-Martinez,Plant_Physiol.,85,(1987),212> ;
-  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/16665660>.
+  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/16665660> ;
   rdfs:seeAlso <http://identifiers.org/pubmed/16665660> ;
   rdf:type bibo:Article . 
 
@@ -226,7 +226,7 @@
   dc:title "Metzger,Plant Physiol.,80,(1985),396" ;
   dcterms:isReferencedBy <annotation#18b24176c038147be449f9dc8b9f27aa> ;
   foaf:homepage <https://mb.metabolomics.jp/wiki/Reference:Metzger,Plant_Physiol.,80,(1985),396> ;
-  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/16664632>.
+  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/16664632> ;
   rdfs:seeAlso <http://identifiers.org/pubmed/16664632> ;
   rdf:type bibo:Article . 
 
@@ -297,7 +297,7 @@
   dc:title "Talon,Plant Physiol.,92,(1990),1094" ;
   dcterms:isReferencedBy <annotation#4c93d24c0c1a42c8f34e37ec7d40c794> ;
   foaf:homepage <https://mb.metabolomics.jp/wiki/Reference:Talon,Plant_Physiol.,92,(1990),1094> ;
-  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/16667376>.
+  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/16667376> ;
   rdfs:seeAlso <http://identifiers.org/pubmed/16667376> ;
   rdf:type bibo:Article . 
 
@@ -322,7 +322,7 @@
   dc:title "Albone,Planta,162,(1984),560" ;
   dcterms:isReferencedBy <annotation#16cf33e984b18c3854b218eb3d6e2509> ;
   foaf:homepage <https://mb.metabolomics.jp/wiki/Reference:Albone,Planta,162,(1984),560> ;
-  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/24253274>.
+  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/24253274> ;
   rdfs:seeAlso <http://identifiers.org/pubmed/24253274> ;
   rdf:type bibo:Article . 
 
@@ -347,7 +347,7 @@
   dc:title "Browning,Nature,265,(1977),375" ;
   dcterms:isReferencedBy <annotation#29323059f620cb075d9d8baa3d6b2b29> ;
   foaf:homepage <https://mb.metabolomics.jp/wiki/Reference:Browning,Nature,265,(1977),375> ;
-  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/870828>.
+  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/870828> ;
   rdfs:seeAlso <http://identifiers.org/pubmed/870828> ;
   rdf:type bibo:Article . 
 
@@ -372,7 +372,7 @@
   dc:title "Yanagisawa,Biosci. Biotech. Biochem.,56,(1992),81" ;
   dcterms:isReferencedBy <annotation#cae4c7c02b42f0a2fdd16610e2bed70e> ;
   foaf:homepage <https://mb.metabolomics.jp/wiki/Reference:Yanagisawa,Biosci._Biotech._Biochem.,56,(1992),81> ;
-  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/27286211>.
+  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/27286211> ;
   rdfs:seeAlso <http://identifiers.org/pubmed/27286211> ;
   rdf:type bibo:Article . 
 
@@ -465,7 +465,7 @@
   dc:title "Atzhorn,Planta,175,(1988),532" ;
   dcterms:isReferencedBy <annotation#293297cc043059a11d27de3d2f1d1753> ;
   foaf:homepage <https://mb.metabolomics.jp/wiki/Reference:Atzhorn,Planta,175,(1988),532> ;
-  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/24221937>.
+  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/24221937> ;
   rdfs:seeAlso <http://identifiers.org/pubmed/24221937> ;
   rdf:type bibo:Article . 
 
@@ -490,7 +490,7 @@
   dc:title "Nakayama,Agric. Biol. Chem.,54,(1990),837" ;
   dcterms:isReferencedBy <annotation#dd7ea7ea2dc7b6fb9617bbd5f4714676> ;
   foaf:homepage <https://mb.metabolomics.jp/wiki/Reference:Nakayama,Agric._Biol._Chem.,54,(1990),837> ;
-  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/1368646>.
+  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/1368646> ;
   rdfs:seeAlso <http://identifiers.org/pubmed/1368646> ;
   rdf:type bibo:Article . 
 
@@ -538,7 +538,7 @@
   dc:title "DoumasPhysiol Plant,85,(1992),489" ;
   dcterms:isReferencedBy <annotation#cd8b331df92cb407017948ef09e4e9ce> ;
   foaf:homepage <https://mb.metabolomics.jp/wiki/Reference:DoumasPhysiol_Plant,85,(1992),489> ;
-  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/24197464>.
+  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/24197464> ;
   rdfs:seeAlso <http://identifiers.org/pubmed/24197464> ;
   rdf:type bibo:Article . 
 
@@ -586,7 +586,7 @@
   dc:title "Luna,Plant Physiol.,93,(1990),20" ;
   dcterms:isReferencedBy <annotation#2de6e7d9c5d11624a992cb15d75845ae> ;
   foaf:homepage <https://mb.metabolomics.jp/wiki/Reference:Luna,Plant_Physiol.,93,(1990),20> ;
-  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/16667435>.
+  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/16667435> ;
   rdfs:seeAlso <http://identifiers.org/pubmed/16667435> ;
   rdf:type bibo:Article . 
 
@@ -644,7 +644,7 @@
   dc:title "Bottini,Plant Physiol.,78,(1985),417" ;
   dcterms:isReferencedBy <annotation#edb0b9797a1ab628485f7755f6ea29d5> ;
   foaf:homepage <https://mb.metabolomics.jp/wiki/Reference:Bottini,Plant_Physiol.,78,(1985),417> ;
-  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/16664256>.
+  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/16664256> ;
   rdfs:seeAlso <http://identifiers.org/pubmed/16664256> ;
   rdf:type bibo:Article . 
 
@@ -691,7 +691,7 @@
   dc:title "Chang,Physiol. Plant,112,(2001),429" ;
   dcterms:isReferencedBy <annotation#8f253db182b81c5f92e952cf38fed225> ;
   foaf:homepage <https://mb.metabolomics.jp/wiki/Reference:Chang,Physiol._Plant,112,(2001),429> ;
-  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/11473701>.
+  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/11473701> ;
   rdfs:seeAlso <http://identifiers.org/pubmed/11473701> ;
   rdf:type bibo:Article . 
 
@@ -716,7 +716,7 @@
   dc:title "Garcia-Martinez,Planta,184,(1991),53" ;
   dcterms:isReferencedBy <annotation#8b9e69cac4086051217dcac61198c4cf> ;
   foaf:homepage <https://mb.metabolomics.jp/wiki/Reference:Garcia-Martinez,Planta,184,(1991),53> ;
-  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/24193929>.
+  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/24193929> ;
   rdfs:seeAlso <http://identifiers.org/pubmed/24193929> ;
   rdf:type bibo:Article . 
 
@@ -764,7 +764,7 @@
   dc:title "Moritz,Planta,181,(1990),538" ;
   dcterms:isReferencedBy <annotation#d23b59b6f6901bb0cf9be465ce675341> ;
   foaf:homepage <https://mb.metabolomics.jp/wiki/Reference:Moritz,Planta,181,(1990),538> ;
-  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/24196934>.
+  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/24196934> ;
   rdfs:seeAlso <http://identifiers.org/pubmed/24196934> ;
   rdf:type bibo:Article . 
 
@@ -789,7 +789,7 @@
   dc:title "Oden,Plant Physiol.,84,(1987),516" ;
   dcterms:isReferencedBy <annotation#3020460dfb1019d8ef9822d59d956b76> ;
   foaf:homepage <https://mb.metabolomics.jp/wiki/Reference:Oden,Plant_Physiol.,84,(1987),516> ;
-  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/16665471>.
+  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/16665471> ;
   rdfs:seeAlso <http://identifiers.org/pubmed/16665471> ;
   rdf:type bibo:Article . 
 
@@ -814,7 +814,7 @@
   dc:title "Yanagisawa,Biosci. Biotech. Biochem.,56,(1992),81" ;
   dcterms:isReferencedBy <annotation#985be81a817e8cbdf7f7ce00acd9eefb> ;
   foaf:homepage <https://mb.metabolomics.jp/wiki/Reference:Yanagisawa,Biosci._Biotech._Biochem.,56,(1992),81> ;
-  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/27286211>.
+  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/27286211> ;
   rdfs:seeAlso <http://identifiers.org/pubmed/27286211> ;
   rdf:type bibo:Article . 
 
@@ -839,7 +839,7 @@
   dc:title "Yanagisawa,Biosci. Biotech. Biochem.,56,(1992),81" ;
   dcterms:isReferencedBy <annotation#bc5fdef2902d5b94812398fdfc595318> ;
   foaf:homepage <https://mb.metabolomics.jp/wiki/Reference:Yanagisawa,Biosci._Biotech._Biochem.,56,(1992),81> ;
-  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/27286211>.
+  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/27286211> ;
   rdfs:seeAlso <http://identifiers.org/pubmed/27286211> ;
   rdf:type bibo:Article . 
 
@@ -909,7 +909,7 @@
   dc:title "Dobert,Plant Physiol.,98,(1992),221" ;
   dcterms:isReferencedBy <annotation#139402b7b61f4af1b02d7e52293960d4> ;
   foaf:homepage <https://mb.metabolomics.jp/wiki/Reference:Dobert,Plant_Physiol.,98,(1992),221> ;
-  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/16668617>.
+  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/16668617> ;
   rdfs:seeAlso <http://identifiers.org/pubmed/16668617> ;
   rdf:type bibo:Article . 
 
@@ -979,7 +979,7 @@
   dc:title "Lardi, M. et al., Int. J. Mol. Sci., 19, (2018), 1049." ;
   dcterms:isReferencedBy <annotation#46632d7aa2ae565ce8fe38b71130847d> ;
   foaf:homepage <https://mb.metabolomics.jp/wiki/Reference:Lardi,_M._et_al.,_Int._J._Mol._Sci.,_19,_(2018),_1049.> ;
-  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/29614780>.
+  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/29614780> ;
   rdfs:seeAlso <http://identifiers.org/pubmed/29614780> ;
   rdf:type bibo:Article . 
 
@@ -1004,7 +1004,7 @@
   dc:title "Kurogochi,Planta,146,(1979),185" ;
   dcterms:isReferencedBy <annotation#0095a2d91d74c9c2b451171fe2a1b70d> ;
   foaf:homepage <https://mb.metabolomics.jp/wiki/Reference:Kurogochi,Planta,146,(1979),185> ;
-  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/24318057>.
+  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/24318057> ;
   rdfs:seeAlso <http://identifiers.org/pubmed/24318057> ;
   rdf:type bibo:Article . 
 
@@ -1189,7 +1189,7 @@
   dc:title "Gocal,Plant Physiol.,119,(1999),1271" ;
   dcterms:isReferencedBy <annotation#e2069f0c7848b67d882852ae4757b0fb> ;
   foaf:homepage <https://mb.metabolomics.jp/wiki/Reference:Gocal,Plant_Physiol.,119,(1999),1271> ;
-  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/10198085>.
+  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/10198085> ;
   rdfs:seeAlso <http://identifiers.org/pubmed/10198085> ;
   rdf:type bibo:Article . 
 
@@ -1237,7 +1237,7 @@
   dc:title "Chen,HortScience,25,(1990),314" ;
   dcterms:isReferencedBy <annotation#6d6d4b9062ccc4546282e68c94aebe4a> ;
   foaf:homepage <https://mb.metabolomics.jp/wiki/Reference:Chen,HortScience,25,(1990),314> ;
-  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/11537562>.
+  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/11537562> ;
   rdfs:seeAlso <http://identifiers.org/pubmed/11537562> ;
   rdf:type bibo:Article . 
 
@@ -1307,7 +1307,7 @@
   dc:title "Silk,Plant Physiol.,59,(1977),211" ;
   dcterms:isReferencedBy <annotation#ee874f7a86a8dbdbd8f33e6cf0a765e9> ;
   foaf:homepage <https://mb.metabolomics.jp/wiki/Reference:Silk,Plant_Physiol.,59,(1977),211> ;
-  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/16659819>.
+  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/16659819> ;
   rdfs:seeAlso <http://identifiers.org/pubmed/16659819> ;
   rdf:type bibo:Article . 
 
@@ -1469,7 +1469,7 @@
   dc:title "Bensen,Plant Physiol.,94,(1990),77" ;
   dcterms:isReferencedBy <annotation#48801563f665d1e5eb400a3c4036c2fc> ;
   foaf:homepage <https://mb.metabolomics.jp/wiki/Reference:Bensen,Plant_Physiol.,94,(1990),77> ;
-  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/16667722>.
+  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/16667722> ;
   rdfs:seeAlso <http://identifiers.org/pubmed/16667722> ;
   rdf:type bibo:Article . 
 
@@ -1516,7 +1516,7 @@
   dc:title "Tudynski,Appl. Microbiol. Biotechnol.,66,(2005),597" ;
   dcterms:isReferencedBy <annotation#ca11806fb0f631e0e4a3fb7d706acabf> ;
   foaf:homepage <https://mb.metabolomics.jp/wiki/Reference:Tudynski,Appl._Microbiol._Biotechnol.,66,(2005),597> ;
-  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/15578178>.
+  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/15578178> ;
   rdfs:seeAlso <http://identifiers.org/pubmed/15578178> ;
   rdf:type bibo:Article . 
 
@@ -1631,7 +1631,7 @@
   dc:title "Nishijima,Biosci. Biotech. Biochem.,61,(1997),1362" ;
   dcterms:isReferencedBy <annotation#a5ca7837122b9c9dd708bcf02c397054> ;
   foaf:homepage <https://mb.metabolomics.jp/wiki/Reference:Nishijima,Biosci._Biotech._Biochem.,61,(1997),1362> ;
-  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/27393175>.
+  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/27393175> ;
   rdfs:seeAlso <http://identifiers.org/pubmed/27393175> ;
   rdf:type bibo:Article . 
 
@@ -1701,7 +1701,7 @@
   dc:title "Yamane,Plant Physiol.,78,(1985),899" ;
   dcterms:isReferencedBy <annotation#2376a05f45a1e11955014b5d613a1edf> ;
   foaf:homepage <https://mb.metabolomics.jp/wiki/Reference:Yamane,Plant_Physiol.,78,(1985),899> ;
-  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/16664349>.
+  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/16664349> ;
   rdfs:seeAlso <http://identifiers.org/pubmed/16664349> ;
   rdf:type bibo:Article . 
 
@@ -1726,7 +1726,7 @@
   dc:title "Lange,Planta,189,(1993),340" ;
   dcterms:isReferencedBy <annotation#22b4ec9b4f214ebb9e3c66ae03d35d46> ;
   foaf:homepage <https://mb.metabolomics.jp/wiki/Reference:Lange,Planta,189,(1993),340> ;
-  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/24178490>.
+  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/24178490> ;
   rdfs:seeAlso <http://identifiers.org/pubmed/24178490> ;
   rdf:type bibo:Article . 
 
@@ -1751,7 +1751,7 @@
   dc:title "Hemphill,Planta,103,(1972),241" ;
   dcterms:isReferencedBy <annotation#3d772966ca8a52361d4ba773a42b399b> ;
   foaf:homepage <https://mb.metabolomics.jp/wiki/Reference:Hemphill,Planta,103,(1972),241> ;
-  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/24481557>.
+  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/24481557> ;
   rdfs:seeAlso <http://identifiers.org/pubmed/24481557> ;
   rdf:type bibo:Article . 
 
@@ -1776,7 +1776,7 @@
   dc:title "Hemphill,Planta,103,(1972),241" ;
   dcterms:isReferencedBy <annotation#73c1ddaf54bda061a85a46ad4c5bd186> ;
   foaf:homepage <https://mb.metabolomics.jp/wiki/Reference:Hemphill,Planta,103,(1972),241> ;
-  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/24481557>.
+  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/24481557> ;
   rdfs:seeAlso <http://identifiers.org/pubmed/24481557> ;
   rdf:type bibo:Article . 
 
@@ -1801,7 +1801,7 @@
   dc:title "Williams,Planta,117,(1974),101" ;
   dcterms:isReferencedBy <annotation#d480ff04e4376f5fd58b676a9e3565dd> ;
   foaf:homepage <https://mb.metabolomics.jp/wiki/Reference:Williams,Planta,117,(1974),101> ;
-  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/24458323>.
+  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/24458323> ;
   rdfs:seeAlso <http://identifiers.org/pubmed/24458323> ;
   rdf:type bibo:Article . 
 
@@ -1872,7 +1872,7 @@
   dc:title "Talon,Plant Physiol.,99,(1992),1575" ;
   dcterms:isReferencedBy <annotation#8f2828b027d5ac56defe210ad834c098> ;
   foaf:homepage <https://mb.metabolomics.jp/wiki/Reference:Talon,Plant_Physiol.,99,(1992),1575> ;
-  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/16669076>.
+  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/16669076> ;
   rdfs:seeAlso <http://identifiers.org/pubmed/16669076> ;
   rdf:type bibo:Article . 
 
@@ -1897,7 +1897,7 @@
   dc:title "Khalifah,Plant Physiol.,40,(1965),441" ;
   dcterms:isReferencedBy <annotation#eb1d635b09313e658e40141d52e306a8> ;
   foaf:homepage <https://mb.metabolomics.jp/wiki/Reference:Khalifah,Plant_Physiol.,40,(1965),441> ;
-  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/16656108>.
+  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/16656108> ;
   rdfs:seeAlso <http://identifiers.org/pubmed/16656108> ;
   rdf:type bibo:Article . 
 
@@ -1922,7 +1922,7 @@
   dc:title "Yamane,Plant Physiol.,86,(1988),857" ;
   dcterms:isReferencedBy <annotation#97fa61e05466f28faef8f50258d4765f> ;
   foaf:homepage <https://mb.metabolomics.jp/wiki/Reference:Yamane,Plant_Physiol.,86,(1988),857> ;
-  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/16666000>.
+  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/16666000> ;
   rdfs:seeAlso <http://identifiers.org/pubmed/16666000> ;
   rdf:type bibo:Article . 
 
@@ -1947,7 +1947,7 @@
   dc:title "Fan, X. et al., J. Agric. Food Chem., 65, (2017), 10332-10349." ;
   dcterms:isReferencedBy <annotation#7b04e3e0b75b7a3397583459d962fa71> ;
   foaf:homepage <https://mb.metabolomics.jp/wiki/Reference:Fan,_X._et_al.,_J._Agric._Food_Chem.,_65,_(2017),_10332-10349.> ;
-  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/29111713>.
+  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/29111713> ;
   rdfs:seeAlso <http://identifiers.org/pubmed/29111713> ;
   rdf:type bibo:Article . 
 
@@ -2064,7 +2064,7 @@
   dc:title "Rood,Plant Physiol.,83,(1987),645" ;
   dcterms:isReferencedBy <annotation#afac7c391250f2708c3163cdd1ee873a> ;
   foaf:homepage <https://mb.metabolomics.jp/wiki/Reference:Rood,Plant_Physiol.,83,(1987),645> ;
-  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/11539033>.
+  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/11539033> ;
   rdfs:seeAlso <http://identifiers.org/pubmed/11539033> ;
   rdf:type bibo:Article . 
 
@@ -2088,7 +2088,7 @@
   dc:title "Rood,Physiol. Plant.,79,(1990),679" ;
   dcterms:isReferencedBy <annotation#4061e6344c87e45f063316f7705939ad> ;
   foaf:homepage <https://mb.metabolomics.jp/wiki/Reference:Rood,Physiol._Plant.,79,(1990),679> ;
-  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/21087279>.
+  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/21087279> ;
   rdfs:seeAlso <http://identifiers.org/pubmed/21087279> ;
   rdf:type bibo:Article . 
 
@@ -2204,7 +2204,7 @@
   dc:title "Bottini,Plant Physiol.,90,(1989),45" ;
   dcterms:isReferencedBy <annotation#a977c7d86cd6cbd30417fb86200d7441> ;
   foaf:homepage <https://mb.metabolomics.jp/wiki/Reference:Bottini,Plant_Physiol.,90,(1989),45> ;
-  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/16666766>.
+  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/16666766> ;
   rdfs:seeAlso <http://identifiers.org/pubmed/16666766> ;
   rdf:type bibo:Article . 
 
@@ -2274,7 +2274,7 @@
   dc:title "Nishijima,Biosci. Biotech. Biochem.,57,(1993),1953" ;
   dcterms:isReferencedBy <annotation#afe2528954bcc178dfcb7360a49aa342> ;
   foaf:homepage <https://mb.metabolomics.jp/wiki/Reference:Nishijima,Biosci._Biotech._Biochem.,57,(1993),1953> ;
-  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/7764222>.
+  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/7764222> ;
   rdfs:seeAlso <http://identifiers.org/pubmed/7764222> ;
   rdf:type bibo:Article . 
 
@@ -2299,7 +2299,7 @@
   dc:title "Talon,Heynh. Planta,182,(1990),501" ;
   dcterms:isReferencedBy <annotation#5403b51818b6d9c5b7b2ed33f70a7dd1> ;
   foaf:homepage <https://mb.metabolomics.jp/wiki/Reference:Talon,Heynh._Planta,182,(1990),501> ;
-  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/24197369>.
+  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/24197369> ;
   rdfs:seeAlso <http://identifiers.org/pubmed/24197369> ;
   rdf:type bibo:Article . 
 
@@ -2413,7 +2413,7 @@
   dc:title "Jones,Planta,149,(1980),274" ;
   dcterms:isReferencedBy <annotation#4588c4a87c85e28c3e8e98a8cc1f6228> ;
   foaf:homepage <https://mb.metabolomics.jp/wiki/Reference:Jones,Planta,149,(1980),274> ;
-  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/24306298>.
+  foaf:primaryTopic <http://rdf.ncbi.nlm.nih.gov/pubmed/24306298> ;
   rdfs:seeAlso <http://identifiers.org/pubmed/24306298> ;
   rdf:type bibo:Article . 
 
