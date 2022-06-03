@@ -1,0 +1,431 @@
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX void: <http://rdfs.org/ns/void#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX pav: <http://purl.org/pav/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX : <http://weso.es/shapes/>
+
+:KNApSAcKCoreRecord
+{
+   rdf:type  [<http://purl.jp/knapsack/resource#KNApSAcKCoreRecord>]  ;          # 100.0 %
+   <http://semanticscience.org/resource/SIO_000008>  IRI  +;          # 100.0 %
+            # 100.0 % obj: @:CHEMINF_000043. Cardinality: {1}
+            # 100.0 % obj: @:CHEMINF_000334. Cardinality: {1}
+            # 100.0 % obj: @:CHEMINF_000042. Cardinality: {1}
+   dc:hasPart  IRI  +;                                         # 100.0 %
+            # 100.0 % obj: @:CDXfile. Cardinality: {1}
+            # 100.0 % obj: @:SDfile. Cardinality: {1}
+            # 100.0 % obj: @:CHEMINF_000058. Cardinality: {1}
+   <http://semanticscience.org/resource/CHEMINF_000200>  IRI  +;          # 100.0 %
+            # 100.0 % obj: @:CHEMINF_000059. Cardinality: {1}
+            # 100.0 % obj: @:CHEMINF_000018. Cardinality: {1}
+            # 100.0 % obj: @:Start_substance. Cardinality: {1}
+            # 100.0 % obj: @:CHEMINF_000113. Cardinality: {1}
+   foaf:homepage  IRI  ;                                       # 100.0 %
+   <http://semanticscience.org/resource/SIO_000255>  IRI  +;          # 100.0 %
+            # 72.04371622438232 % obj: IRI. Cardinality: {1}
+            # 12.88350972910444 % obj: IRI. Cardinality: {2}
+            # 100.0 % obj: @:KNApSAcKCoreAnnotation. Cardinality: +
+            # 9.445950378977537 % obj: @:KNApSAcKMetaboliteActivityAnnotation. Cardinality: +
+   dc:references  IRI  +;                                      # 100.0 %
+            # 65.57951622092922 % obj: IRI. Cardinality: {1}
+            # 17.755831419741362 % obj: IRI. Cardinality: {2}
+            # 6.762893005749408 % obj: IRI. Cardinality: {3}
+            # 100.0 % obj: @:KNApSAcKReference. Cardinality: +
+            # 100.0 % obj: @:Article. Cardinality: +
+   rdfs:label  xsd:string  +;                                  # 100.0 %
+            # 94.51475336245446 % obj: xsd:string. Cardinality: {1}
+            # 5.471434244375766 % obj: xsd:string. Cardinality: {2}
+   <http://purl.jp/knapsack/resource#fid>  xsd:string  ;          # 100.0 %
+   <http://purl.org/dc/elements/1.1/identifier>  xsd:string  +;          # 100.0 %
+            # 94.51475336245446 % obj: xsd:string. Cardinality: {1}
+            # 5.485246637545538 % obj: xsd:string. Cardinality: {2}
+   rdfs:seeAlso  IRI  ;                                        # 100.0 %
+   skos:closeMatch  IRI  *;
+            # 89.67350955644953 % obj: IRI. Cardinality: +
+            # 81.6450560265198 % obj: IRI. Cardinality: {1}
+            # 7.669331307515669 % obj: IRI. Cardinality: {2}
+   rdf:type  [<http://purl.jp/knapsack/resource#KNApSAcKMetaboliteActivityRecord>]  ?;
+            # 5.485246637545538 % obj: <http://purl.jp/knapsack/resource#KNApSAcKMetaboliteActivityRecord>. Cardinality: {1}
+   <http://purl.jp/knapsack/resource#function>  xsd:string  *;
+            # 5.485246637545538 % obj: xsd:string. Cardinality: +
+   <http://semanticscience.org/resource/SIO_000225>  @:KnapsackMetaboliteActivity  *;
+            # 5.485246637545538 % obj: @:KnapsackMetaboliteActivity. Cardinality: +
+   <http://purl.jp/knapsack/resource#category>  xsd:string  *;
+            # 5.485246637545538 % obj: xsd:string. Cardinality: +
+   <http://purl.jp/knapsack/resource#targetsp>  xsd:string  *
+            # 5.485246637545538 % obj: xsd:string. Cardinality: +
+}
+
+
+:CHEMINF_000059
+{
+   rdf:type  [<http://semanticscience.org/resource/CHEMINF_000059>]  ;          # 100.0 %
+   <http://semanticscience.org/resource/SIO_000300>  xsd:string  ;          # 100.0 %
+   rdfs:seeAlso  IRI                                           # 100.0 %
+}
+
+
+:Start_substance
+{
+   rdf:type  [<http://purl.jp/knapsack/resource#Start_substance>]  ;          # 100.0 %
+   <http://semanticscience.org/resource/SIO_000300>  xsd:string            # 100.0 %
+}
+
+
+:CHEMINF_000042
+{
+   rdf:type  [<http://semanticscience.org/resource/CHEMINF_000042>]  ;          # 100.0 %
+   <http://semanticscience.org/resource/SIO_000300>  xsd:string            # 100.0 %
+}
+
+
+:SDfile
+{
+   rdf:type  [<http://purl.jp/knapsack/resource#SDfile>]  ;          # 100.0 %
+   rdfs:seeAlso  IRI  ;                                        # 100.0 %
+   dc:format  IRI                                              # 100.0 %
+}
+
+
+:CHEMINF_000058
+{
+   rdf:type  [<http://semanticscience.org/resource/CHEMINF_000058>]  ;          # 100.0 %
+   rdfs:seeAlso  IRI  ;                                        # 100.0 %
+   dc:format  IRI                                              # 100.0 %
+}
+
+
+:Article
+{
+   rdf:type  [<http://purl.org/ontology/bibo/Article>]  ;          # 100.0 %
+   rdf:type  [<http://purl.jp/knapsack/resource#KNApSAcKReference>]  ;          # 100.0 %
+   <http://purl.org/dc/elements/1.1/title>  xsd:string  +;          # 100.0 %
+            # 96.1277485842559 % obj: xsd:string. Cardinality: {1}
+   dc:isReferencedBy  IRI  +;                                  # 100.0 %
+            # 72.7998571501454 % obj: IRI. Cardinality: {1}
+            # 11.448395490026018 % obj: IRI. Cardinality: {2}
+            # 99.59695933880924 % obj: @:KNApSAcKCoreAnnotation. Cardinality: +
+            # 13.662568236314474 % obj: @:KNApSAcKMetaboliteActivityAnnotation. Cardinality: +
+            # 6.68078159277588 % obj: @:KnapsackMetaboliteActivity. Cardinality: +
+   foaf:homepage  IRI  ?;
+            # 97.19146982296822 % obj: IRI. Cardinality: {1}
+   foaf:primaryTopic  IRI  *;
+            # 37.61797867455742 % obj: IRI. Cardinality: +
+            # 35.041579511249424 % obj: IRI. Cardinality: {1}
+   rdfs:seeAlso  IRI  *
+            # 37.61797867455742 % obj: IRI. Cardinality: +
+            # 35.041579511249424 % obj: IRI. Cardinality: {1}
+}
+
+
+:KNApSAcKReference
+{
+   rdf:type  [<http://purl.org/ontology/bibo/Article>]  ;          # 100.0 %
+   rdf:type  [<http://purl.jp/knapsack/resource#KNApSAcKReference>]  ;          # 100.0 %
+   <http://purl.org/dc/elements/1.1/title>  xsd:string  +;          # 100.0 %
+            # 96.1277485842559 % obj: xsd:string. Cardinality: {1}
+   dc:isReferencedBy  IRI  +;                                  # 100.0 %
+            # 72.7998571501454 % obj: IRI. Cardinality: {1}
+            # 11.448395490026018 % obj: IRI. Cardinality: {2}
+            # 99.59695933880924 % obj: @:KNApSAcKCoreAnnotation. Cardinality: +
+            # 13.662568236314474 % obj: @:KNApSAcKMetaboliteActivityAnnotation. Cardinality: +
+            # 6.68078159277588 % obj: @:KnapsackMetaboliteActivity. Cardinality: +
+   foaf:homepage  IRI  ?;
+            # 97.19146982296822 % obj: IRI. Cardinality: {1}
+   foaf:primaryTopic  IRI  *;
+            # 37.61797867455742 % obj: IRI. Cardinality: +
+            # 35.041579511249424 % obj: IRI. Cardinality: {1}
+   rdfs:seeAlso  IRI  *
+            # 37.61797867455742 % obj: IRI. Cardinality: +
+            # 35.041579511249424 % obj: IRI. Cardinality: {1}
+}
+
+
+:CHEMINF_000113
+{
+   rdf:type  [<http://semanticscience.org/resource/CHEMINF_000113>]  ;          # 100.0 %
+   <http://semanticscience.org/resource/SIO_000300>  xsd:string  ;          # 100.0 %
+   rdfs:seeAlso  IRI                                           # 100.0 %
+}
+
+
+:CDXfile
+{
+   rdf:type  [<http://purl.jp/knapsack/resource#CDXfile>]  ;          # 100.0 %
+   dc:format  IRI  ;                                           # 100.0 %
+   rdfs:seeAlso  IRI                                           # 100.0 %
+}
+
+
+:CHEMINF_000043
+{
+   rdf:type  [<http://semanticscience.org/resource/CHEMINF_000043>]  ;          # 100.0 %
+   <http://semanticscience.org/resource/SIO_000300>  xsd:string            # 100.0 %
+}
+
+
+:CHEMINF_000334
+{
+   rdf:type  [<http://semanticscience.org/resource/CHEMINF_000334>]  ;          # 100.0 %
+   <http://semanticscience.org/resource/SIO_000221>  IRI  ;          # 100.0 %
+   <http://semanticscience.org/resource/SIO_000300>  xsd:decimal  ?
+            # 99.9913672542689 % obj: xsd:decimal. Cardinality: {1}
+}
+
+
+:KNApSAcKCoreAnnotation
+{
+   rdf:type  [<http://purl.jp/knapsack/resource#KNApSAcKCoreAnnotation>]  ;          # 100.0 %
+   <http://purl.jp/knapsack/resource#sp1>  xsd:string  ;          # 100.0 %
+   <http://semanticscience.org/resource/SIO_000254>  IRI  +;          # 100.0 %
+            # 37.505347212319975 % obj: IRI. Cardinality: {1}
+            # 17.506773135605304 % obj: IRI. Cardinality: {2}
+            # 10.248823613289606 % obj: IRI. Cardinality: {3}
+            # 7.300727220875516 % obj: IRI. Cardinality: {4}
+            # 5.43276771709682 % obj: IRI. Cardinality: {5}
+            # 100.0 % obj: @:KNApSAcKCoreRecord. Cardinality: +
+            # 46.74533010124055 % obj: @:KNApSAcKMetaboliteActivityRecord. Cardinality: +
+   <http://purl.jp/knapsack/resource#references>  xsd:string  +;          # 100.0 %
+            # 65.82774846713247 % obj: xsd:string. Cardinality: {1}
+            # 15.06487950948239 % obj: xsd:string. Cardinality: {2}
+            # 6.509339797518894 % obj: xsd:string. Cardinality: {3}
+   dc:references  IRI  +;                                      # 100.0 %
+            # 55.126194210751464 % obj: IRI. Cardinality: {1}
+            # 14.423214031085127 % obj: IRI. Cardinality: {2}
+            # 8.487808355910452 % obj: IRI. Cardinality: {3}
+            # 100.0 % obj: @:KNApSAcKReference. Cardinality: +
+            # 100.0 % obj: @:Article. Cardinality: +
+   <http://purl.jp/knapsack/resource#kingdom>  xsd:string  ;          # 100.0 %
+   <http://purl.jp/knapsack/resource#sp>  xsd:string  +;          # 100.0 %
+            # 98.31741052331384 % obj: xsd:string. Cardinality: {1}
+   <http://purl.jp/knapsack/resource#family>  xsd:string  ;          # 100.0 %
+   foaf:homepage  IRI  ;                                       # 100.0 %
+   rdfs:seeAlso  IRI  ?
+            # 43.71524311992015 % obj: IRI. Cardinality: {1}
+}
+
+
+:CHEMINF_000018
+{
+   rdf:type  [<http://semanticscience.org/resource/CHEMINF_000018>]  ;          # 100.0 %
+   <http://semanticscience.org/resource/SIO_000300>  rdf:langString  ?;
+            # 74.57829037103542 % obj: rdf:langString. Cardinality: {1}
+   <http://semanticscience.org/resource/SIO_000300>  xsd:string  ?
+            # 25.42170962896459 % obj: xsd:string. Cardinality: {1}
+}
+
+
+:KNApSAcKMetaboliteActivityRecord
+{
+   rdf:type  [<http://purl.jp/knapsack/resource#KNApSAcKMetaboliteActivityRecord>]  ?;
+            # 87.00410396716826 % obj: <http://purl.jp/knapsack/resource#KNApSAcKMetaboliteActivityRecord>. Cardinality: {1}
+   <http://semanticscience.org/resource/SIO_000255>  IRI  *;
+            # 87.00410396716826 % obj: IRI. Cardinality: +
+            # 18.796169630642957 % obj: IRI. Cardinality: {2}
+            # 10.642954856361149 % obj: IRI. Cardinality: {3}
+            # 8.29001367989056 % obj: IRI. Cardinality: {4}
+            # 6.238030095759234 % obj: IRI. Cardinality: {5}
+            # 87.00410396716826 % obj: @:KNApSAcKCoreAnnotation. Cardinality: +
+            # 51.27222982216142 % obj: @:KNApSAcKMetaboliteActivityAnnotation. Cardinality: +
+            # 8.180574555403556 % obj: @:KNApSAcKNaturalActivityAnnotation. Cardinality: +
+   dc:references  IRI  *;
+            # 87.00410396716826 % obj: IRI. Cardinality: +
+            # 24.48700410396717 % obj: IRI. Cardinality: {2}
+            # 11.49110807113543 % obj: IRI. Cardinality: {3}
+            # 7.7975376196990425 % obj: IRI. Cardinality: {4}
+            # 5.253077975376197 % obj: IRI. Cardinality: {5}
+            # 87.00410396716826 % obj: @:Article. Cardinality: +
+            # 87.00410396716826 % obj: @:KNApSAcKReference. Cardinality: +
+   rdfs:label  xsd:string  *;
+            # 87.00410396716826 % obj: xsd:string. Cardinality: +
+            # 86.703146374829 % obj: xsd:string. Cardinality: {2}
+   <http://purl.org/dc/elements/1.1/identifier>  xsd:string  *;
+            # 87.00410396716826 % obj: xsd:string. Cardinality: +
+            # 86.92202462380301 % obj: xsd:string. Cardinality: {2}
+   <http://purl.jp/knapsack/resource#function>  xsd:string  *;
+            # 87.00410396716826 % obj: xsd:string. Cardinality: +
+            # 38.35841313269494 % obj: xsd:string. Cardinality: {1}
+            # 20.300957592339262 % obj: xsd:string. Cardinality: {2}
+            # 11.053351573187415 % obj: xsd:string. Cardinality: {3}
+            # 5.909712722298222 % obj: xsd:string. Cardinality: {4}
+   <http://semanticscience.org/resource/SIO_000225>  IRI  *;
+            # 87.00410396716826 % obj: IRI. Cardinality: +
+            # 38.35841313269494 % obj: IRI. Cardinality: {1}
+            # 20.300957592339262 % obj: IRI. Cardinality: {2}
+            # 11.053351573187415 % obj: IRI. Cardinality: {3}
+            # 5.909712722298222 % obj: IRI. Cardinality: {4}
+            # 87.00410396716826 % obj: @:KnapsackMetaboliteActivity. Cardinality: +
+            # 13.050615595075241 % obj: @:KnapsackNaturalActivity. Cardinality: +
+   <http://purl.jp/knapsack/resource#category>  xsd:string  *;
+            # 87.00410396716826 % obj: xsd:string. Cardinality: +
+            # 45.08891928864569 % obj: xsd:string. Cardinality: {1}
+            # 19.507523939808483 % obj: xsd:string. Cardinality: {2}
+            # 10.177838577291382 % obj: xsd:string. Cardinality: {3}
+   <http://purl.jp/knapsack/resource#targetsp>  xsd:string  *;
+            # 87.00410396716826 % obj: xsd:string. Cardinality: +
+            # 57.4281805745554 % obj: xsd:string. Cardinality: {1}
+            # 13.32421340629275 % obj: xsd:string. Cardinality: {2}
+            # 5.4993160054719565 % obj: xsd:string. Cardinality: {3}
+   rdf:type  [<http://purl.jp/knapsack/resource#KNApSAcKCoreRecord>]  ?;
+            # 86.92202462380301 % obj: <http://purl.jp/knapsack/resource#KNApSAcKCoreRecord>. Cardinality: {1}
+   <http://semanticscience.org/resource/SIO_000008>  IRI  *;
+            # 86.92202462380301 % obj: IRI. Cardinality: {3}
+            # 86.92202462380301 % obj: @:CHEMINF_000042. Cardinality: {1}
+            # 86.92202462380301 % obj: @:CHEMINF_000334. Cardinality: {1}
+            # 86.92202462380301 % obj: @:CHEMINF_000043. Cardinality: {1}
+   <http://semanticscience.org/resource/CHEMINF_000200>  IRI  *;
+            # 86.92202462380301 % obj: IRI. Cardinality: {5}
+            # 86.92202462380301 % obj: @:CHEMINF_000018. Cardinality: {1}
+            # 86.92202462380301 % obj: @:CHEMINF_000113. Cardinality: {1}
+            # 86.92202462380301 % obj: @:Start_substance. Cardinality: {1}
+            # 86.92202462380301 % obj: @:CHEMINF_000059. Cardinality: {1}
+   rdfs:seeAlso  IRI  ?;
+            # 86.92202462380301 % obj: IRI. Cardinality: {1}
+   dc:hasPart  IRI  *;
+            # 86.92202462380301 % obj: IRI. Cardinality: {3}
+            # 86.92202462380301 % obj: @:CHEMINF_000058. Cardinality: {1}
+            # 86.92202462380301 % obj: @:SDfile. Cardinality: {1}
+            # 86.92202462380301 % obj: @:CDXfile. Cardinality: {1}
+   <http://purl.jp/knapsack/resource#fid>  xsd:string  ?;
+            # 86.92202462380301 % obj: xsd:string. Cardinality: {1}
+   foaf:homepage  IRI  ?;
+            # 86.92202462380301 % obj: IRI. Cardinality: {1}
+   skos:closeMatch  IRI  *
+            # 78.8782489740082 % obj: IRI. Cardinality: +
+            # 50.6155950752394 % obj: IRI. Cardinality: {2}
+            # 25.444596443228455 % obj: IRI. Cardinality: {1}
+}
+
+
+:KNApSAcKNaturalActivityAnnotation
+{
+   rdf:type  [<http://purl.jp/knapsack/resource#KNApSAcKNaturalActivityAnnotation>]  ;          # 100.0 %
+   <http://purl.jp/knapsack/resource#sp>  xsd:string  +;          # 100.0 %
+            # 85.19553072625699 % obj: xsd:string. Cardinality: {1}
+            # 14.804469273743019 % obj: xsd:string. Cardinality: {2}
+   dc:references  IRI  +;                                      # 100.0 %
+            # 85.19553072625699 % obj: IRI. Cardinality: {1}
+            # 7.681564245810056 % obj: IRI. Cardinality: {2}
+            # 100.0 % obj: @:Article. Cardinality: +
+            # 100.0 % obj: @:KNApSAcKReference. Cardinality: +
+   <http://purl.jp/knapsack/resource#activity>  IRI  +;          # 100.0 %
+            # 100.0 % obj: @:KnapsackNaturalActivity. Cardinality: +
+            # 88.8268156424581 % obj: @:KnapsackMetaboliteActivity. Cardinality: +
+   rdf:type  [<http://purl.jp/knapsack/resource#KNApSAcKCoreAnnotation>]  ?;
+            # 14.804469273743019 % obj: <http://purl.jp/knapsack/resource#KNApSAcKCoreAnnotation>. Cardinality: {1}
+   <http://semanticscience.org/resource/SIO_000254>  IRI  *;
+            # 14.804469273743019 % obj: IRI. Cardinality: +
+            # 14.804469273743019 % obj: @:KNApSAcKCoreRecord. Cardinality: +
+            # 8.030726256983241 % obj: @:KNApSAcKMetaboliteActivityRecord. Cardinality: +
+   <http://purl.jp/knapsack/resource#sp1>  xsd:string  ?;
+            # 14.804469273743019 % obj: xsd:string. Cardinality: {1}
+   foaf:homepage  IRI  ?;
+            # 14.804469273743019 % obj: IRI. Cardinality: {1}
+   <http://purl.jp/knapsack/resource#kingdom>  xsd:string  ?;
+            # 14.804469273743019 % obj: xsd:string. Cardinality: {1}
+   <http://purl.jp/knapsack/resource#family>  xsd:string  ?;
+            # 14.804469273743019 % obj: xsd:string. Cardinality: {1}
+   <http://purl.jp/knapsack/resource#references>  xsd:string  *
+            # 14.804469273743019 % obj: xsd:string. Cardinality: +
+            # 10.125698324022347 % obj: xsd:string. Cardinality: {1}
+}
+
+
+:KNApSAcKMetaboliteActivityAnnotation
+{
+   rdf:type  [<http://purl.jp/knapsack/resource#KNApSAcKMetaboliteActivityAnnotation>]  ;          # 100.0 %
+   <http://purl.jp/knapsack/resource#sp>  xsd:string  +;          # 100.0 %
+            # 72.31096911608094 % obj: xsd:string. Cardinality: {1}
+            # 27.689030883919063 % obj: xsd:string. Cardinality: {2}
+   dc:references  IRI  +;                                      # 100.0 %
+            # 32.05537806176784 % obj: IRI. Cardinality: {1}
+            # 15.867944621938232 % obj: IRI. Cardinality: {2}
+            # 7.0287539936102235 % obj: IRI. Cardinality: {3}
+            # 100.0 % obj: @:Article. Cardinality: +
+            # 100.0 % obj: @:KNApSAcKReference. Cardinality: +
+   rdf:type  [<http://purl.jp/knapsack/resource#KNApSAcKCoreAnnotation>]  ?;
+            # 27.689030883919063 % obj: <http://purl.jp/knapsack/resource#KNApSAcKCoreAnnotation>. Cardinality: {1}
+   <http://purl.jp/knapsack/resource#sp1>  xsd:string  ?;
+            # 27.689030883919063 % obj: xsd:string. Cardinality: {1}
+   <http://semanticscience.org/resource/SIO_000254>  IRI  *;
+            # 27.689030883919063 % obj: IRI. Cardinality: +
+            # 5.963791267305645 % obj: IRI. Cardinality: {1}
+            # 27.689030883919063 % obj: @:KNApSAcKCoreRecord. Cardinality: +
+            # 22.364217252396166 % obj: @:KNApSAcKMetaboliteActivityRecord. Cardinality: +
+   <http://purl.jp/knapsack/resource#kingdom>  xsd:string  ?;
+            # 27.689030883919063 % obj: xsd:string. Cardinality: {1}
+   <http://purl.jp/knapsack/resource#family>  xsd:string  ?;
+            # 27.689030883919063 % obj: xsd:string. Cardinality: {1}
+   <http://purl.jp/knapsack/resource#references>  xsd:string  *;
+            # 27.689030883919063 % obj: xsd:string. Cardinality: +
+            # 7.561235356762514 % obj: xsd:string. Cardinality: {1}
+   foaf:homepage  IRI  ?;
+            # 27.689030883919063 % obj: IRI. Cardinality: {1}
+   rdfs:seeAlso  IRI  ?;
+            # 22.470713525026625 % obj: IRI. Cardinality: {1}
+   <http://purl.jp/knapsack/resource#sp2>  xsd:string  ?
+            # 7.880724174653888 % obj: xsd:string. Cardinality: {1}
+}
+
+
+:KnapsackMetaboliteActivity
+{
+   rdf:type  [<http://purl.jp/knapsack/resource#KnapsackMetaboliteActivity>]  ;          # 100.0 %
+   <http://semanticscience.org/resource/SIO_001278>  IRI  +;          # 100.0 %
+            # 98.29418344519016 % obj: IRI. Cardinality: {1}
+   rdfs:label  rdf:langString  +;                              # 100.0 %
+            # 98.29418344519016 % obj: rdf:langString. Cardinality: {1}
+   <http://semanticscience.org/resource/SIO_000255>  IRI  *
+            # 29.110738255033556 % obj: IRI. Cardinality: +
+            # 22.231543624161073 % obj: IRI. Cardinality: {1}
+            # 28.635346756152124 % obj: @:KNApSAcKMetaboliteActivityAnnotation. Cardinality: +
+            # 15.380313199105144 % obj: @:KNApSAcKCoreAnnotation. Cardinality: +
+}
+
+
+:KnapsackNaturalActivity
+{
+   rdf:type  [<http://purl.jp/knapsack/resource#KnapsackNaturalActivity>]  ;          # 100.0 %
+   rdfs:label  rdf:langString  +;                              # 100.0 %
+            # 96.77077818951825 % obj: rdf:langString. Cardinality: {1}
+   <http://semanticscience.org/resource/SIO_001278>  IRI  +;          # 100.0 %
+            # 96.77077818951825 % obj: IRI. Cardinality: {1}
+   dc:references  IRI  +;                                      # 100.0 %
+            # 49.49708840656432 % obj: IRI. Cardinality: {1}
+            # 17.09899417681313 % obj: IRI. Cardinality: {2}
+            # 11.911064055055585 % obj: IRI. Cardinality: {3}
+            # 7.358390682901006 % obj: IRI. Cardinality: {4}
+            # 5.346744309158285 % obj: IRI. Cardinality: {5}
+            # 100.0 % obj: @:Article. Cardinality: +
+            # 100.0 % obj: @:KNApSAcKReference. Cardinality: +
+   skos:altLabel  rdf:langString  ;                            # 100.0 %
+   rdfs:label  xsd:string  ?;
+            # 99.36474325039704 % obj: xsd:string. Cardinality: {1}
+   <http://semanticscience.org/resource/SIO_000255>  IRI  *
+            # 99.36474325039704 % obj: IRI. Cardinality: +
+            # 40.97406034939121 % obj: IRI. Cardinality: {1}
+            # 10.640550555849657 % obj: IRI. Cardinality: {2}
+            # 7.940709370037056 % obj: IRI. Cardinality: {3}
+            # 93.59449444150344 % obj: @:KNApSAcKCoreAnnotation. Cardinality: +
+            # 34.039174166225514 % obj: @:KNApSAcKMetaboliteActivityAnnotation. Cardinality: +
+            # 23.239809422975117 % obj: @:KNApSAcKNaturalActivityAnnotation. Cardinality: +
+}
+
+
+:Class
+{
+   rdf:type  [owl:Class]  ;                                    # 100.0 %
+   rdfs:label  rdf:langString  ;                               # 100.0 %
+   <http://semanticscience.org/resource/SIO_001278>  IRI  ?;
+            # 66.66666666666666 % obj: IRI. Cardinality: {1}
+   rdfs:subClassOf  @:Class  ?
+            # 66.66666666666666 % obj: @:Class. Cardinality: {1}
+}
+
+
