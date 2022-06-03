@@ -52,7 +52,7 @@ def output
       end
     end
 
-    ttlfile = File.close
+    ttlfile.close
     tsvfile.close
   rescue SystemCallError => e
     puts %Q(class=[#{e.class}] message=[#{e.message}])
