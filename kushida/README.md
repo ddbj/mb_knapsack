@@ -132,14 +132,12 @@ where {
 
 ```
 ```
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-
 <http://purl.jp/bio/4/id/kb0000000001>
-    <http://knapsack/property/sp2> "Chelidonium majus"@en, "Theobroma cacao"@en ;
+    <http://purl.jp/knapsack/property/sp2> "Chelidonium majus"@en, "Theobroma cacao"@en ;
     <http://www.w3.org/2000/01/rdf-schema#label> "12-Lipoxygenase inhibitor"@en .
 
 <http://purl.jp/bio/4/id/kb0000000002>
-    <http://knapsack/property/sp2> "Theobroma cacao"@en ;
+    <http://purl.jp/knapsack/property/sp2> "Theobroma cacao"@en ;
     <http://www.w3.org/2000/01/rdf-schema#label> "15-Lipoxygenase inhibitor"@en .
 ```
 ```
@@ -156,8 +154,6 @@ where {
 * output: [md5Metabolite_ActivityCateFunc_TargetSp_Ref.ttl](../kushida/変換結果20220108/python変換結果20220108/md5Metabolite_ActivityCateFunc_TargetSp_Ref.ttl)
 
 ```
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-
 <http://purl.jp/knapsack/activity#f6596aa6da5e0718dfd9799e38023a8e>
 	<http://purl.jp/knapsack/property/category> "Antibacterial", "Antifungal" ;
 	<http://purl.jp/knapsack/property/function> "Antibacterial", "Antifungal" ;
@@ -177,8 +173,6 @@ where {
 * output: [md5Metabolite_Label_cid.ttl](../kushida/変換結果20220108/python変換結果20220108/md5Metabolite_Label_cid.ttl)
 
 ```
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-
 <http://purl.jp/knapsack/activity#f6596aa6da5e0718dfd9799e38023a8e>
 	<http://www.w3.org/2000/01/rdf-schema#label>	"(+)-11-Hydroxyvittatine"@en ;
 	<http://purl.org/dc/terms/identifier>	"C00027615" .
@@ -190,5 +184,40 @@ where {
 ```
 
 
+### 8. Activity_chebi
+* step: load RDF into virtuoso
+   * graph <http://metadb.riken.jp/db/knapsackRDF>
+     * 1. md5References_title_fromNatural_Activity_main.ttl
+     * 2. md5Species_Activity_References_fromNatural_Activity_main_02.ttl
+     * 3. md5Function_md5CategoryOfMebabolite.ttl
+     * 4. md5Metabolite_Label_cid.ttl
+     * 5. md5Metabolite_ActivityCateFunc_TargetSp_Ref.ttl
+     * 6. md5Activity_Species_fromNatural_Activity_act_list.ttl
+     * 7. BA_1_2_8plusMetaboliteA03.ttl
+   * graph <http://metadb.riken.jp/db/knapsack_cid-chebi_cid>
+     * 4. knapsack_cid-chebi_cid.ttl
+* step: sparql(*) 
+* input: https://knowledge.brc.riken.jp/sparql
+* output: [md5activity_chebi.ttl](../kushida/変換結果20220108/SPARQLで取得20220121/md5activity_chebi.ttl)
 
+```
+CONSTRUCT {?activity <http://www.w3.org/2000/01/rdf-schema#seeAlso> ?chebi.}
+WHERE {
+  graph <http://metadb.riken.jp/db/knapsackRDF>{
+	?activity <http://www.w3.org/2000/01/rdf-schema#label> ?label.
+    ?activity <http://purl.org/dc/terms/identifier>	?literal_c.
+    	BIND(IRI(CONCAT("http://purl.jp/knapsack/", STR(?literal_c)))AS ?uri_c)
+    }
+  graph <http://metadb.riken.jp/db/knapsack_cid-chebi_cid> {
+    ?uri_c <http://www.w3.org/2004/02/skos/core#closeMatch> ?chebi.
+    }
+} 
 
+```
+```
+<http://purl.jp/knapsack/activity#6b8526f7c52cd7cf16c33e0e3dec2cf1>
+	<http://www.w3.org/2000/01/rdf-schema#seeAlso>	<http://purl.obolibrary.org/obo/CHEBI_4289> .
+
+<http://purl.jp/knapsack/activity#527390fa544d81dcc9cf22817c3bfc6f>
+	<http://www.w3.org/2000/01/rdf-schema#seeAlso>	<http://purl.obolibrary.org/obo/CHEBI_10137> .
+```
