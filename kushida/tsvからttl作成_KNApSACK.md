@@ -49,7 +49,6 @@ where {
 }
 
 # graph <http://metadb.riken.jp/db/knapsackRDF>
-## Activity_Species_fromNatural_Activity_act_list_BA_03.ttl
 ## md5References_title_fromNatural_Activity_main.ttl
 ## md5Species_Activity_References_fromNatural_Activity_main_02.ttl
 ## md5Function_md5CategoryOfMebabolite.ttl
