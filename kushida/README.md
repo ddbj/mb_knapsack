@@ -151,41 +151,42 @@ where {
 
 ## Metabolite_Activity RDF作成方法
 ### 6. Metabolite_ActivityCateFunc_TargetSp_Ref
-* step: [Metabolite_ActivityCateFunc_TargetSp_Ref.py](../kushida/変換スクリプト20220108/Metabolite_ActivityCateFunc_TargetSp_Ref.py)
+* step: [md5Metabolite_ActivityCateFunc_TargetSp_Ref20220626.py](../kushida/変換スクリプト20220108/md5Metabolite_ActivityCateFunc_TargetSp_Ref20220626.py)
 * input: [Metabolite_Activity.tsv](../kushida/変換前20210927/Metabolite_Activity.tsv)
-* output: [Metabolite_ActivityCateFunc_TargetSp_Ref.ttl](../kushida/変換結果20220108/python変換結果20220108/Metabolite_ActivityCateFunc_TargetSp_Ref.ttl)
+* output: [md5Metabolite_ActivityCateFunc_TargetSp_Ref.ttl](../kushida/変換結果20220108/python変換結果20220108/md5Metabolite_ActivityCateFunc_TargetSp_Ref.ttl)
 
 ```
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
-<http://knapsack/Metabolite/%28%2B%29-11-Hydroxyvittatine>
-    <http://knapsack/property/category> "Antibacterial", "Antifungal" ;
-    <http://knapsack/property/function> "Antibacterial", "Antifungal" ;
-    <http://knapsack/property/references> "Evidente, et al., Phytochemistry, 65, (2004), 2113." ;
-    <http://knapsack/property/targetsp> "Candida albicans", "Staphylococcus aureus" .
+<http://purl.jp/knapsack/activity#f6596aa6da5e0718dfd9799e38023a8e>
+	<http://purl.jp/knapsack/property/category> "Antibacterial", "Antifungal" ;
+	<http://purl.jp/knapsack/property/function> "Antibacterial", "Antifungal" ;
+	<http://purl.jp/knapsack/property/references> "Evidente, et al., Phytochemistry, 65, (2004), 2113." ;
+	<http://purl.jp/knapsack/property/targetsp> "Candida albicans", "Staphylococcus aureus" .
 
-<http://knapsack/Metabolite/%28%2B%29-4-Hydroxy-1-tetralone%3B%284S%29-4-Hydroxy-alpha-tetralone>
-    <http://knapsack/property/category> "Antituberculotic", "Cytotoxic" ;
-    <http://knapsack/property/function> "Antibacterial", "Cytotoxic inactive, HT29 cells", "Cytotoxic inactive, MCF7 cells" ;
-    <http://knapsack/property/references> "Li, et al., Chem Pharm Bull, 51, (2003), 262.;MACHIDA, et al., Chem Pharm Bull, 53, (2005), 934.;Lin, et al., Planta Med, 71, (2005), 171."
-    <http://knapsack/property/targetsp> "Mycobacterium tuberculosis" .
+<http://purl.jp/knapsack/activity#09524c2d7c74cc3a58714e33bc81eda6>
+	<http://purl.jp/knapsack/property/category> "Antituberculotic", "Cytotoxic" ;
+	<http://purl.jp/knapsack/property/function> "Antibacterial", "Cytotoxic inactive, HT29 cells", "Cytotoxic inactive, MCF7 cells" ;
+	<http://purl.jp/knapsack/property/references> "Li, et al., Chem Pharm Bull, 51, (2003), 262.;MACHIDA, et al., Chem Pharm Bull, 53, (2005), 934.;Lin, et al., Planta Med, 71, (2005), 171." ; 
+	<http://purl.jp/knapsack/property/targetsp> "Mycobacterium tuberculosis" .
 ```
 
 ### 7. Metabolite_Label_cid
-* step: [Metabolite_ActivityCateFunc_TargetSp_Ref.py](../kushida/変換スクリプト20220108/Metabolite_ActivityCateFunc_TargetSp_Ref.py)
+* step: [md5Metabolite_ActivityCateFunc_TargetSp_Ref20220626.py](../kushida/変換スクリプト20220108/md5Metabolite_ActivityCateFunc_TargetSp_Ref20220626.py)
 * input: [Metabolite_Activity.tsv](../kushida/変換前20210927/Metabolite_Activity.tsv)
-* output: [Metabolite_Label_cid.ttl](../kushida/変換結果20220108/python変換結果20220108/Metabolite_Label_cid.ttl)
+* output: [md5Metabolite_Label_cid.ttl](../kushida/変換結果20220108/python変換結果20220108/md5Metabolite_Label_cid.ttl)
 
 ```
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
-<http://knapsack/Metabolite/%28%2B%29-11-Hydroxyvittatine>
-    <http://purl.org/dc/terms/identifier> "C00027615" ;
-    <http://www.w3.org/2000/01/rdf-schema#label> "(+)-11-Hydroxyvittatine"@en .
+<http://purl.jp/knapsack/activity#f6596aa6da5e0718dfd9799e38023a8e>
+	<http://www.w3.org/2000/01/rdf-schema#label>	"(+)-11-Hydroxyvittatine"@en ;
+	<http://purl.org/dc/terms/identifier>	"C00027615" .
 
-<http://knapsack/Metabolite/%28%2B%29-4-Hydroxy-1-tetralone%3B%284S%29-4-Hydroxy-alpha-tetralone>
-    <http://purl.org/dc/terms/identifier> "C00050618" ;
-    <http://www.w3.org/2000/01/rdf-schema#label> "(+)-4-Hydroxy-1-tetralone;(4S)-4-Hydroxy-alpha-tetralone"@en .
+<http://purl.jp/knapsack/activity#09524c2d7c74cc3a58714e33bc81eda6>
+	<http://www.w3.org/2000/01/rdf-schema#label>
+	"(+)-4-Hydroxy-1-tetralone;(4S)-4-Hydroxy-alpha-tetralone"@en ,"(+)-4-Hydroxy-1-tetralone"@en , "(4S)-4-Hydroxy-alpha-tetralone"@en ;
+	<http://purl.org/dc/terms/identifier>	"C00050618" .
 ```
 
 
