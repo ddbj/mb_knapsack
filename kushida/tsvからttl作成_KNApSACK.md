@@ -13,8 +13,7 @@ d. Natural_Activity_dictionary.tsv
 5. md5Metabolite_ActivityCateFunc_TargetSp_Ref.ttl
 6. md5Metabolite_Label_cid.ttl
 7. BA_1_2_8plusMetaboliteA03.ttl
-8. md5Function_md5CategoryOfMebabolite.ttl
-9. md5activity_chebi.ttl
+8. md5activity_chebi.ttl
 
 ## 変換スクリプト（python）and 作成方法
 1. <- a. md5Species_Activity_References_fromNatural_Activity_main_02_20220626.py
@@ -24,8 +23,7 @@ d. Natural_Activity_dictionary.tsv
 5. <- c. md5Metabolite_ActivityCateFunc_TargetSp_Ref20220626.py
 6. <- c. md5Metabolite_ActivityCateFunc_TargetSp_Ref20220626.py
 7. <- d. Protegeで編集
-8. <- c. md5Metabolite_ActivityCateFunc_TargetSp_Ref20220626.py
-9. <- 下記のSPARQLで取得（*2）
+8. <- 下記のSPARQLで取得（*2）
 
 ---
 * SPARQLで取得（*1, *2）
