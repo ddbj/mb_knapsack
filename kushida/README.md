@@ -1,55 +1,54 @@
 
 ## Natural_Activity RDF作成方法
 ### 1. Species- Activity - References
-* step: [Species_Activity_References_fromNatural_Activity_main_02.py](../kushida/変換スクリプト20220108/Species_Activity_References_fromNatural_Activity_main_02.py)
+* step: [md5Species_Activity_References_fromNatural_Activity_main_02_20220626.py](../kushida/変換スクリプト20220108/md5Species_Activity_References_fromNatural_Activity_main_02_20220626.py)
 * input: [Natural_Activity_main_rev.tsv](../kushida/変換前20210927/Natural_Activity_main_rev.tsv)
-* output: [Species_Activity_References_fromNatural_Activity_main_02.ttl](../kushida/変換結果20220108/python変換結果20220108/Species_Activity_References_fromNatural_Activity_main_02.ttl)
+* output: [md5Species_Activity_References_fromNatural_Activity_main_02.ttl](../kushida/変換結果20220108/python変換結果20220108/md5Species_Activity_References_fromNatural_Activity_main_02.ttl)
 
 ```
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
-<http://knapsack/Species/Abelmoschus%20esculentus%20%28L.%29%20Moench.>
-    <http://knapsack/proterty/activity> "Abortifacient"@en, "Antibacterial"@en, "Anticancer"@en, "Antispasmodic"@en, "Demulcent"@en, "Diaphoretic"@en, "Diuretic"@en, "Emollient"@en, "Immunostimulant"@en, "Stimulant"@en, "免疫賦活剤"@ja, "利尿薬"@ja, "堕胎薬"@ja, "抗ガン"@ja, "抗菌"@ja, "発汗剤"@ja, "皮膚の炎症または傷を沈静化する（油脂や軟膏等の形態の）薬物"@ja, "緩和剤"@ja, "興奮薬"@ja, "鎮痙薬"@ja .
+<http://purl.jp/knapsack/annotation#e77d07072736ea0340064c854957905d>
+	<http://purl.jp/knapsack/proterty/activity>	"Abortifacient"@en, "堕胎薬"@ja, "Antibacterial"@en, "抗菌"@ja, "Anticancer"@en, "抗ガン"@ja, "Antispasmodic"@en, "鎮痙薬"@ja, "Demulcent"@en, "皮膚の炎症または傷を沈静化する（油脂や軟膏等の形態の）薬物"@ja, "Diaphoretic"@en, "発汗剤"@ja, "Diuretic"@en, "利尿薬"@ja, "Emollient"@en, "緩和剤"@ja, "Immunostimulant"@en, "免疫賦活剤"@ja, "Stimulant"@en, "興奮薬"@ja.
 
-<http://knapsack/Species/Abelmoschus%20moschatus%20Medik.>
-    <http://knapsack/proterty/activity> "Antihysteric"@en, "Antipyretic"@en, "Antiseptic"@en, "Antispasmodic"@en, "Aphrodisiac"@en, "Carminative"@en, "Demulcent"@en, "Diuretic"@en, "Emollient"@en, "Insecticide"@en, "Litholytic"@en, "Stimulant"@en, "Stomachic"@en, "Tonic"@en, "健胃薬"@ja, "利尿薬"@ja, "媚薬"@ja, "強壮剤"@ja, "抗ヒステリー"@ja, "殺虫剤"@ja, "皮膚
-の炎症または傷を沈静化する（油脂や軟膏等の形態の）薬物"@ja, "結石溶解"@ja, "緩和剤"@ja, "興奮薬"@ja, "解熱薬"@ja, "鎮痙薬"@ja, "防腐剤"@ja, "駆風薬"@ja .
+<http://purl.jp/knapsack/annotation#d97e291f1149eff41f698e4d2f92ec20>
+	<http://purl.jp/knapsack/proterty/activity>	"Antihysteric"@en, "抗ヒステリー"@ja, "Antipyretic"@en, "解熱薬"@ja, "Antiseptic"@en, "防腐剤"@ja, "Antispasmodic"@en, "鎮痙薬"@ja, "Aphrodisiac"@en, "媚薬"@ja, "Carminative"@en, "駆風薬"@ja, "Demulcent"@en, "皮膚の炎症または傷を沈静化する（油脂や軟膏等の形態の）薬物"@ja, "Diuretic"@en, "利尿薬"@ja, "Emollient"@en, "緩和剤"@ja, "Insecticide"@en, "殺虫剤"@ja, "Litholytic"@en, "結石溶解"@ja, "Stimulant"@en, "興奮薬"@ja, "Stomachic"@en, "健胃薬"@ja, "Tonic"@en, "強壮剤"@ja.
 
 ```
 
 ### 2. Activity-Species
-* step: [Activity_Species_fromNatural_Activity_act_list.py](../kushida/変換スクリプト20220108/Activity_Species_fromNatural_Activity_act_list.py)
+* step: [md5Activity_Species_fromNatural_Activity_act_list20220626.py](../kushida/変換スクリプト20220108/md5Activity_Species_fromNatural_Activity_act_list20220626.py)
 * input: [Natural_Activity_act_list.tsv](../kushida/変換前20210927/Natural_Activity_act_list.tsv)
-* output: [Activity_Species_fromNatural_Activity_act_list.ttl](../kushida/変換結果20220108/python変換結果20220108/Activity_Species_fromNatural_Activity_act_list.ttl)
+* output: [md5Activity_Species_fromNatural_Activity_act_list.ttl](../kushida/変換結果20220108/python変換結果20220108/md5Activity_Species_fromNatural_Activity_act_list.ttl)
 
 ```
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
-<http://kanpsack/Activities/0001>
-    <http://kanpsack/property/sp2> "Chelidonium majus"@en, "Theobroma cacao"@en ;
-    <http://www.w3.org/2000/01/rdf-schema#label> "12-Lipoxygenase inhibitor"@en .
+<http://purl.jp/knapsack/activity#78b5662aa473d5a9f67c737ebf586cdf>
+	<http://www.w3.org/2000/01/rdf-schema#label>	"12-Lipoxygenase inhibitor"@en ;
+	<http://purl.jp/knapsack/property/sp2>	"Chelidonium majus"@en , "Theobroma cacao"@en .
 
-<http://kanpsack/Activities/0002>
-    <http://kanpsack/property/sp2> "Theobroma cacao"@en ;
-    <http://www.w3.org/2000/01/rdf-schema#label> "15-Lipoxygenase inhibitor"@en .
+<http://purl.jp/knapsack/activity#96d538ca336e0aaf5edd58850b5ebf26>
+	<http://www.w3.org/2000/01/rdf-schema#label>	"15-Lipoxygenase inhibitor"@en ;
+	<http://purl.jp/knapsack/property/sp2>	"Theobroma cacao"@en .
 ```
 
 ### 3. References_title
-* step: [References_title_fromNatural_Activity_main.py](../kushida/変換スクリプト20220108/References_title_fromNatural_Activity_main.py)
+* step: [md5References_title_fromNatural_Activity_main20220626.py](../kushida/変換スクリプト20220108/md5References_title_fromNatural_Activity_main20220626.py)
 * input: [Natural_Activity_main_rev.tsv](../kushida/変換前20210927/Natural_Activity_main_rev.tsv)
-* output: [References_title_fromNatural_Activity_main.ttl](../kushida/変換結果20220108/python変換結果20220108/References_title_fromNatural_Activity_main.ttl)
+* output: [md5References_title_fromNatural_Activity_main.ttl](../kushida/変換結果20220108/python変換結果20220108/md5References_title_fromNatural_Activity_main.ttl)
 
 ```
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
-<http://kanpsack/References/James%20A%20Duke%20with%20Mary%20Jo%20Bogenschutz-Godwin%2CJudi%20duCellier%2CPeggy-Ann%20K.Duke%28Illustrator%29%2CCRC%20HANDBOOK%20OF%20Medicinal%20Spices%2CCRC%20PRESS%282002%29>
-    <http://purl.org/dc/elements/1.1/title> "James A Duke with Mary Jo Bogenschutz-Godwin,Judi duCellier,Peggy-Ann K.Duke(Illustrator),CRC HANDBOOK OF Medicinal Spices,CRC PRESS(2002)" .
-
-<http://kanpsack/References/James%20A.%20Duke%2CDuke%27s%20handbook%20of%20medicinal%20plants%20of%20Latin%20America%2CCRC%20Press%282008%29>
-    <http://purl.org/dc/elements/1.1/title> "James A. Duke,Duke's handbook of medicinal plants of Latin America,CRC Press(2008)" .
-
-<http://kanpsack/References/James%20A.%20Duke%2CHandbook%20of%20Medicinal%20Herbs%202nd%20Ed.%2CCRC%20Press%282002%29>
-    <http://purl.org/dc/elements/1.1/title> "James A. Duke,Handbook of Medicinal Herbs 2nd Ed.,CRC Press(2002)" .
+<http://purl.jp/knapsack/References/9dadd46089d9864f9457ca4eb941b002>
+	<http://purl.org/dc/elements/1.1/title>	"James A. Duke,Duke's handbook of medicinal plants of Latin America,CRC Press(2008)" . 
+    
+<http://purl.jp/knapsack/References/f9bf95f6e8b4b522a83feefc371afcec>
+	<http://purl.org/dc/elements/1.1/title>	"James A Duke with Mary Jo Bogenschutz-Godwin,Judi duCellier,Peggy-Ann K.Duke(Illustrator),CRC HANDBOOK OF Medicinal Spices,CRC PRESS(2002)" . 
+    
+<http://purl.jp/knapsack/References/9498058f7b9a417fa009c8dbc7ce48c3>
+	<http://purl.org/dc/elements/1.1/title>	"James A. Duke,Handbook of Medicinal Herbs 2nd Ed.,CRC Press(2002)" . 
 ```
 
 ### 4. BA_1_2_8plusMetaboliteA03
@@ -103,14 +102,18 @@
 ### 5. Activity_Species
 * step: load RDF into virtuoso
    * graph <http://metadb.riken.jp/db/knapsackRDF>
-     * 1. Species_Activity_References_fromNatural_Activity_main_02.ttl
-     * 2. Activity_Species_fromNatural_Activity_act_list.ttl
-     * 3. References_title_fromNatural_Activity_main.ttl
+     * 1. md5References_title_fromNatural_Activity_main.ttl
+     * 2. md5Species_Activity_References_fromNatural_Activity_main_02.ttl
+     * 3. md5Function_md5CategoryOfMebabolite.ttl
+     * 4. md5Metabolite_Label_cid.ttl
+     * 5. md5Metabolite_ActivityCateFunc_TargetSp_Ref.ttl
+     * 6. md5Activity_Species_fromNatural_Activity_act_list.ttl
+     * 7. BA_1_2_8plusMetaboliteA03.ttl
    * graph <http://metadb.riken.jp/db/biologicalActivity>
      * 4. BA_1_2_8plusMetaboliteA03.ttl
 * step: sparql(*) 
 * input: https://knowledge.brc.riken.jp/sparql
-* output: [Activity_Species_fromNatural_Activity_act_list_BA_02.ttl](../kushida/変換結果20220108/SPARQLで取得20220121/Activity_Species_fromNatural_Activity_act_list_BA_02.ttl)
+* output: [Activity_Species_fromNatural_Activity_act_list_BA_03.ttl](../kushida/変換結果20220108/SPARQLで取得20220121/Activity_Species_fromNatural_Activity_act_list_BA_03.ttl)
 
 ```
 CONSTRUCT {
