@@ -179,7 +179,7 @@ save_file('md5Metabolite_Label_cid.ttl', "\n".join(ttl_mlc_rev)) # .joinで，�
 
 
 
-
+"""
 ### Function_CategoryOfMebabolite.ttl を作成
 
 ttl_func_categ = ["{0}\t<http://www.w3.org/2000/01/rdf-schema#subClassOf>\t{1} ;\t{2} . \n{1}\t{3} .".format(line1, line2, line3, line4) for line1, line2, line3, line4 in zip(cal3_httpMd5Fuc, cal2_httpMd5Cat, cal3_label_fuc, cal2_label_cat)]
@@ -206,7 +206,7 @@ ttl_func_categ_rev = list(set(ttl_func_categ_rev)) # 重複削除
 ttl_func_categ_rev = sorted(ttl_func_categ_rev) # 並べ替え
 
 save_file('md5Function_md5CategoryOfMebabolite.ttl', "\n".join(ttl_func_categ_rev)) # .joinで，改行で'\n'で行を連結
-
+"""
 
 
 
