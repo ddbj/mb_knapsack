@@ -8,7 +8,7 @@ d. Natural_Activity_dictionary.tsv
 ## 変換結果（ttl）
 1. md5Species_Activity_References_fromNatural_Activity_main_02.ttl
 2. md5References_title_fromNatural_Activity_main.ttl 
-3. Activity_Species_fromNatural_Activity_act_list_BA_02.ttl
+3. Activity_Species_fromNatural_Activity_act_list_BA_03.ttl
 4. md5Activity_Species_fromNatural_Activity_act_list.ttl
 5. md5Metabolite_ActivityCateFunc_TargetSp_Ref.ttl
 6. md5Metabolite_Label_cid.ttl
@@ -36,12 +36,12 @@ d. Natural_Activity_dictionary.tsv
 # *1
 CONSTRUCT {
 ?ba <http://www.w3.org/2000/01/rdf-schema#label> ?label. 
-?ba <http://knapsack/property/sp2> ?species. 
+?ba <http://purl.jp/knapsack/property/sp2> ?species. 
 }
 where {
   graph <http://metadb.riken.jp/db/knapsackRDF> {
     OPTIONAL{?knapsack <http://www.w3.org/2000/01/rdf-schema#label> ?label.}
-    OPTIONAL{?knapsack <http://kanpsack/property/sp2> ?species.  }
+    OPTIONAL{?knapsack <http://purl.jp/knapsack/property/sp2> ?species.  }
     }  
   graph <http://metadb.riken.jp/db/biologicalActivity> {
     ?ba <http://www.w3.org/2000/01/rdf-schema#label> ?label.  
