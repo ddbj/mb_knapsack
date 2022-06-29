@@ -1,9 +1,9 @@
 # tsvからttl作成（20220629修正 by櫛田，20220121作成 by櫛田）
 ## 変換前（tsv）
-a. Natural_Activity_main_rev.tsv
-b. Natural_Activity_act_list.tsv
-c. Metabolite_Activity.tsv
-d. Natural_Activity_dictionary.tsv
+a. Natural_Activity_main_rev.tsv  
+b. Natural_Activity_act_list.tsv  
+c. Metabolite_Activity.tsv  
+d. Natural_Activity_dictionary.tsv  
 
 ## 変換結果（ttl）
 1. md5Species_Activity_References_fromNatural_Activity_main_02.ttl
@@ -19,16 +19,16 @@ d. Natural_Activity_dictionary.tsv
 ## 変換スクリプト（python）and 作成方法
 1. <- a. md5Species_Activity_References_fromNatural_Activity_main_02_20220626.py
 2. <- a. md5References_title_fromNatural_Activity_main20220626.py
-3. <- 下記のSPARQLで取得（＊1）
+3. <- 下記のSPARQLで取得（*1）
 4. <- b. md5Activity_Species_fromNatural_Activity_act_list20220626.py
 5. <- c. md5Metabolite_ActivityCateFunc_TargetSp_Ref20220626.py
 6. <- c. md5Metabolite_ActivityCateFunc_TargetSp_Ref20220626.py
 7. <- d. Protegeで編集
 8. <- c. md5Metabolite_ActivityCateFunc_TargetSp_Ref20220626.py
-9. <- 下記のSPARQLで取得（＊2）
+9. <- 下記のSPARQLで取得（*2）
 
 ---
-* SPARQLで取得（＊1, *2）
+* SPARQLで取得（*1, *2）
 * 以下のSPARQL Endpointで取得
 * https://knowledge.brc.riken.jp/sparql
 
