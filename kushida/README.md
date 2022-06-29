@@ -118,12 +118,12 @@
 ```
 CONSTRUCT {
 ?ba <http://www.w3.org/2000/01/rdf-schema#label> ?label. 
-?ba <http://knapsack/property/sp2> ?species. 
+?ba <http://purl.jp/knapsack/property/sp2> ?species. 
 }
 where {
   graph <http://metadb.riken.jp/db/knapsackRDF> {
     OPTIONAL{?knapsack <http://www.w3.org/2000/01/rdf-schema#label> ?label.}
-    OPTIONAL{?knapsack <http://kanpsack/property/sp2> ?species.  }
+    OPTIONAL{?knapsack <http://purl.jp/knapsack/property/sp2> ?species.  }
     }  
   graph <http://metadb.riken.jp/db/biologicalActivity> {
     ?ba <http://www.w3.org/2000/01/rdf-schema#label> ?label.  
