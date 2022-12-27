@@ -40,3 +40,10 @@ psql -h localhost -p 5432 -U postgres -d Natural_Activity -c 'SELECT * FROM main
 psql -h localhost -p 5432 -U postgres -d Natural_Activity -c 'SELECT * FROM act_list' -A -F " " > Natural_Activity_act_list.tsv
 psql -h localhost -p 5432 -U postgres -d Natural_Activity -c 'SELECT * FROM dictionary' -A -F " " > Natural_Activity_dictionary.tsv
 ```
+
+### Twins
+```
+root@postgres:/# createdb -U postgres Twins
+root@postgres:/# psql -U postgres -d Twins < docker-entrypoint-initdb.d/Twins_dump_202210171529.sql 
+psql -h localhost -p 5432 -U postgres -d Twins -c 'SELECT * FROM main;' -A -F "        " > Twins_dump_202210171529.tsv
+```
