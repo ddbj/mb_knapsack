@@ -1,0 +1,1143 @@
+PREFIX : <http://weso.es/shapes/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX xml: <http://www.w3.org/XML/1998/namespace/>
+PREFIX : <http://purl.jp/knapsack/>
+PREFIX knapsack: <http://purl.jp/knapsack/resource#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX cheminf: <http://semanticscience.org/resource/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX bibo: <http://purl.org/ontology/bibo/>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+:CHEMINF_000058   # 57919 instances
+{
+   rdf:type  [cheminf:CHEMINF_000058]  ;                       # 100.0 % (57919 instances).
+   dcterms:format  IRI  ;                                      # 100.0 % (57919 instances).
+   rdfs:seeAlso  IRI                                           # 100.0 % (57919 instances).
+}
+
+
+:CHEMINF_000043   # 57919 instances
+{
+   rdf:type  [cheminf:CHEMINF_000043]  ;                       # 100.0 % (57919 instances).
+   cheminf:SIO_000300  xsd:string                              # 100.0 % (57919 instances).
+}
+
+
+:KNApSAcKCoreRecord   # 57919 instances
+{
+   rdf:type  [knapsack:KNApSAcKCoreRecord]  ;                  # 100.0 % (57919 instances).
+   knapsack:fid  xsd:string  ;                                 # 100.0 % (57919 instances).
+   cheminf:CHEMINF_000200  IRI  {5};                           # 100.0 % (57919 instances).
+            # 100.0 % (57919 instances). obj: @:CHEMINF_000059. Cardinality: {1}
+            # 100.0 % (57919 instances). obj: @:CHEMINF_000018. Cardinality: {1}
+            # 100.0 % (57919 instances). obj: @:CHEMINF_000113. Cardinality: {1}
+            # 100.0 % (57919 instances). obj: @:Start_substance. Cardinality: {1}
+   dcterms:hasPart  IRI  {3};                                  # 100.0 % (57919 instances).
+            # 100.0 % (57919 instances). obj: @:CHEMINF_000058. Cardinality: {1}
+            # 100.0 % (57919 instances). obj: @:SDfile. Cardinality: {1}
+            # 100.0 % (57919 instances). obj: @:CDXfile. Cardinality: {1}
+   foaf:homepage  IRI  ;                                       # 100.0 % (57919 instances).
+   cheminf:SIO_000008  IRI  {3};                               # 100.0 % (57919 instances).
+            # 100.0 % (57919 instances). obj: @:CHEMINF_000042. Cardinality: {1}
+            # 100.0 % (57919 instances). obj: @:CHEMINF_000043. Cardinality: {1}
+            # 100.0 % (57919 instances). obj: @:CHEMINF_000334. Cardinality: {1}
+   cheminf:SIO_000255  @:KNApSAcKCoreAnnotation  +;            # 100.0 % (57919 instances).
+            # 73.5699856696421 % (42611 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {1}
+            # 12.396622869869992 % (7180 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {2}
+            # 4.451043698958891 % (2578 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {3}
+            # 2.3774581743469327 % (1377 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {4}
+            # 1.439941987948687 % (834 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {5}
+            # 0.9875861116386677 % (572 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {6}
+            # 0.7320568379978936 % (424 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {7}
+            # 0.48170721179578374 % (279 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {8}
+            # 0.38156736131493985 % (221 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {9}
+            # 0.3228646903434106 % (187 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {10}
+            # 0.26761511766432433 % (155 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {13}
+            # 0.25207617534833127 % (146 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {11}
+            # 0.23653723303233826 % (137 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {12}
+            # 0.17092836547592327 % (99 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {14}
+            # 0.14848322657504445 % (86 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {15}
+            # 0.1277646368203871 % (74 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {17}
+            # 0.11913189108927985 % (69 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {18}
+            # 0.1174053419430584 % (68 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {16}
+            # 0.0915071047497367 % (53 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {21}
+            # 0.0880540064572938 % (51 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {19}
+            # 0.07251506414130078 % (42 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {20}
+            # 0.07078851499507934 % (41 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {22}
+            # 0.0587026709715292 % (34 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {23}
+            # 0.053523023532864866 % (31 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {26}
+            # 0.051796474386643414 % (30 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {28}
+            # 0.05006992524042197 % (29 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {25}
+            # 0.044890277801757625 % (26 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {30}
+            # 0.044890277801757625 % (26 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {24}
+            # 0.034530982924428945 % (20 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {33}
+            # 0.0328044337782075 % (19 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {32}
+            # 0.0328044337782075 % (19 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {27}
+            # 0.0328044337782075 % (19 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {31}
+            # 0.027624786339543156 % (16 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {29}
+            # 0.02417168804710026 % (14 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {37}
+            # 0.022445138900878812 % (13 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {40}
+            # 0.020718589754657367 % (12 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {38}
+            # 0.01899204060843592 % (11 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {41}
+            # 0.01899204060843592 % (11 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {42}
+            # 0.017265491462214472 % (10 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {34}
+            # 0.017265491462214472 % (10 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {49}
+            # 0.017265491462214472 % (10 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {36}
+            # 0.015538942315993025 % (9 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {43}
+            # 0.015538942315993025 % (9 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {52}
+            # 0.015538942315993025 % (9 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {50}
+            # 0.015538942315993025 % (9 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {58}
+            # 0.015538942315993025 % (9 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {39}
+            # 0.013812393169771578 % (8 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {56}
+            # 0.01208584402355013 % (7 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {35}
+            # 0.01208584402355013 % (7 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {48}
+            # 0.01208584402355013 % (7 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {45}
+            # 0.010359294877328683 % (6 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {44}
+            # 0.010359294877328683 % (6 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {46}
+            # 0.010359294877328683 % (6 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {68}
+            # 0.010359294877328683 % (6 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {62}
+            # 0.008632745731107236 % (5 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {65}
+            # 0.008632745731107236 % (5 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {98}
+            # 0.008632745731107236 % (5 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {66}
+            # 0.008632745731107236 % (5 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {51}
+            # 0.008632745731107236 % (5 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {53}
+            # 0.008632745731107236 % (5 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {61}
+            # 0.006906196584885789 % (4 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {110}
+            # 0.006906196584885789 % (4 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {67}
+            # 0.006906196584885789 % (4 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {54}
+            # 0.005179647438664342 % (3 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {63}
+            # 0.005179647438664342 % (3 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {119}
+            # 0.005179647438664342 % (3 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {73}
+            # 0.005179647438664342 % (3 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {47}
+            # 0.005179647438664342 % (3 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {92}
+            # 0.005179647438664342 % (3 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {111}
+            # 0.005179647438664342 % (3 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {133}
+            # 0.005179647438664342 % (3 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {60}
+            # 0.005179647438664342 % (3 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {69}
+            # 0.005179647438664342 % (3 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {131}
+            # 0.005179647438664342 % (3 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {82}
+            # 0.0034530982924428945 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {83}
+            # 0.0034530982924428945 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {103}
+            # 0.0034530982924428945 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {268}
+            # 0.0034530982924428945 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {76}
+            # 0.0034530982924428945 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {96}
+            # 0.0034530982924428945 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {72}
+            # 0.0034530982924428945 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {84}
+            # 0.0034530982924428945 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {79}
+            # 0.0034530982924428945 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {99}
+            # 0.0034530982924428945 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {86}
+            # 0.0034530982924428945 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {172}
+            # 0.0034530982924428945 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {108}
+            # 0.0034530982924428945 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {89}
+            # 0.0034530982924428945 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {59}
+            # 0.0034530982924428945 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {55}
+            # 0.0034530982924428945 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {80}
+            # 0.0034530982924428945 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {70}
+            # 0.0034530982924428945 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {141}
+            # 0.0034530982924428945 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {114}
+            # 0.0034530982924428945 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {116}
+            # 0.0034530982924428945 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {77}
+            # 0.0034530982924428945 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {231}
+            # 0.0034530982924428945 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {87}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {259}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {125}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {140}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {101}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {128}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {203}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {88}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {57}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {90}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {188}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {64}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {94}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {95}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {100}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {129}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {118}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {117}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {126}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {194}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {130}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {138}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {197}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {244}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {137}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {184}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {127}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {143}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {272}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {232}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {262}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {526}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {105}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {91}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {160}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {81}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {229}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {107}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {166}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {151}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {113}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {155}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {115}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {134}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {180}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {74}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {135}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {71}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {168}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {159}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {173}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {75}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {198}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {93}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {145}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {296}
+            # 0.0017265491462214472 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {185}
+   dcterms:references  IRI  +;                                 # 100.0 % (57919 instances).
+            # 67.26290163849514 % (38958 instances). obj: IRI. Cardinality: {1}
+            # 16.961618812479497 % (9824 instances). obj: IRI. Cardinality: {2}
+            # 6.545347813325507 % (3791 instances). obj: IRI. Cardinality: {3}
+            # 2.703775962982786 % (1566 instances). obj: IRI. Cardinality: {4}
+            # 1.536628740137088 % (890 instances). obj: IRI. Cardinality: {5}
+            # 1.0739135689497403 % (622 instances). obj: IRI. Cardinality: {6}
+            # 0.6923462076348004 % (401 instances). obj: IRI. Cardinality: {7}
+            # 0.49379305581933386 % (286 instances). obj: IRI. Cardinality: {8}
+            # 0.41609834423936876 % (241 instances). obj: IRI. Cardinality: {9}
+            # 0.3004195514425318 % (174 instances). obj: IRI. Cardinality: {10}
+            # 0.2417168804710026 % (140 instances). obj: IRI. Cardinality: {11}
+            # 0.18474075864569484 % (107 instances). obj: IRI. Cardinality: {13}
+            # 0.1795611112070305 % (104 instances). obj: IRI. Cardinality: {12}
+            # 0.13985048084393722 % (81 instances). obj: IRI. Cardinality: {14}
+            # 0.10704604706572973 % (62 instances). obj: IRI. Cardinality: {16}
+            # 0.10359294877328683 % (60 instances). obj: IRI. Cardinality: {15}
+            # 0.09323365389595814 % (54 instances). obj: IRI. Cardinality: {18}
+            # 0.08632745731107236 % (50 instances). obj: IRI. Cardinality: {17}
+            # 0.06733541670263644 % (39 instances). obj: IRI. Cardinality: {19}
+            # 0.053523023532864866 % (31 instances). obj: IRI. Cardinality: {20}
+            # 0.04834337609420052 % (28 instances). obj: IRI. Cardinality: {23}
+            # 0.044890277801757625 % (26 instances). obj: IRI. Cardinality: {21}
+            # 0.044890277801757625 % (26 instances). obj: IRI. Cardinality: {22}
+            # 0.03798408121687184 % (22 instances). obj: IRI. Cardinality: {28}
+            # 0.034530982924428945 % (20 instances). obj: IRI. Cardinality: {24}
+            # 0.03107788463198605 % (18 instances). obj: IRI. Cardinality: {27}
+            # 0.0293513354857646 % (17 instances). obj: IRI. Cardinality: {29}
+            # 0.0293513354857646 % (17 instances). obj: IRI. Cardinality: {25}
+            # 0.027624786339543156 % (16 instances). obj: IRI. Cardinality: {30}
+            # 0.027624786339543156 % (16 instances). obj: IRI. Cardinality: {26}
+            # 0.02417168804710026 % (14 instances). obj: IRI. Cardinality: {32}
+            # 0.015538942315993025 % (9 instances). obj: IRI. Cardinality: {44}
+            # 0.015538942315993025 % (9 instances). obj: IRI. Cardinality: {39}
+            # 0.013812393169771578 % (8 instances). obj: IRI. Cardinality: {33}
+            # 0.01208584402355013 % (7 instances). obj: IRI. Cardinality: {31}
+            # 0.01208584402355013 % (7 instances). obj: IRI. Cardinality: {36}
+            # 0.01208584402355013 % (7 instances). obj: IRI. Cardinality: {35}
+            # 0.01208584402355013 % (7 instances). obj: IRI. Cardinality: {46}
+            # 0.01208584402355013 % (7 instances). obj: IRI. Cardinality: {65}
+            # 0.010359294877328683 % (6 instances). obj: IRI. Cardinality: {40}
+            # 0.010359294877328683 % (6 instances). obj: IRI. Cardinality: {43}
+            # 0.010359294877328683 % (6 instances). obj: IRI. Cardinality: {38}
+            # 0.010359294877328683 % (6 instances). obj: IRI. Cardinality: {34}
+            # 0.008632745731107236 % (5 instances). obj: IRI. Cardinality: {42}
+            # 0.008632745731107236 % (5 instances). obj: IRI. Cardinality: {41}
+            # 0.008632745731107236 % (5 instances). obj: IRI. Cardinality: {56}
+            # 0.008632745731107236 % (5 instances). obj: IRI. Cardinality: {73}
+            # 0.008632745731107236 % (5 instances). obj: IRI. Cardinality: {37}
+            # 0.006906196584885789 % (4 instances). obj: IRI. Cardinality: {79}
+            # 0.006906196584885789 % (4 instances). obj: IRI. Cardinality: {51}
+            # 0.006906196584885789 % (4 instances). obj: IRI. Cardinality: {45}
+            # 0.006906196584885789 % (4 instances). obj: IRI. Cardinality: {50}
+            # 0.006906196584885789 % (4 instances). obj: IRI. Cardinality: {49}
+            # 0.005179647438664342 % (3 instances). obj: IRI. Cardinality: {55}
+            # 0.005179647438664342 % (3 instances). obj: IRI. Cardinality: {96}
+            # 0.005179647438664342 % (3 instances). obj: IRI. Cardinality: {110}
+            # 0.005179647438664342 % (3 instances). obj: IRI. Cardinality: {74}
+            # 0.005179647438664342 % (3 instances). obj: IRI. Cardinality: {154}
+            # 0.005179647438664342 % (3 instances). obj: IRI. Cardinality: {54}
+            # 0.005179647438664342 % (3 instances). obj: IRI. Cardinality: {47}
+            # 0.005179647438664342 % (3 instances). obj: IRI. Cardinality: {68}
+            # 0.0034530982924428945 % (2 instances). obj: IRI. Cardinality: {63}
+            # 0.0034530982924428945 % (2 instances). obj: IRI. Cardinality: {91}
+            # 0.0034530982924428945 % (2 instances). obj: IRI. Cardinality: {57}
+            # 0.0034530982924428945 % (2 instances). obj: IRI. Cardinality: {111}
+            # 0.0034530982924428945 % (2 instances). obj: IRI. Cardinality: {64}
+            # 0.0034530982924428945 % (2 instances). obj: IRI. Cardinality: {99}
+            # 0.0034530982924428945 % (2 instances). obj: IRI. Cardinality: {53}
+            # 0.0034530982924428945 % (2 instances). obj: IRI. Cardinality: {90}
+            # 0.0034530982924428945 % (2 instances). obj: IRI. Cardinality: {69}
+            # 0.0034530982924428945 % (2 instances). obj: IRI. Cardinality: {93}
+            # 0.0034530982924428945 % (2 instances). obj: IRI. Cardinality: {112}
+            # 0.0034530982924428945 % (2 instances). obj: IRI. Cardinality: {66}
+            # 0.0034530982924428945 % (2 instances). obj: IRI. Cardinality: {83}
+            # 0.0034530982924428945 % (2 instances). obj: IRI. Cardinality: {58}
+            # 0.0034530982924428945 % (2 instances). obj: IRI. Cardinality: {62}
+            # 0.0034530982924428945 % (2 instances). obj: IRI. Cardinality: {61}
+            # 0.0034530982924428945 % (2 instances). obj: IRI. Cardinality: {119}
+            # 0.0017265491462214472 % (1 instance). obj: IRI. Cardinality: {78}
+            # 0.0017265491462214472 % (1 instance). obj: IRI. Cardinality: {201}
+            # 0.0017265491462214472 % (1 instance). obj: IRI. Cardinality: {82}
+            # 0.0017265491462214472 % (1 instance). obj: IRI. Cardinality: {182}
+            # 0.0017265491462214472 % (1 instance). obj: IRI. Cardinality: {89}
+            # 0.0017265491462214472 % (1 instance). obj: IRI. Cardinality: {80}
+            # 0.0017265491462214472 % (1 instance). obj: IRI. Cardinality: {98}
+            # 0.0017265491462214472 % (1 instance). obj: IRI. Cardinality: {67}
+            # 0.0017265491462214472 % (1 instance). obj: IRI. Cardinality: {71}
+            # 0.0017265491462214472 % (1 instance). obj: IRI. Cardinality: {117}
+            # 0.0017265491462214472 % (1 instance). obj: IRI. Cardinality: {131}
+            # 0.0017265491462214472 % (1 instance). obj: IRI. Cardinality: {125}
+            # 0.0017265491462214472 % (1 instance). obj: IRI. Cardinality: {108}
+            # 0.0017265491462214472 % (1 instance). obj: IRI. Cardinality: {48}
+            # 0.0017265491462214472 % (1 instance). obj: IRI. Cardinality: {161}
+            # 0.0017265491462214472 % (1 instance). obj: IRI. Cardinality: {147}
+            # 0.0017265491462214472 % (1 instance). obj: IRI. Cardinality: {76}
+            # 0.0017265491462214472 % (1 instance). obj: IRI. Cardinality: {88}
+            # 0.0017265491462214472 % (1 instance). obj: IRI. Cardinality: {457}
+            # 0.0017265491462214472 % (1 instance). obj: IRI. Cardinality: {135}
+            # 0.0017265491462214472 % (1 instance). obj: IRI. Cardinality: {188}
+            # 0.0017265491462214472 % (1 instance). obj: IRI. Cardinality: {115}
+            # 0.0017265491462214472 % (1 instance). obj: IRI. Cardinality: {142}
+            # 0.0017265491462214472 % (1 instance). obj: IRI. Cardinality: {136}
+            # 0.0017265491462214472 % (1 instance). obj: IRI. Cardinality: {126}
+            # 0.0017265491462214472 % (1 instance). obj: IRI. Cardinality: {85}
+            # 0.0017265491462214472 % (1 instance). obj: IRI. Cardinality: {105}
+            # 0.0017265491462214472 % (1 instance). obj: IRI. Cardinality: {72}
+            # 0.0017265491462214472 % (1 instance). obj: IRI. Cardinality: {59}
+            # 0.0017265491462214472 % (1 instance). obj: IRI. Cardinality: {214}
+            # 100.0 % (57919 instances). obj: @:KNApSAcKReference. Cardinality: +
+            # 100.0 % (57919 instances). obj: @:Article. Cardinality: +
+   rdfs:label  xsd:string  ;                                   # 100.0 % (57919 instances).
+   dc:identifier  xsd:string  ;                                # 100.0 % (57919 instances).
+   rdfs:seeAlso  IRI                                           # 100.0 % (57919 instances).
+}
+
+
+:CHEMINF_000113   # 57919 instances
+{
+   rdf:type  [cheminf:CHEMINF_000113]  ;                       # 100.0 % (57919 instances).
+   rdfs:seeAlso  IRI  ;                                        # 100.0 % (57919 instances).
+   cheminf:SIO_000300  xsd:string                              # 100.0 % (57919 instances).
+}
+
+
+:Start_substance   # 57919 instances
+{
+   rdf:type  [knapsack:Start_substance]  ;                     # 100.0 % (57919 instances).
+   cheminf:SIO_000300  xsd:string                              # 100.0 % (57919 instances).
+}
+
+
+:Article   # 37342 instances
+{
+   rdf:type  [bibo:Article]  ;                                 # 100.0 % (37342 instances).
+   rdf:type  [knapsack:KNApSAcKReference]  ;                   # 100.0 % (37342 instances).
+   foaf:homepage  IRI  ;                                       # 100.0 % (37342 instances).
+   dc:title  xsd:string  ;                                     # 100.0 % (37342 instances).
+   dcterms:isReferencedBy  @:KNApSAcKCoreAnnotation  +;          # 100.0 % (37342 instances).
+            # 76.7955653151947 % (28677 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {1}
+            # 10.315462481923838 % (3852 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {2}
+            # 4.057093888918644 % (1515 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {3}
+            # 2.1396818595683147 % (799 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {4}
+            # 1.341652830592898 % (501 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {5}
+            # 0.8703336725403031 % (325 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {6}
+            # 0.5811150982807562 % (217 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {7}
+            # 0.5168443040008569 % (193 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {8}
+            # 0.2945744737828718 % (110 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {10}
+            # 0.25976112688125974 % (97 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {9}
+            # 0.2570831771195973 % (96 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {13}
+            # 0.20888008140967276 % (78 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {12}
+            # 0.19816828236302286 % (74 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {11}
+            # 0.17942263403138559 % (67 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {15}
+            # 0.16067698569974828 % (60 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {14}
+            # 0.08837234213486155 % (33 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {16}
+            # 0.08301644261153661 % (31 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {18}
+            # 0.0749825933265492 % (28 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {19}
+            # 0.0749825933265492 % (28 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {17}
+            # 0.07230464356488672 % (27 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {20}
+            # 0.06694874404156177 % (25 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {41}
+            # 0.053558995233249425 % (20 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {23}
+            # 0.04820309570992448 % (18 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {21}
+            # 0.04552514594826201 % (17 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {43}
+            # 0.0374912966632746 % (14 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {25}
+            # 0.03481334690161213 % (13 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {27}
+            # 0.03481334690161213 % (13 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {33}
+            # 0.03213539713994966 % (12 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {28}
+            # 0.03213539713994966 % (12 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {36}
+            # 0.029457447378287184 % (11 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {22}
+            # 0.026779497616624712 % (10 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {48}
+            # 0.026779497616624712 % (10 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {42}
+            # 0.026779497616624712 % (10 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {24}
+            # 0.026779497616624712 % (10 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {65}
+            # 0.02410154785496224 % (9 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {31}
+            # 0.02410154785496224 % (9 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {81}
+            # 0.02410154785496224 % (9 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {82}
+            # 0.02410154785496224 % (9 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {29}
+            # 0.021423598093299773 % (8 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {50}
+            # 0.021423598093299773 % (8 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {39}
+            # 0.021423598093299773 % (8 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {40}
+            # 0.021423598093299773 % (8 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {30}
+            # 0.0187456483316373 % (7 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {69}
+            # 0.0187456483316373 % (7 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {37}
+            # 0.0187456483316373 % (7 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {84}
+            # 0.0187456483316373 % (7 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {26}
+            # 0.01606769856997483 % (6 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {44}
+            # 0.01606769856997483 % (6 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {32}
+            # 0.013389748808312356 % (5 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {59}
+            # 0.013389748808312356 % (5 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {38}
+            # 0.013389748808312356 % (5 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {60}
+            # 0.013389748808312356 % (5 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {34}
+            # 0.010711799046649886 % (4 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {86}
+            # 0.010711799046649886 % (4 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {1004}
+            # 0.010711799046649886 % (4 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {96}
+            # 0.010711799046649886 % (4 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {100}
+            # 0.010711799046649886 % (4 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {46}
+            # 0.010711799046649886 % (4 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {57}
+            # 0.010711799046649886 % (4 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {47}
+            # 0.010711799046649886 % (4 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {54}
+            # 0.010711799046649886 % (4 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {83}
+            # 0.008033849284987415 % (3 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {98}
+            # 0.008033849284987415 % (3 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {106}
+            # 0.008033849284987415 % (3 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {56}
+            # 0.008033849284987415 % (3 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {45}
+            # 0.008033849284987415 % (3 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {120}
+            # 0.008033849284987415 % (3 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {63}
+            # 0.008033849284987415 % (3 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {172}
+            # 0.008033849284987415 % (3 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {99}
+            # 0.008033849284987415 % (3 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {118}
+            # 0.008033849284987415 % (3 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {107}
+            # 0.008033849284987415 % (3 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {62}
+            # 0.008033849284987415 % (3 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {91}
+            # 0.008033849284987415 % (3 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {58}
+            # 0.008033849284987415 % (3 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {49}
+            # 0.008033849284987415 % (3 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {77}
+            # 0.008033849284987415 % (3 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {74}
+            # 0.008033849284987415 % (3 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {53}
+            # 0.005355899523324943 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {124}
+            # 0.005355899523324943 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {115}
+            # 0.005355899523324943 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {92}
+            # 0.005355899523324943 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {261}
+            # 0.005355899523324943 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {87}
+            # 0.005355899523324943 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {88}
+            # 0.005355899523324943 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {162}
+            # 0.005355899523324943 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {101}
+            # 0.005355899523324943 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {97}
+            # 0.005355899523324943 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {75}
+            # 0.005355899523324943 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {51}
+            # 0.005355899523324943 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {79}
+            # 0.005355899523324943 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {35}
+            # 0.005355899523324943 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {208}
+            # 0.005355899523324943 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {105}
+            # 0.005355899523324943 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {111}
+            # 0.005355899523324943 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {196}
+            # 0.005355899523324943 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {70}
+            # 0.005355899523324943 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {110}
+            # 0.005355899523324943 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {121}
+            # 0.005355899523324943 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {164}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {76}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {1289}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {896}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {232}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {94}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {171}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {152}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {211}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {154}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {128}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {281}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {242}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {119}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {347}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {144}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {161}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {181}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {139}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {1510}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {137}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {132}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {426}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {90}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {67}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {1328}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {311}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {117}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {138}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {64}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {797}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {136}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {1056}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {148}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {368}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {537}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {669}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {130}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {227}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {66}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {116}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {293}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {114}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {200}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {220}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {113}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {409}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {1684}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {750}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {142}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {52}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {694}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {78}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {297}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {129}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {278}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {134}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {155}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {55}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {216}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {133}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {112}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {145}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {796}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {624}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {251}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {1024}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {159}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {73}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {89}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {274}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {170}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {151}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {169}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {218}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {103}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {670}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {61}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {85}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {192}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {176}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {419}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {380}
+   rdfs:seeAlso  IRI  ?;
+            # 38.13936050559691 % (14242 instances). obj: IRI. Cardinality: {1}
+   foaf:primaryTopic  IRI  ?
+            # 38.13936050559691 % (14242 instances). obj: IRI. Cardinality: {1}
+}
+
+
+:KNApSAcKReference   # 37342 instances
+{
+   rdf:type  [bibo:Article]  ;                                 # 100.0 % (37342 instances).
+   rdf:type  [knapsack:KNApSAcKReference]  ;                   # 100.0 % (37342 instances).
+   foaf:homepage  IRI  ;                                       # 100.0 % (37342 instances).
+   dc:title  xsd:string  ;                                     # 100.0 % (37342 instances).
+   dcterms:isReferencedBy  @:KNApSAcKCoreAnnotation  +;          # 100.0 % (37342 instances).
+            # 76.7955653151947 % (28677 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {1}
+            # 10.315462481923838 % (3852 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {2}
+            # 4.057093888918644 % (1515 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {3}
+            # 2.1396818595683147 % (799 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {4}
+            # 1.341652830592898 % (501 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {5}
+            # 0.8703336725403031 % (325 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {6}
+            # 0.5811150982807562 % (217 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {7}
+            # 0.5168443040008569 % (193 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {8}
+            # 0.2945744737828718 % (110 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {10}
+            # 0.25976112688125974 % (97 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {9}
+            # 0.2570831771195973 % (96 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {13}
+            # 0.20888008140967276 % (78 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {12}
+            # 0.19816828236302286 % (74 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {11}
+            # 0.17942263403138559 % (67 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {15}
+            # 0.16067698569974828 % (60 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {14}
+            # 0.08837234213486155 % (33 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {16}
+            # 0.08301644261153661 % (31 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {18}
+            # 0.0749825933265492 % (28 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {19}
+            # 0.0749825933265492 % (28 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {17}
+            # 0.07230464356488672 % (27 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {20}
+            # 0.06694874404156177 % (25 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {41}
+            # 0.053558995233249425 % (20 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {23}
+            # 0.04820309570992448 % (18 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {21}
+            # 0.04552514594826201 % (17 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {43}
+            # 0.0374912966632746 % (14 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {25}
+            # 0.03481334690161213 % (13 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {27}
+            # 0.03481334690161213 % (13 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {33}
+            # 0.03213539713994966 % (12 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {28}
+            # 0.03213539713994966 % (12 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {36}
+            # 0.029457447378287184 % (11 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {22}
+            # 0.026779497616624712 % (10 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {48}
+            # 0.026779497616624712 % (10 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {42}
+            # 0.026779497616624712 % (10 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {24}
+            # 0.026779497616624712 % (10 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {65}
+            # 0.02410154785496224 % (9 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {31}
+            # 0.02410154785496224 % (9 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {81}
+            # 0.02410154785496224 % (9 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {82}
+            # 0.02410154785496224 % (9 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {29}
+            # 0.021423598093299773 % (8 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {50}
+            # 0.021423598093299773 % (8 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {39}
+            # 0.021423598093299773 % (8 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {40}
+            # 0.021423598093299773 % (8 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {30}
+            # 0.0187456483316373 % (7 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {69}
+            # 0.0187456483316373 % (7 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {37}
+            # 0.0187456483316373 % (7 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {84}
+            # 0.0187456483316373 % (7 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {26}
+            # 0.01606769856997483 % (6 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {44}
+            # 0.01606769856997483 % (6 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {32}
+            # 0.013389748808312356 % (5 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {59}
+            # 0.013389748808312356 % (5 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {38}
+            # 0.013389748808312356 % (5 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {60}
+            # 0.013389748808312356 % (5 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {34}
+            # 0.010711799046649886 % (4 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {86}
+            # 0.010711799046649886 % (4 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {1004}
+            # 0.010711799046649886 % (4 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {96}
+            # 0.010711799046649886 % (4 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {100}
+            # 0.010711799046649886 % (4 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {46}
+            # 0.010711799046649886 % (4 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {57}
+            # 0.010711799046649886 % (4 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {47}
+            # 0.010711799046649886 % (4 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {54}
+            # 0.010711799046649886 % (4 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {83}
+            # 0.008033849284987415 % (3 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {98}
+            # 0.008033849284987415 % (3 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {106}
+            # 0.008033849284987415 % (3 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {56}
+            # 0.008033849284987415 % (3 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {45}
+            # 0.008033849284987415 % (3 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {120}
+            # 0.008033849284987415 % (3 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {63}
+            # 0.008033849284987415 % (3 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {172}
+            # 0.008033849284987415 % (3 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {99}
+            # 0.008033849284987415 % (3 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {118}
+            # 0.008033849284987415 % (3 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {107}
+            # 0.008033849284987415 % (3 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {62}
+            # 0.008033849284987415 % (3 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {91}
+            # 0.008033849284987415 % (3 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {58}
+            # 0.008033849284987415 % (3 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {49}
+            # 0.008033849284987415 % (3 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {77}
+            # 0.008033849284987415 % (3 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {74}
+            # 0.008033849284987415 % (3 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {53}
+            # 0.005355899523324943 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {124}
+            # 0.005355899523324943 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {115}
+            # 0.005355899523324943 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {92}
+            # 0.005355899523324943 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {261}
+            # 0.005355899523324943 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {87}
+            # 0.005355899523324943 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {88}
+            # 0.005355899523324943 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {162}
+            # 0.005355899523324943 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {101}
+            # 0.005355899523324943 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {97}
+            # 0.005355899523324943 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {75}
+            # 0.005355899523324943 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {51}
+            # 0.005355899523324943 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {79}
+            # 0.005355899523324943 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {35}
+            # 0.005355899523324943 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {208}
+            # 0.005355899523324943 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {105}
+            # 0.005355899523324943 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {111}
+            # 0.005355899523324943 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {196}
+            # 0.005355899523324943 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {70}
+            # 0.005355899523324943 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {110}
+            # 0.005355899523324943 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {121}
+            # 0.005355899523324943 % (2 instances). obj: @:KNApSAcKCoreAnnotation. Cardinality: {164}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {76}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {1289}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {896}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {232}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {94}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {171}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {152}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {211}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {154}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {128}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {281}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {242}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {119}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {347}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {144}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {161}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {181}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {139}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {1510}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {137}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {132}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {426}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {90}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {67}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {1328}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {311}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {117}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {138}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {64}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {797}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {136}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {1056}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {148}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {368}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {537}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {669}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {130}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {227}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {66}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {116}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {293}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {114}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {200}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {220}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {113}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {409}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {1684}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {750}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {142}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {52}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {694}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {78}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {297}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {129}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {278}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {134}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {155}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {55}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {216}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {133}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {112}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {145}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {796}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {624}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {251}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {1024}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {159}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {73}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {89}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {274}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {170}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {151}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {169}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {218}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {103}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {670}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {61}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {85}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {192}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {176}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {419}
+            # 0.0026779497616624716 % (1 instance). obj: @:KNApSAcKCoreAnnotation. Cardinality: {380}
+   rdfs:seeAlso  IRI  ?;
+            # 38.13936050559691 % (14242 instances). obj: IRI. Cardinality: {1}
+   foaf:primaryTopic  IRI  ?
+            # 38.13936050559691 % (14242 instances). obj: IRI. Cardinality: {1}
+}
+
+
+:KNApSAcKCoreAnnotation   # 28052 instances
+{
+   rdf:type  [knapsack:KNApSAcKCoreAnnotation]  ;              # 100.0 % (28052 instances).
+   knapsack:sp  xsd:string  ;                                  # 100.0 % (28052 instances).
+   cheminf:SIO_000254  @:KNApSAcKCoreRecord  +;                # 100.0 % (28052 instances).
+            # 37.505347212319975 % (10521 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {1}
+            # 17.506773135605304 % (4911 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {2}
+            # 10.248823613289606 % (2875 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {3}
+            # 7.300727220875516 % (2048 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {4}
+            # 5.43276771709682 % (1524 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {5}
+            # 3.878511336090119 % (1088 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {6}
+            # 2.9195779267075435 % (819 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {7}
+            # 2.3171253386567803 % (650 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {8}
+            # 1.9463852844716953 % (546 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {9}
+            # 1.472265792100385 % (413 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {10}
+            # 1.2369884500213888 % (347 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {11}
+            # 0.951803792955939 % (267 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {12}
+            # 0.7379153001568516 % (207 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {13}
+            # 0.6095822044773991 % (171 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {14}
+            # 0.5311564237844003 % (149 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {15}
+            # 0.49550834165121915 % (139 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {16}
+            # 0.4527306430914017 % (127 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {17}
+            # 0.4206473691715386 % (118 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {18}
+            # 0.2851846570654499 % (80 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {19}
+            # 0.2851846570654499 % (80 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {21}
+            # 0.27805504063881364 % (78 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {20}
+            # 0.23527734207899614 % (66 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {23}
+            # 0.21745330101240554 % (61 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {22}
+            # 0.19606445173249681 % (55 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {24}
+            # 0.17467560245258806 % (49 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {26}
+            # 0.15685156138599743 % (44 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {25}
+            # 0.1532867531726793 % (43 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {30}
+            # 0.1354627121060887 % (38 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {33}
+            # 0.1069442463995437 % (30 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {28}
+            # 0.09981462997290745 % (28 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {31}
+            # 0.08555539711963497 % (24 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {32}
+            # 0.08555539711963497 % (24 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {27}
+            # 0.08199058890631683 % (23 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {35}
+            # 0.08199058890631683 % (23 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {29}
+            # 0.07842578069299871 % (22 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {38}
+            # 0.07129616426636247 % (20 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {34}
+            # 0.06416654783972622 % (18 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {36}
+            # 0.05703693141308997 % (16 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {39}
+            # 0.05703693141308997 % (16 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {42}
+            # 0.05347212319977185 % (15 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {40}
+            # 0.05347212319977185 % (15 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {37}
+            # 0.0463425067731356 % (13 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {47}
+            # 0.03921289034649936 % (11 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {41}
+            # 0.03921289034649936 % (11 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {44}
+            # 0.035648082133181234 % (10 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {46}
+            # 0.035648082133181234 % (10 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {43}
+            # 0.03208327391986311 % (9 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {45}
+            # 0.028518465706544985 % (8 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {53}
+            # 0.028518465706544985 % (8 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {48}
+            # 0.024953657493226863 % (7 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {51}
+            # 0.024953657493226863 % (7 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {54}
+            # 0.021388849279908743 % (6 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {61}
+            # 0.017824041066590617 % (5 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {57}
+            # 0.017824041066590617 % (5 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {52}
+            # 0.017824041066590617 % (5 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {50}
+            # 0.014259232853272493 % (4 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {69}
+            # 0.014259232853272493 % (4 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {64}
+            # 0.014259232853272493 % (4 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {60}
+            # 0.014259232853272493 % (4 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {49}
+            # 0.014259232853272493 % (4 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {62}
+            # 0.014259232853272493 % (4 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {79}
+            # 0.010694424639954372 % (3 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {56}
+            # 0.010694424639954372 % (3 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {66}
+            # 0.010694424639954372 % (3 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {99}
+            # 0.010694424639954372 % (3 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {140}
+            # 0.010694424639954372 % (3 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {58}
+            # 0.010694424639954372 % (3 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {145}
+            # 0.010694424639954372 % (3 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {71}
+            # 0.010694424639954372 % (3 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {126}
+            # 0.010694424639954372 % (3 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {70}
+            # 0.010694424639954372 % (3 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {116}
+            # 0.007129616426636246 % (2 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {55}
+            # 0.007129616426636246 % (2 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {94}
+            # 0.007129616426636246 % (2 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {75}
+            # 0.007129616426636246 % (2 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {105}
+            # 0.007129616426636246 % (2 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {84}
+            # 0.007129616426636246 % (2 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {88}
+            # 0.007129616426636246 % (2 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {102}
+            # 0.007129616426636246 % (2 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {63}
+            # 0.007129616426636246 % (2 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {129}
+            # 0.007129616426636246 % (2 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {72}
+            # 0.007129616426636246 % (2 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {110}
+            # 0.007129616426636246 % (2 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {109}
+            # 0.007129616426636246 % (2 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {74}
+            # 0.007129616426636246 % (2 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {81}
+            # 0.007129616426636246 % (2 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {118}
+            # 0.007129616426636246 % (2 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {156}
+            # 0.007129616426636246 % (2 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {86}
+            # 0.007129616426636246 % (2 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {122}
+            # 0.007129616426636246 % (2 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {148}
+            # 0.007129616426636246 % (2 instances). obj: @:KNApSAcKCoreRecord. Cardinality: {87}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {138}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {112}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {197}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {208}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {107}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {111}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {132}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {175}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {78}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {83}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {213}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {137}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {73}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {139}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {173}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {185}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {144}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {101}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {141}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {146}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {82}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {134}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {96}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {279}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {125}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {98}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {154}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {181}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {80}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {252}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {120}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {68}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {167}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {164}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {163}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {93}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {106}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {123}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {160}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {149}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {90}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {89}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {232}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {65}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {652}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {150}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {222}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {255}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {77}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {203}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {85}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {67}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {229}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {104}
+            # 0.003564808213318123 % (1 instance). obj: @:KNApSAcKCoreRecord. Cardinality: {205}
+   knapsack:references  xsd:string  +;                         # 100.0 % (28052 instances).
+            # 65.82774846713247 % (18466 instances). obj: xsd:string. Cardinality: {1}
+            # 15.06487950948239 % (4226 instances). obj: xsd:string. Cardinality: {2}
+            # 6.509339797518894 % (1826 instances). obj: xsd:string. Cardinality: {3}
+            # 3.600456295451305 % (1010 instances). obj: xsd:string. Cardinality: {4}
+            # 2.252958790817054 % (632 instances). obj: xsd:string. Cardinality: {5}
+            # 1.5506915727933839 % (435 instances). obj: xsd:string. Cardinality: {6}
+            # 0.8484243547697133 % (238 instances). obj: xsd:string. Cardinality: {7}
+            # 0.7165264508769428 % (201 instances). obj: xsd:string. Cardinality: {8}
+            # 0.634535861970626 % (178 instances). obj: xsd:string. Cardinality: {9}
+            # 0.45629545130471977 % (128 instances). obj: xsd:string. Cardinality: {10}
+            # 0.3956937116783117 % (111 instances). obj: xsd:string. Cardinality: {11}
+            # 0.2709254242121774 % (76 instances). obj: xsd:string. Cardinality: {12}
+            # 0.2388421502923143 % (67 instances). obj: xsd:string. Cardinality: {13}
+            # 0.1818052188792243 % (51 instances). obj: xsd:string. Cardinality: {16}
+            # 0.15685156138599743 % (44 instances). obj: xsd:string. Cardinality: {14}
+            # 0.1497219449593612 % (42 instances). obj: xsd:string. Cardinality: {17}
+            # 0.14615713674604305 % (41 instances). obj: xsd:string. Cardinality: {15}
+            # 0.11050905461286183 % (31 instances). obj: xsd:string. Cardinality: {18}
+            # 0.08199058890631683 % (23 instances). obj: xsd:string. Cardinality: {19}
+            # 0.06060173962640811 % (17 instances). obj: xsd:string. Cardinality: {25}
+            # 0.06060173962640811 % (17 instances). obj: xsd:string. Cardinality: {23}
+            # 0.06060173962640811 % (17 instances). obj: xsd:string. Cardinality: {21}
+            # 0.05703693141308997 % (16 instances). obj: xsd:string. Cardinality: {20}
+            # 0.05703693141308997 % (16 instances). obj: xsd:string. Cardinality: {22}
+            # 0.03921289034649936 % (11 instances). obj: xsd:string. Cardinality: {26}
+            # 0.035648082133181234 % (10 instances). obj: xsd:string. Cardinality: {24}
+            # 0.035648082133181234 % (10 instances). obj: xsd:string. Cardinality: {31}
+            # 0.028518465706544985 % (8 instances). obj: xsd:string. Cardinality: {27}
+            # 0.028518465706544985 % (8 instances). obj: xsd:string. Cardinality: {28}
+            # 0.024953657493226863 % (7 instances). obj: xsd:string. Cardinality: {29}
+            # 0.021388849279908743 % (6 instances). obj: xsd:string. Cardinality: {36}
+            # 0.021388849279908743 % (6 instances). obj: xsd:string. Cardinality: {32}
+            # 0.017824041066590617 % (5 instances). obj: xsd:string. Cardinality: {33}
+            # 0.014259232853272493 % (4 instances). obj: xsd:string. Cardinality: {40}
+            # 0.014259232853272493 % (4 instances). obj: xsd:string. Cardinality: {60}
+            # 0.014259232853272493 % (4 instances). obj: xsd:string. Cardinality: {42}
+            # 0.014259232853272493 % (4 instances). obj: xsd:string. Cardinality: {37}
+            # 0.014259232853272493 % (4 instances). obj: xsd:string. Cardinality: {30}
+            # 0.010694424639954372 % (3 instances). obj: xsd:string. Cardinality: {45}
+            # 0.010694424639954372 % (3 instances). obj: xsd:string. Cardinality: {54}
+            # 0.010694424639954372 % (3 instances). obj: xsd:string. Cardinality: {44}
+            # 0.010694424639954372 % (3 instances). obj: xsd:string. Cardinality: {41}
+            # 0.010694424639954372 % (3 instances). obj: xsd:string. Cardinality: {93}
+            # 0.007129616426636246 % (2 instances). obj: xsd:string. Cardinality: {46}
+            # 0.007129616426636246 % (2 instances). obj: xsd:string. Cardinality: {35}
+            # 0.007129616426636246 % (2 instances). obj: xsd:string. Cardinality: {38}
+            # 0.007129616426636246 % (2 instances). obj: xsd:string. Cardinality: {55}
+            # 0.007129616426636246 % (2 instances). obj: xsd:string. Cardinality: {39}
+            # 0.007129616426636246 % (2 instances). obj: xsd:string. Cardinality: {59}
+            # 0.007129616426636246 % (2 instances). obj: xsd:string. Cardinality: {58}
+            # 0.007129616426636246 % (2 instances). obj: xsd:string. Cardinality: {50}
+            # 0.007129616426636246 % (2 instances). obj: xsd:string. Cardinality: {43}
+            # 0.007129616426636246 % (2 instances). obj: xsd:string. Cardinality: {51}
+            # 0.003564808213318123 % (1 instance). obj: xsd:string. Cardinality: {116}
+            # 0.003564808213318123 % (1 instance). obj: xsd:string. Cardinality: {96}
+            # 0.003564808213318123 % (1 instance). obj: xsd:string. Cardinality: {91}
+            # 0.003564808213318123 % (1 instance). obj: xsd:string. Cardinality: {78}
+            # 0.003564808213318123 % (1 instance). obj: xsd:string. Cardinality: {47}
+            # 0.003564808213318123 % (1 instance). obj: xsd:string. Cardinality: {49}
+            # 0.003564808213318123 % (1 instance). obj: xsd:string. Cardinality: {66}
+            # 0.003564808213318123 % (1 instance). obj: xsd:string. Cardinality: {57}
+            # 0.003564808213318123 % (1 instance). obj: xsd:string. Cardinality: {79}
+            # 0.003564808213318123 % (1 instance). obj: xsd:string. Cardinality: {201}
+            # 0.003564808213318123 % (1 instance). obj: xsd:string. Cardinality: {102}
+            # 0.003564808213318123 % (1 instance). obj: xsd:string. Cardinality: {34}
+            # 0.003564808213318123 % (1 instance). obj: xsd:string. Cardinality: {53}
+            # 0.003564808213318123 % (1 instance). obj: xsd:string. Cardinality: {204}
+            # 0.003564808213318123 % (1 instance). obj: xsd:string. Cardinality: {77}
+            # 0.003564808213318123 % (1 instance). obj: xsd:string. Cardinality: {65}
+            # 0.003564808213318123 % (1 instance). obj: xsd:string. Cardinality: {68}
+   knapsack:sp1  xsd:string  ;                                 # 100.0 % (28052 instances).
+   knapsack:kingdom  xsd:string  ;                             # 100.0 % (28052 instances).
+   dcterms:references  IRI  +;                                 # 100.0 % (28052 instances).
+            # 55.72151718237559 % (15631 instances). obj: IRI. Cardinality: {1}
+            # 14.15228860687295 % (3970 instances). obj: IRI. Cardinality: {2}
+            # 8.387993725937545 % (2353 instances). obj: IRI. Cardinality: {3}
+            # 4.153001568515614 % (1165 instances). obj: IRI. Cardinality: {4}
+            # 2.7769855981748184 % (779 instances). obj: IRI. Cardinality: {5}
+            # 2.2672180236703263 % (636 instances). obj: IRI. Cardinality: {6}
+            # 1.5542563810067018 % (436 instances). obj: IRI. Cardinality: {7}
+            # 1.2334236418080708 % (346 instances). obj: IRI. Cardinality: {8}
+            # 1.151433052901754 % (323 instances). obj: IRI. Cardinality: {9}
+            # 0.9232853272493939 % (259 instances). obj: IRI. Cardinality: {10}
+            # 0.7272208755168972 % (204 instances). obj: IRI. Cardinality: {11}
+            # 0.6381006701839441 % (179 instances). obj: IRI. Cardinality: {12}
+            # 0.5275916155710823 % (148 instances). obj: IRI. Cardinality: {13}
+            # 0.4776843005846286 % (134 instances). obj: IRI. Cardinality: {14}
+            # 0.39212890346499363 % (110 instances). obj: IRI. Cardinality: {15}
+            # 0.3208327391986311 % (90 instances). obj: IRI. Cardinality: {16}
+            # 0.2851846570654499 % (80 instances). obj: IRI. Cardinality: {18}
+            # 0.27805504063881364 % (78 instances). obj: IRI. Cardinality: {17}
+            # 0.24240695850563243 % (68 instances). obj: IRI. Cardinality: {19}
+            # 0.22814772565235988 % (64 instances). obj: IRI. Cardinality: {20}
+            # 0.22101810922572365 % (62 instances). obj: IRI. Cardinality: {23}
+            # 0.1853700270925424 % (52 instances). obj: IRI. Cardinality: {21}
+            # 0.16041636959931554 % (45 instances). obj: IRI. Cardinality: {24}
+            # 0.14615713674604305 % (41 instances). obj: IRI. Cardinality: {22}
+            # 0.13189790389277056 % (37 instances). obj: IRI. Cardinality: {26}
+            # 0.12476828746613433 % (35 instances). obj: IRI. Cardinality: {28}
+            # 0.12120347925281622 % (34 instances). obj: IRI. Cardinality: {31}
+            # 0.11050905461286183 % (31 instances). obj: IRI. Cardinality: {27}
+            # 0.11050905461286183 % (31 instances). obj: IRI. Cardinality: {25}
+            # 0.10337943818622558 % (29 instances). obj: IRI. Cardinality: {32}
+            # 0.0926850135462712 % (26 instances). obj: IRI. Cardinality: {34}
+            # 0.08912020533295309 % (25 instances). obj: IRI. Cardinality: {36}
+            # 0.08912020533295309 % (25 instances). obj: IRI. Cardinality: {29}
+            # 0.08555539711963497 % (24 instances). obj: IRI. Cardinality: {33}
+            # 0.0748609724796806 % (21 instances). obj: IRI. Cardinality: {38}
+            # 0.0748609724796806 % (21 instances). obj: IRI. Cardinality: {39}
+            # 0.07129616426636247 % (20 instances). obj: IRI. Cardinality: {30}
+            # 0.06773135605304435 % (19 instances). obj: IRI. Cardinality: {46}
+            # 0.06416654783972622 % (18 instances). obj: IRI. Cardinality: {35}
+            # 0.06416654783972622 % (18 instances). obj: IRI. Cardinality: {37}
+            # 0.06416654783972622 % (18 instances). obj: IRI. Cardinality: {49}
+            # 0.06060173962640811 % (17 instances). obj: IRI. Cardinality: {42}
+            # 0.06060173962640811 % (17 instances). obj: IRI. Cardinality: {47}
+            # 0.05703693141308997 % (16 instances). obj: IRI. Cardinality: {41}
+            # 0.05347212319977185 % (15 instances). obj: IRI. Cardinality: {43}
+            # 0.05347212319977185 % (15 instances). obj: IRI. Cardinality: {51}
+            # 0.04277769855981749 % (12 instances). obj: IRI. Cardinality: {52}
+            # 0.04277769855981749 % (12 instances). obj: IRI. Cardinality: {40}
+            # 0.03921289034649936 % (11 instances). obj: IRI. Cardinality: {54}
+            # 0.03921289034649936 % (11 instances). obj: IRI. Cardinality: {50}
+            # 0.03921289034649936 % (11 instances). obj: IRI. Cardinality: {48}
+            # 0.035648082133181234 % (10 instances). obj: IRI. Cardinality: {45}
+            # 0.028518465706544985 % (8 instances). obj: IRI. Cardinality: {66}
+            # 0.028518465706544985 % (8 instances). obj: IRI. Cardinality: {71}
+            # 0.028518465706544985 % (8 instances). obj: IRI. Cardinality: {57}
+            # 0.024953657493226863 % (7 instances). obj: IRI. Cardinality: {65}
+            # 0.024953657493226863 % (7 instances). obj: IRI. Cardinality: {44}
+            # 0.021388849279908743 % (6 instances). obj: IRI. Cardinality: {75}
+            # 0.021388849279908743 % (6 instances). obj: IRI. Cardinality: {93}
+            # 0.021388849279908743 % (6 instances). obj: IRI. Cardinality: {67}
+            # 0.017824041066590617 % (5 instances). obj: IRI. Cardinality: {68}
+            # 0.017824041066590617 % (5 instances). obj: IRI. Cardinality: {61}
+            # 0.017824041066590617 % (5 instances). obj: IRI. Cardinality: {62}
+            # 0.017824041066590617 % (5 instances). obj: IRI. Cardinality: {56}
+            # 0.017824041066590617 % (5 instances). obj: IRI. Cardinality: {64}
+            # 0.017824041066590617 % (5 instances). obj: IRI. Cardinality: {59}
+            # 0.017824041066590617 % (5 instances). obj: IRI. Cardinality: {70}
+            # 0.014259232853272493 % (4 instances). obj: IRI. Cardinality: {92}
+            # 0.014259232853272493 % (4 instances). obj: IRI. Cardinality: {95}
+            # 0.014259232853272493 % (4 instances). obj: IRI. Cardinality: {55}
+            # 0.014259232853272493 % (4 instances). obj: IRI. Cardinality: {79}
+            # 0.014259232853272493 % (4 instances). obj: IRI. Cardinality: {77}
+            # 0.014259232853272493 % (4 instances). obj: IRI. Cardinality: {89}
+            # 0.010694424639954372 % (3 instances). obj: IRI. Cardinality: {102}
+            # 0.010694424639954372 % (3 instances). obj: IRI. Cardinality: {156}
+            # 0.010694424639954372 % (3 instances). obj: IRI. Cardinality: {94}
+            # 0.010694424639954372 % (3 instances). obj: IRI. Cardinality: {96}
+            # 0.010694424639954372 % (3 instances). obj: IRI. Cardinality: {84}
+            # 0.010694424639954372 % (3 instances). obj: IRI. Cardinality: {87}
+            # 0.010694424639954372 % (3 instances). obj: IRI. Cardinality: {98}
+            # 0.010694424639954372 % (3 instances). obj: IRI. Cardinality: {78}
+            # 0.010694424639954372 % (3 instances). obj: IRI. Cardinality: {60}
+            # 0.010694424639954372 % (3 instances). obj: IRI. Cardinality: {97}
+            # 0.010694424639954372 % (3 instances). obj: IRI. Cardinality: {72}
+            # 0.010694424639954372 % (3 instances). obj: IRI. Cardinality: {99}
+            # 0.010694424639954372 % (3 instances). obj: IRI. Cardinality: {88}
+            # 0.010694424639954372 % (3 instances). obj: IRI. Cardinality: {81}
+            # 0.007129616426636246 % (2 instances). obj: IRI. Cardinality: {69}
+            # 0.007129616426636246 % (2 instances). obj: IRI. Cardinality: {63}
+            # 0.007129616426636246 % (2 instances). obj: IRI. Cardinality: {115}
+            # 0.007129616426636246 % (2 instances). obj: IRI. Cardinality: {73}
+            # 0.007129616426636246 % (2 instances). obj: IRI. Cardinality: {108}
+            # 0.007129616426636246 % (2 instances). obj: IRI. Cardinality: {104}
+            # 0.007129616426636246 % (2 instances). obj: IRI. Cardinality: {83}
+            # 0.007129616426636246 % (2 instances). obj: IRI. Cardinality: {114}
+            # 0.007129616426636246 % (2 instances). obj: IRI. Cardinality: {141}
+            # 0.007129616426636246 % (2 instances). obj: IRI. Cardinality: {80}
+            # 0.007129616426636246 % (2 instances). obj: IRI. Cardinality: {82}
+            # 0.007129616426636246 % (2 instances). obj: IRI. Cardinality: {91}
+            # 0.007129616426636246 % (2 instances). obj: IRI. Cardinality: {127}
+            # 0.007129616426636246 % (2 instances). obj: IRI. Cardinality: {53}
+            # 0.007129616426636246 % (2 instances). obj: IRI. Cardinality: {90}
+            # 0.003564808213318123 % (1 instance). obj: IRI. Cardinality: {262}
+            # 0.003564808213318123 % (1 instance). obj: IRI. Cardinality: {121}
+            # 0.003564808213318123 % (1 instance). obj: IRI. Cardinality: {148}
+            # 0.003564808213318123 % (1 instance). obj: IRI. Cardinality: {140}
+            # 0.003564808213318123 % (1 instance). obj: IRI. Cardinality: {112}
+            # 0.003564808213318123 % (1 instance). obj: IRI. Cardinality: {159}
+            # 0.003564808213318123 % (1 instance). obj: IRI. Cardinality: {110}
+            # 0.003564808213318123 % (1 instance). obj: IRI. Cardinality: {105}
+            # 0.003564808213318123 % (1 instance). obj: IRI. Cardinality: {117}
+            # 0.003564808213318123 % (1 instance). obj: IRI. Cardinality: {139}
+            # 0.003564808213318123 % (1 instance). obj: IRI. Cardinality: {145}
+            # 0.003564808213318123 % (1 instance). obj: IRI. Cardinality: {201}
+            # 0.003564808213318123 % (1 instance). obj: IRI. Cardinality: {203}
+            # 0.003564808213318123 % (1 instance). obj: IRI. Cardinality: {119}
+            # 0.003564808213318123 % (1 instance). obj: IRI. Cardinality: {143}
+            # 0.003564808213318123 % (1 instance). obj: IRI. Cardinality: {100}
+            # 0.003564808213318123 % (1 instance). obj: IRI. Cardinality: {101}
+            # 0.003564808213318123 % (1 instance). obj: IRI. Cardinality: {163}
+            # 0.003564808213318123 % (1 instance). obj: IRI. Cardinality: {106}
+            # 0.003564808213318123 % (1 instance). obj: IRI. Cardinality: {204}
+            # 0.003564808213318123 % (1 instance). obj: IRI. Cardinality: {161}
+            # 0.003564808213318123 % (1 instance). obj: IRI. Cardinality: {86}
+            # 0.003564808213318123 % (1 instance). obj: IRI. Cardinality: {128}
+            # 0.003564808213318123 % (1 instance). obj: IRI. Cardinality: {58}
+            # 0.003564808213318123 % (1 instance). obj: IRI. Cardinality: {124}
+            # 0.003564808213318123 % (1 instance). obj: IRI. Cardinality: {76}
+            # 0.003564808213318123 % (1 instance). obj: IRI. Cardinality: {109}
+            # 0.003564808213318123 % (1 instance). obj: IRI. Cardinality: {179}
+            # 0.003564808213318123 % (1 instance). obj: IRI. Cardinality: {122}
+            # 0.003564808213318123 % (1 instance). obj: IRI. Cardinality: {118}
+            # 0.003564808213318123 % (1 instance). obj: IRI. Cardinality: {136}
+            # 0.003564808213318123 % (1 instance). obj: IRI. Cardinality: {191}
+            # 0.003564808213318123 % (1 instance). obj: IRI. Cardinality: {160}
+            # 100.0 % (28052 instances). obj: @:Article. Cardinality: +
+            # 100.0 % (28052 instances). obj: @:KNApSAcKReference. Cardinality: +
+   foaf:homepage  IRI  ;                                       # 100.0 % (28052 instances).
+   knapsack:family  xsd:string  ;                              # 100.0 % (28052 instances).
+   rdfs:seeAlso  IRI  ?
+            # 43.71524311992015 % (12263 instances). obj: IRI. Cardinality: {1}
+}
+
+
+:CHEMINF_000018   # 57919 instances
+{
+   rdf:type  [cheminf:CHEMINF_000018]  ;                       # 100.0 % (57919 instances).
+   cheminf:SIO_000300  rdf:langString  ?;
+            # 74.57829037103542 % (43195 instances). obj: rdf:langString. Cardinality: {1}
+   cheminf:SIO_000300  xsd:string  ?
+            # 25.42170962896459 % (14724 instances). obj: xsd:string. Cardinality: {1}
+}
+
+
+:SDfile   # 57919 instances
+{
+   rdf:type  [knapsack:SDfile]  ;                              # 100.0 % (57919 instances).
+   rdfs:seeAlso  IRI  ;                                        # 100.0 % (57919 instances).
+   dcterms:format  IRI                                         # 100.0 % (57919 instances).
+}
+
+
+:CDXfile   # 57919 instances
+{
+   rdf:type  [knapsack:CDXfile]  ;                             # 100.0 % (57919 instances).
+   rdfs:seeAlso  IRI  ;                                        # 100.0 % (57919 instances).
+   dcterms:format  IRI                                         # 100.0 % (57919 instances).
+}
+
+
+:CHEMINF_000059   # 57919 instances
+{
+   rdf:type  [cheminf:CHEMINF_000059]  ;                       # 100.0 % (57919 instances).
+   cheminf:SIO_000300  xsd:string  ;                           # 100.0 % (57919 instances).
+   rdfs:seeAlso  IRI                                           # 100.0 % (57919 instances).
+}
+
+
+:CHEMINF_000042   # 57919 instances
+{
+   rdf:type  [cheminf:CHEMINF_000042]  ;                       # 100.0 % (57919 instances).
+   cheminf:SIO_000300  xsd:string                              # 100.0 % (57919 instances).
+}
+
+
+:CHEMINF_000334   # 57919 instances
+{
+   rdf:type  [cheminf:CHEMINF_000334]  ;                       # 100.0 % (57919 instances).
+   cheminf:SIO_000300  xsd:double  ;                           # 100.0 % (57919 instances).
+   cheminf:SIO_000221  IRI                                     # 100.0 % (57919 instances).
+}
+
+
